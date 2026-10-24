@@ -1,0 +1,4 @@
+interface:
+  display_name: "Unity True CLI"
+  short_description: "通过真实 CLI 制作和检查 Unity 场景、镜头、UI 与渲染效果"
+  default_prompt: "使用 $unity-true-cli 连接我的 Unity 工程，发现当前可用命令并完成制作任务。"

@@ -1,0 +1,605 @@
+{
+  "package": "com.unity.pipeline",
+  "version": "0.8.0-exp.1",
+  "fingerprint": "62c08c808737255821f3449466689a527a2eea50",
+  "revision": "dde7080264d32a1091171d4b358351279fa10ddb",
+  "cli_version": "1.0.0-beta.13",
+  "cli_sha256": "9a63636402d8a087e9b67621f31b15fbe0f48eba130a91bdefb88b68aa717b20",
+  "changes": [
+    {
+      "path": "Editor/Commands/Animation/AnimationClipCommands.cs",
+      "upstream_sha256": "6edb257ad92da56db9cfbac55c9dafcf62c8529a840edd7235312bf04f498e87",
+      "sha256": "d459cdf299bcbaaf2e99f205ba2cce540e9c0a83f78a60cd9c4b5af4aa035f1b"
+    },
+    {
+      "path": "Editor/Commands/Animation/TimelineCommands.cs",
+      "upstream_sha256": "48e1590dde52c5dbc38563a2a520e6106a680b4a8eede5d8e63ef69d6b544fc1",
+      "sha256": "46bcb3b58d0d2f70d5b0ae0805b8430b9820ee24f15df07114a9a3af25bd2935"
+    },
+    {
+      "path": "Editor/Commands/Assets/AssetCommands.cs",
+      "upstream_sha256": "639d1fe96d1dc8ee129b41b8fb69bd24781658730a5fc920e334dcfc6cca970b",
+      "sha256": "ecd779fb9622206d1d25b84dca05154249da578e4b4fa95c8adc9ce5525ba82a"
+    },
+    {
+      "path": "Editor/Commands/Batch/BatchCommand.cs",
+      "upstream_sha256": "7dd16e1610f326cb4e3fac13945520e2c47eecceab08b5eab41aa3f8a8dfe3dd",
+      "sha256": "9c87368c8366f883f5c46e8dd6d30eacdf2deae1a97f69aa11cab4914151ee6c"
+    },
+    {
+      "path": "Editor/Commands/Capture/CaptureCommands.cs",
+      "upstream_sha256": "081a645c05a013c1168dc6403583e3edf16c330053a4f1bb7acca6e4a463d760",
+      "sha256": "6359d3cdcaa523af5a0f436cb88e1a8a13bf5efc908aa938efeefa7093725bcb"
+    },
+    {
+      "path": "Editor/Commands/Capture/VisualObservationCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "08542da2cacab2eab6a619d1a212b0a9f9a7d7aeba8386f1a480afbc68a2547e"
+    },
+    {
+      "path": "Editor/Commands/Capture/VisualObservationCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "3fd9c184218d92127c4259fc486401095a79b35381d61dcd58e22227bfc1e7b0"
+    },
+    {
+      "path": "Editor/Commands/Materials/MaterialCommands.cs",
+      "upstream_sha256": "1a1a1bacb9f58e7653771ce5a0922092d2767e11f0000f3bc824738c30fc8e5f",
+      "sha256": "7f16ab276d1d042ae2f54aca02fc78e7a890ab6d7a25e1e7ac518c1d994386e2"
+    },
+    {
+      "path": "Editor/Commands/ProjectSettings/GraphicsSettingsCommands.cs",
+      "upstream_sha256": "5355864064701a67b366b6599c338b0ce99242279ef94b6e630733369601ea1a",
+      "sha256": "ce739a9997549596e09979114d1f510b7df4d8b244d1ad82c5e8a31fa299f5b4"
+    },
+    {
+      "path": "Editor/Commands/RecompileCommand.cs",
+      "upstream_sha256": "0d258c0923815b44b459eb55ecdeabbdebd3dab3c0b60059a0f29e2114a9eee5",
+      "sha256": "9635249b1ae4ceb5bf87b71b6351be3f0adc337c40aa61eb3dd27a986ad73fd7"
+    },
+    {
+      "path": "Editor/Commands/UI/UiInspectionCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "9d29c3f9ec001ef74618145d56b27ff706339d6d7ac144fab4b6007403ac7131"
+    },
+    {
+      "path": "Editor/Commands/UI/UiInspectionCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "7d295e15d114b347611ddd74e27e152f11535275f31485ba5ca71e64dd188410"
+    },
+    {
+      "path": "Editor/Commands/UI.meta",
+      "upstream_sha256": null,
+      "sha256": "0c4a05b519781dcb7433cf9f507bcd9a623920c3ddcdd841804abea4812593d2"
+    },
+    {
+      "path": "Editor/Compatibility/LegacyAnalytics.cs",
+      "upstream_sha256": null,
+      "sha256": "723da786d7013ed7de88fdd35f85f7b909b807aa10bf48ec8bc6a6fb6202b6c5"
+    },
+    {
+      "path": "Editor/Compatibility/LegacyAnalytics.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "09ad5eda2afe73e80dcaeb0c18d13a27fad97fe4936b399aaedbc2e60b62b29f"
+    },
+    {
+      "path": "Editor/Compatibility/LegacyConsoleCounts.cs",
+      "upstream_sha256": null,
+      "sha256": "949293bc1150670351bc07f48d48b50645dc8f0479192518b7f14d122d554365"
+    },
+    {
+      "path": "Editor/Compatibility/LegacyConsoleCounts.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "3a4444b45e84da979fc191ea25dc121613ae2870c867e7640ff1f828b5ea965f"
+    },
+    {
+      "path": "Editor/Compatibility.meta",
+      "upstream_sha256": null,
+      "sha256": "7b32b26a438ce591de7088e59368a2d33e510f9362d16616d659ee76419f6957"
+    },
+    {
+      "path": "Editor/Console/EditorConsoleGroundTruth.cs",
+      "upstream_sha256": "8d0b080944ab5bd3364d1b674d8ace91b7fbe5faef87b6ed26c24161789e373c",
+      "sha256": "480757851524d731add5ba2ac65c012099eeda9503d8226c5689f07f03905209"
+    },
+    {
+      "path": "Editor/Extensions/Cinemachine2/CinemachineAdvancedCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "8f4ceb24a1e721675e11bb2a001b0fc703e03b0faf2c07200905b0131eccfd99"
+    },
+    {
+      "path": "Editor/Extensions/Cinemachine2/CinemachineAdvancedCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "b9d87d7567a973b99019913ad8314c92ef5a1bfcad6320b7c36b40c589483030"
+    },
+    {
+      "path": "Editor/Extensions/Cinemachine2/CinemachineCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "139c97c7804cc0e0d5bebdcbb37b6480e58d1fda6d3e4417642c42248467a666"
+    },
+    {
+      "path": "Editor/Extensions/Cinemachine2/CinemachineCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "02b82187f831ffe9a629bc3a5e42b9ceeb654aef27eecd5b3943394137ba4ee8"
+    },
+    {
+      "path": "Editor/Extensions/Cinemachine2/Unity.Pipeline.Cinemachine2.Editor.asmdef",
+      "upstream_sha256": null,
+      "sha256": "0fe4c8cba11e9d457bf9e848b7b12e67844cd9c97e9865a90a8dc790327c53e6"
+    },
+    {
+      "path": "Editor/Extensions/Cinemachine2/Unity.Pipeline.Cinemachine2.Editor.asmdef.meta",
+      "upstream_sha256": null,
+      "sha256": "efec9cb5f840f5090e121e213bc702b0ac6a83093c7f64d20615f7764f27f324"
+    },
+    {
+      "path": "Editor/Extensions/Cinemachine2.meta",
+      "upstream_sha256": null,
+      "sha256": "db74c127c45971a03ef2792a7347cf2efbb38b408d4f7d377493bb2ac4ee2964"
+    },
+    {
+      "path": "Editor/Extensions/Cinemachine3/CinemachineAdvancedCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "7187ecfa044075933f5741ced3b5c2e5f9651522a668aa2f7e25ed6565c2f847"
+    },
+    {
+      "path": "Editor/Extensions/Cinemachine3/CinemachineAdvancedCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "09ae805af46bb56f27ad7f03be7ab64e6041430a34e55afa29cb8c7008f1f603"
+    },
+    {
+      "path": "Editor/Extensions/Cinemachine3/CinemachineCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "8cf829454e97171d5b784f42a6b111f50ed2454902922f944c6f14ce1e56ba82"
+    },
+    {
+      "path": "Editor/Extensions/Cinemachine3/CinemachineCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "9ed6cca868d4039597ad59f975294747e398f44e226ebcd377eb382ad90cfef4"
+    },
+    {
+      "path": "Editor/Extensions/Cinemachine3/Unity.Pipeline.Cinemachine3.Editor.asmdef",
+      "upstream_sha256": null,
+      "sha256": "495d8a9a14b6004bea72fdadd2c9c4837a00e408fe458c027d097ca847053638"
+    },
+    {
+      "path": "Editor/Extensions/Cinemachine3/Unity.Pipeline.Cinemachine3.Editor.asmdef.meta",
+      "upstream_sha256": null,
+      "sha256": "a5b70f93224a39d2dee2587157b2f35259190ce6b257407db7369b3329da8084"
+    },
+    {
+      "path": "Editor/Extensions/Cinemachine3.meta",
+      "upstream_sha256": null,
+      "sha256": "e00a68d7f1bfb5ef01e846d1579fe4e5c600c3db780174141f5d08107de21cc5"
+    },
+    {
+      "path": "Editor/Extensions/ExtensionFileWrites.cs",
+      "upstream_sha256": null,
+      "sha256": "02baba3285c252c23e10a379d34ec0e7822ceb487f7068a3a6a1fe602446ec32"
+    },
+    {
+      "path": "Editor/Extensions/ExtensionFileWrites.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "b10fe89f51a96123887b9b3392881aa29423e6a8a0d9312c3318f4ada874c0a2"
+    },
+    {
+      "path": "Editor/Extensions/ExtensionObjects.cs",
+      "upstream_sha256": null,
+      "sha256": "e1b2d8b028d1d25c9e390408d57d7b21c95bf9bce67c9c14332b923e86f67601"
+    },
+    {
+      "path": "Editor/Extensions/ExtensionObjects.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "0bfad9fe0cb25354135637ac738b9c823f850d68d0eb10b7bc798db99c5519a6"
+    },
+    {
+      "path": "Editor/Extensions/ExtensionProperties.cs",
+      "upstream_sha256": null,
+      "sha256": "e3ccdfb1c5d5f9ef529bf9918db056d402349cf98e65aac989d4c39ab71dd5b3"
+    },
+    {
+      "path": "Editor/Extensions/ExtensionProperties.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "ae3e233413723100f44b8571dab513c26aa6884d6a75d6d4b8d02e371d31f1f0"
+    },
+    {
+      "path": "Editor/Extensions/Input/InputSequenceCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "8d186eb88b4227a82c865d643464a9ed1d70af2fcab51378c96c31ba85d48633"
+    },
+    {
+      "path": "Editor/Extensions/Input/InputSequenceCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "7eda905db158935daf8400d657f38e6d82a94182a4b1eceb9b53ea15fa78d2c8"
+    },
+    {
+      "path": "Editor/Extensions/Input/InputSystemCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "a9005facd5b2c05c09d372e41f7f30a9e86ad4502d501ab2da474e229ff075d6"
+    },
+    {
+      "path": "Editor/Extensions/Input/InputSystemCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "f7a5dedd2fc8597c65499e2185a3b126f0c8c33468b91daf3b3ca1bb8c129f5b"
+    },
+    {
+      "path": "Editor/Extensions/Input/Unity.Pipeline.Input.Editor.asmdef",
+      "upstream_sha256": null,
+      "sha256": "5b2683a635229293f6c93c47d5606ad168cb4e8739261c8801d2bb0645fc4697"
+    },
+    {
+      "path": "Editor/Extensions/Input/Unity.Pipeline.Input.Editor.asmdef.meta",
+      "upstream_sha256": null,
+      "sha256": "18f83d907380881e026ae2f421589da33def90c1b6cf2275f859ed07405e7f1f"
+    },
+    {
+      "path": "Editor/Extensions/Input.meta",
+      "upstream_sha256": null,
+      "sha256": "4a9dac452655aac8f0f860838a7f896c853b2873b5fc5b233edc232b92a3da58"
+    },
+    {
+      "path": "Editor/Extensions/RenderCameraCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "97e1627609ec76076c3d06f54e152299bd9e39a2b46e7c3808890c272017f127"
+    },
+    {
+      "path": "Editor/Extensions/RenderCameraCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "839f4981d808496b33a37a75878b561902423d2d858eb1725e7437cf237c5862"
+    },
+    {
+      "path": "Editor/Extensions/ShaderGlobalCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "89d0d6c0937e7cc574847cefae0bfa81001875978757bc20506d18a95b84d589"
+    },
+    {
+      "path": "Editor/Extensions/ShaderGlobalCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "c80ff7f91ea3139fb74b00129b26e4e297ca18a6eacbea3a2cb8ec82a74eed5a"
+    },
+    {
+      "path": "Editor/Extensions/SsuMaterialCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "fe764eaa8815cd03bf48e1688d24274566686c983ca4b5c4419a9879ad5654ce"
+    },
+    {
+      "path": "Editor/Extensions/SsuMaterialCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "f94f4c37285b441046824cb0e5075c34a151a2e856567cb1022bd23e37834fe8"
+    },
+    {
+      "path": "Editor/Extensions/SsuRendererCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "22f56bbd0abacb6fa65a6a53cfc620e2263bd4e3f7d2708376da612244d1f240"
+    },
+    {
+      "path": "Editor/Extensions/SsuRendererCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "2c64be2b6a56b6afd2ceab60a2c4fee3ba1f11de468aacd2ba721d03a972f275"
+    },
+    {
+      "path": "Editor/Extensions/Timeline/DirectorCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "8e5f2d72e413d5d76558148e3166b2ddaaaa83daac67a027a692fa59827c5da4"
+    },
+    {
+      "path": "Editor/Extensions/Timeline/DirectorCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "5698ad3066c638786883eb8f670cd33f1f1420fa562c87d975d4d4d6ee48b49f"
+    },
+    {
+      "path": "Editor/Extensions/Timeline/Unity.Pipeline.Timeline.Editor.asmdef",
+      "upstream_sha256": null,
+      "sha256": "c7414f43c091070d80181bc6386f8da504eded11e069a9a69577ad4f0831d814"
+    },
+    {
+      "path": "Editor/Extensions/Timeline/Unity.Pipeline.Timeline.Editor.asmdef.meta",
+      "upstream_sha256": null,
+      "sha256": "479f52e5352cdf545708578b5a0688e56988b60431395da155ad79afdfed8a40"
+    },
+    {
+      "path": "Editor/Extensions/Timeline.meta",
+      "upstream_sha256": null,
+      "sha256": "d949265640d1e33a2afc23b5e0f963ecc1bdf489e2aa96aa952de81e2a9efbc4"
+    },
+    {
+      "path": "Editor/Extensions/TMP/TmpCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "1ecacbe2d69d09fcf506c9c8c742a442dc182319bcdbd8b448586022e9732bde"
+    },
+    {
+      "path": "Editor/Extensions/TMP/TmpCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "f6d9ce6bedd4308c69e00ad9a18751b1f82dd1dee40ed7adcd51e4beb03a0836"
+    },
+    {
+      "path": "Editor/Extensions/TMP/Unity.Pipeline.TMP.Editor.asmdef",
+      "upstream_sha256": null,
+      "sha256": "2ce5d3b40b46ec3dbe38574a59fc5d445550c61e44bd21d3e2065a90e196d194"
+    },
+    {
+      "path": "Editor/Extensions/TMP/Unity.Pipeline.TMP.Editor.asmdef.meta",
+      "upstream_sha256": null,
+      "sha256": "c2ecd8deaf91db5b3917a0b7c9d23644e184bc5e05cc51944c03d6a3b17e5404"
+    },
+    {
+      "path": "Editor/Extensions/TMP.meta",
+      "upstream_sha256": null,
+      "sha256": "9c7d1c921a2b7d1651f3d2916ac8a14405adf0212cf777f22addfe7efaa30252"
+    },
+    {
+      "path": "Editor/Extensions/UGUI/SsuUiCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "0f1cab3f4c2bae78fb000ca661dbb337e3c567a86cac8390e67ca08cb279b6b6"
+    },
+    {
+      "path": "Editor/Extensions/UGUI/SsuUiCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "09e8f94e168adf8d8cfca18fbd976fffc819ae708007d9ffeeaaef08ddb97ccb"
+    },
+    {
+      "path": "Editor/Extensions/UGUI/UiAuthoringCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "2788f7772bf87b00a709d40c7ab39cebd9caf110ddd161e0c1ce84e25d330fa6"
+    },
+    {
+      "path": "Editor/Extensions/UGUI/UiAuthoringCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "08f067245ceea6df5889d3cdd6502b3df706cc5f8db97c8c8a3a6b6e19faa865"
+    },
+    {
+      "path": "Editor/Extensions/UGUI/UiBuilderCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "bde47e3d2fc2cfd5e600b480d47c5c985b14701b27cddf84fb2c22481f3b2cc9"
+    },
+    {
+      "path": "Editor/Extensions/UGUI/UiBuilderCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "df3374de0ec2f00f5b64b1a87bf6ee8db8b1139ba0b7456fcce800c14fd0e21c"
+    },
+    {
+      "path": "Editor/Extensions/UGUI/UiComponentCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "acd0eeadf5e4c987b460764c993f5e9ec93b82065294bc2b430e7c932f8c7635"
+    },
+    {
+      "path": "Editor/Extensions/UGUI/UiComponentCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "08cde30ce8eda523e108f3c9bbef9c4de4c3dd43f8cc48194b18b256cb79754c"
+    },
+    {
+      "path": "Editor/Extensions/UGUI/UiShapeCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "f3d740cf53be421a52165b1deb7b58030204ae6a925250ad2875752b1af70e29"
+    },
+    {
+      "path": "Editor/Extensions/UGUI/UiShapeCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "2fc288a3513f6f9564a51703cd119868d2deb5e6bf5e01f14741685649ba74c0"
+    },
+    {
+      "path": "Editor/Extensions/UGUI/Unity.Pipeline.UGUI.Editor.asmdef",
+      "upstream_sha256": null,
+      "sha256": "158f71693733e5305c5626d69359ee7fd7e5fd15e8488557fe90e3dd69c376fb"
+    },
+    {
+      "path": "Editor/Extensions/UGUI/Unity.Pipeline.UGUI.Editor.asmdef.meta",
+      "upstream_sha256": null,
+      "sha256": "b6a35f950b10a2eb14ffc84f94f4fa1f568ad4e8411e724d51bab4eefc169bfa"
+    },
+    {
+      "path": "Editor/Extensions/UGUI.meta",
+      "upstream_sha256": null,
+      "sha256": "edfdbb9fcabddf694eebf239f066275860853dd9e8ba97602c0aed9cc1d53ae5"
+    },
+    {
+      "path": "Editor/Extensions/UiOrderCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "f48facad562448490402f378a2d432612bdcd1a2c3ccb2af36a85d8ae11d5eec"
+    },
+    {
+      "path": "Editor/Extensions/UiOrderCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "9885a13f6cda14691bce753af369034fb4a1a91d53e01f07e59dbfa94ad84618"
+    },
+    {
+      "path": "Editor/Extensions/UiStructureCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "d27a1021d467ce6633b5e23a4a494376fc0385235e40e030637e68f0de4e18d5"
+    },
+    {
+      "path": "Editor/Extensions/UiStructureCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "946f4d5debbe19ca6e27fe2306fd2460ab3442285f961ec6ea7e6cf03dbada40"
+    },
+    {
+      "path": "Editor/Extensions/URP/Unity.Pipeline.URP.Editor.asmdef",
+      "upstream_sha256": null,
+      "sha256": "67d9050f6946755c7dba16f45b7288ed58781e33c53a957544ecc51979f0eb4d"
+    },
+    {
+      "path": "Editor/Extensions/URP/Unity.Pipeline.URP.Editor.asmdef.meta",
+      "upstream_sha256": null,
+      "sha256": "a0998abe196f285f534fc72e8d1d743694034d222dfe413042a5ec8a7131b843"
+    },
+    {
+      "path": "Editor/Extensions/URP/UrpCameraCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "b2c2b1c11037af1ac5acbb21effa4570647ce8a5e1160d481c5ecfcadcf0b853"
+    },
+    {
+      "path": "Editor/Extensions/URP/UrpCameraCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "824653e45d52629693f5153096dbf6c96c4ca7217bb2d604638e07b64565fd86"
+    },
+    {
+      "path": "Editor/Extensions/URP/UrpFullScreenCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "ee6e2ea9547635293b00d12720d369c8435a6768dbb5b85e0144e2e0260ba978"
+    },
+    {
+      "path": "Editor/Extensions/URP/UrpFullScreenCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "f519acd68e721be584b64547c8325960fc5bc338f809bc35c154353e6f542a53"
+    },
+    {
+      "path": "Editor/Extensions/URP/UrpVolumeCommands.cs",
+      "upstream_sha256": null,
+      "sha256": "bf9cb03167165ca9ea362fd09b295f21e2107a97830c50491f3c7d585f85389c"
+    },
+    {
+      "path": "Editor/Extensions/URP/UrpVolumeCommands.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "477d396fa30935e646b57616fe81cd62bc9277cfc454193a26beda30b47ea064"
+    },
+    {
+      "path": "Editor/Extensions/URP.meta",
+      "upstream_sha256": null,
+      "sha256": "fec94ddd50162dd5caebd9394eef4fa5afa4e642874ef1051a2342f960a68a4a"
+    },
+    {
+      "path": "Editor/Extensions/VisualAuthoring.cs",
+      "upstream_sha256": null,
+      "sha256": "60a74aea452dc73636109a089c6f3af985523b1fb7c4953eb8a8bf801eb91706"
+    },
+    {
+      "path": "Editor/Extensions/VisualAuthoring.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "79c1ba4e60c07f2b35de8808d2b8057bbe4c0e37e974f398251ee6e94a7314ac"
+    },
+    {
+      "path": "Editor/Extensions.meta",
+      "upstream_sha256": null,
+      "sha256": "f7ef1aa44d7b212bee9e381014790a03d0237da4735cb73b48906ed9a22bebdf"
+    },
+    {
+      "path": "Editor/PipelineAnalytics.cs",
+      "upstream_sha256": "2f8f0672639854e656566b383ebef4bebbdde3c94e86fa822ace4beb73b89cf0",
+      "sha256": "a040759f48de9ba78912fecaec9f759f12df1c72ed04ff083628bf9d61b37e2f"
+    },
+    {
+      "path": "Editor/Unity.Pipeline.Editor.asmdef",
+      "upstream_sha256": "c6aeac1c1a2dafe8e7b6706ad5a128a5759ded8a8704cdd1685ce13ed6ef6336",
+      "sha256": "c14bdf8048776d85ef198d9cda90514ccc1ebff0c9508a4a508fc852324dd66f"
+    },
+    {
+      "path": "package.json",
+      "upstream_sha256": "5d2931db338dc76fc23d6132a7bc16bad5a9519f06a688a6b4e6c4dd3e005625",
+      "sha256": "0bbaadb14da5725dff95b310a02e7a680bf78198e5e5f79ccac8ffd08dde7621"
+    },
+    {
+      "path": "README.md",
+      "upstream_sha256": "5e652b829989949e512fa404501689f962d998d9cb109df357282fe58fdbf713",
+      "sha256": "84fc78ded831ea60cc3f56ec220363ccd1d71544f1cd7da2560c42638892e445"
+    },
+    {
+      "path": "Runtime/Commands/CodeEvalCommand.cs",
+      "upstream_sha256": "4a725199300ae31d08c84f05fb3128c449c67bcc592de7efee21d6f5cb2d9fa4",
+      "sha256": "10a9e70ce5777550dbdd5218866f38132dad538228395e80f3d365a2ce308f67"
+    },
+    {
+      "path": "Runtime/Compilation/EvalCodeCompiler.cs",
+      "upstream_sha256": "51d15e4bff39b499b53af34f422ee0c6a7938e62e1f9ccc657c8bbee343dc267",
+      "sha256": "d2e89710cb07e60fdc107ebeec4e0a26f063a2f68afab5bb8cfd775315bbced0"
+    },
+    {
+      "path": "Runtime/Compilation/RoslynCompilationService.cs",
+      "upstream_sha256": "3278392d0ca0e774678f77970c6626788ad368e464f3642a806e6175cdf970c3",
+      "sha256": "70ab22aaad473df12cfa3232b2b723dfbe37cfb3d3c1f03b957f51402a09e36d"
+    },
+    {
+      "path": "Runtime/Plugins/CodeAnalysis/UnityPipeline.Microsoft.CodeAnalysis.CSharp.dll.meta",
+      "upstream_sha256": "5e2fc2c2f158b9e9b3ce39f83979d593162b30e3afe8e36352707dc43195bc14",
+      "sha256": "c18877975786c248e2bb9ce44adb4ad439eb5c14c438aa87e01074a3078353ab"
+    },
+    {
+      "path": "Runtime/Plugins/CodeAnalysis/UnityPipeline.Microsoft.CodeAnalysis.dll.meta",
+      "upstream_sha256": "6e8974eb91046372ca28d21ca7c63d4afbb99675f77a400eedd022b793cf223f",
+      "sha256": "8ea9a8d529e12199df198b179742c7e2b4625fbf04d2c119d1eb6d809fab45c7"
+    },
+    {
+      "path": "Runtime/Plugins/CodeAnalysis/UnityPipeline.System.Collections.Immutable.dll.meta",
+      "upstream_sha256": "b8fc5742f72b139b05c85807c2812b333159c20c763e1848bb818ce9c4315ba4",
+      "sha256": "6f333e08453682b9fa3f605a4dead4f1a3fb08eb465b4eeee0a071b4a69b4389"
+    },
+    {
+      "path": "Runtime/Plugins/CodeAnalysis/UnityPipeline.System.Reflection.Metadata.dll.meta",
+      "upstream_sha256": "f84d2495ca277ac32250727a5e45807b4037613d8f3208e9a80b348251ed75b8",
+      "sha256": "1d1c66b9bb2e8a94017781468293f71e3cd8c55610f17387189cc19299c62943"
+    },
+    {
+      "path": "Runtime/Plugins/CodeAnalysis/UnityPipeline.System.Runtime.CompilerServices.Unsafe.dll.meta",
+      "upstream_sha256": "adb717a3538ac472a289ce4926af86a43adb407f46a7192a0212d93770c9236d",
+      "sha256": "f97d3a7a668a05f14970f57012578e8c150efb0751b51a31e7ba0a8d7d44f8a0"
+    },
+    {
+      "path": "Runtime/VisualCore/GlobalShaderDriver.cs",
+      "upstream_sha256": null,
+      "sha256": "ef0e3b86c90d979e7c86cd341fde5abc9aa3fa952c2ef402543bae0e8c83cd00"
+    },
+    {
+      "path": "Runtime/VisualCore/GlobalShaderDriver.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "0e082a4551e862c7735599e31d6da7c0640f6295e9a7bb7c2048197f660810a2"
+    },
+    {
+      "path": "Runtime/VisualCore/GlobalShaderProfile.cs",
+      "upstream_sha256": null,
+      "sha256": "80bcda8626437d0bd6300d849f796ec765faae6fb368670718ded058652881bf"
+    },
+    {
+      "path": "Runtime/VisualCore/GlobalShaderProfile.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "eef89b3e473bfdac4e0f03407920cd225a63dd9e46441c7f7cf8a16a846957d2"
+    },
+    {
+      "path": "Runtime/VisualCore/Unity.Pipeline.VisualCore.asmdef",
+      "upstream_sha256": null,
+      "sha256": "852909c35f0962152e1f908d3fcdb40969c2c10b52efb7e9056c3e9bd51e1361"
+    },
+    {
+      "path": "Runtime/VisualCore/Unity.Pipeline.VisualCore.asmdef.meta",
+      "upstream_sha256": null,
+      "sha256": "063907e06df0f34a8e54468e2dd8ed6ea12b092bfa044f4f67aa97d18380698b"
+    },
+    {
+      "path": "Runtime/VisualCore.meta",
+      "upstream_sha256": null,
+      "sha256": "4a93db003a968886cd8e4f4b9f404e1f2f71d3f43a7a54660d602cc984734ea6"
+    },
+    {
+      "path": "Runtime/VisualUI/PipelineShapeGraphic.cs",
+      "upstream_sha256": null,
+      "sha256": "026e49022bb2999790091eb0afecdf976457fe0f68757f53be28b2279507295e"
+    },
+    {
+      "path": "Runtime/VisualUI/PipelineShapeGraphic.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "02409fd5c9c4acb1d6c3c8ebc668dfe319217ba269da5b981d17dab2f8e15fda"
+    },
+    {
+      "path": "Runtime/VisualUI/SsuGraphicBridge.cs",
+      "upstream_sha256": null,
+      "sha256": "bdf4c138cae44299d27d9f37968e605110175e617fb43614db1802cca4e9ff8e"
+    },
+    {
+      "path": "Runtime/VisualUI/SsuGraphicBridge.cs.meta",
+      "upstream_sha256": null,
+      "sha256": "18d30682370ca9c90ca6a78e3a84d3222019493f59ebaaad28f11a238ba541e1"
+    },
+    {
+      "path": "Runtime/VisualUI/Unity.Pipeline.VisualUI.asmdef",
+      "upstream_sha256": null,
+      "sha256": "6815de03dd247e7e0539a4f20f331cc684575630a2f577f7a5701ae602fc4533"
+    },
+    {
+      "path": "Runtime/VisualUI/Unity.Pipeline.VisualUI.asmdef.meta",
+      "upstream_sha256": null,
+      "sha256": "aa13ba82134d47cac4fb51ee8d08cffea1e6d65331c97fc5ef795f5a8cb65969"
+    },
+    {
+      "path": "Runtime/VisualUI.meta",
+      "upstream_sha256": null,
+      "sha256": "92c756ad946cdb8748933b735264659a7843881c28b448199bb2bfd89a293916"
+    }
+  ]
+}

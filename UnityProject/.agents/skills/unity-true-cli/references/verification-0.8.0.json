@@ -1,0 +1,996 @@
+{
+  "bundleVersion": "0.8.0",
+  "pipelineVersion": "0.8.0-exp.1+truecli.9",
+  "platform": "windows-x64",
+  "testedEditors": [
+    "2022.3.45f1",
+    "6000.3.22f1"
+  ],
+  "staticCommandNames": 277,
+  "staticImplementations": 310,
+  "suites": [
+    {
+      "suite": "ext-cm2-2022",
+      "editor": "2022.3.45f1",
+      "success": true,
+      "cases": [
+        {
+          "case": "commands_discovered",
+          "pass": true
+        },
+        {
+          "case": "graphics_available",
+          "pass": true
+        },
+        {
+          "case": "scaler_and_button",
+          "pass": true
+        },
+        {
+          "case": "ui_control_write",
+          "pass": true
+        },
+        {
+          "case": "scaler_write",
+          "pass": true
+        },
+        {
+          "case": "canvas_order_write",
+          "pass": true
+        },
+        {
+          "case": "tmp_write_readback",
+          "pass": true
+        },
+        {
+          "case": "create_input_asset",
+          "pass": true
+        },
+        {
+          "case": "create_refuses_overwrite",
+          "pass": true
+        },
+        {
+          "case": "binding_write_preserves_ids",
+          "pass": true
+        },
+        {
+          "case": "backend_enabled",
+          "pass": true
+        },
+        {
+          "case": "cinemachine_authoring",
+          "pass": true
+        },
+        {
+          "case": "cm_catalog_actual_types",
+          "pass": true
+        },
+        {
+          "case": "cm_pipeline_includes_real_body",
+          "pass": true
+        },
+        {
+          "case": "cm_replacement_requires_explicit_flag",
+          "pass": true
+        },
+        {
+          "case": "cm_pipeline_undo_restores_body",
+          "pass": true
+        },
+        {
+          "case": "cm_third_person_real_fields",
+          "pass": true
+        },
+        {
+          "case": "cm_noise_valid",
+          "pass": true
+        },
+        {
+          "case": "cm_orbit_created",
+          "pass": true
+        },
+        {
+          "case": "cm_group_members_real",
+          "pass": true
+        },
+        {
+          "case": "cm_obstacle_and_confinement_configured",
+          "pass": true
+        },
+        {
+          "case": "cm_component_schema_is_discovered",
+          "pass": true
+        },
+        {
+          "case": "cm_bad_property_is_atomic",
+          "pass": true
+        },
+        {
+          "case": "cm_removed_component_not_rebound",
+          "pass": true
+        },
+        {
+          "case": "cm_dolly_valid",
+          "pass": true
+        },
+        {
+          "case": "cm_custom_blend_asset",
+          "pass": true
+        },
+        {
+          "case": "cm_sequence_configured",
+          "pass": true
+        },
+        {
+          "case": "cm_mixer_weights_readback",
+          "pass": true
+        },
+        {
+          "case": "cm_state_rules_readback",
+          "pass": true
+        },
+        {
+          "case": "transparent_graphic_blocks",
+          "pass": true
+        },
+        {
+          "case": "raycast_target_changes_hit",
+          "pass": true
+        },
+        {
+          "case": "input_runs_in_game_frames",
+          "pass": true
+        },
+        {
+          "case": "cancel_releases_owned_keys",
+          "pass": true
+        },
+        {
+          "case": "cross_frame_pointer_click",
+          "pass": true
+        },
+        {
+          "case": "brain_selects_real_camera",
+          "pass": true
+        },
+        {
+          "case": "read_real_controls",
+          "pass": true
+        },
+        {
+          "case": "cm_impulse_emitted",
+          "pass": true
+        },
+        {
+          "case": "bounded_dynamic_frames",
+          "pass": true
+        },
+        {
+          "case": "pixels_change_over_time",
+          "pass": true
+        },
+        {
+          "case": "stop_keeps_play_mode",
+          "pass": true
+        },
+        {
+          "case": "invalid_session_is_rejected",
+          "pass": true
+        },
+        {
+          "case": "screen_capture_available",
+          "pass": true
+        }
+      ],
+      "raw_report_sha256": "6873892ea4d863d3c21a90777c8ddf8376383ff207d407571b331c4f98f78092"
+    },
+    {
+      "suite": "ext-cm3-u6",
+      "editor": "6000.3.22f1",
+      "success": true,
+      "cases": [
+        {
+          "case": "commands_discovered",
+          "pass": true
+        },
+        {
+          "case": "graphics_available",
+          "pass": true
+        },
+        {
+          "case": "scaler_and_button",
+          "pass": true
+        },
+        {
+          "case": "ui_control_write",
+          "pass": true
+        },
+        {
+          "case": "scaler_write",
+          "pass": true
+        },
+        {
+          "case": "canvas_order_write",
+          "pass": true
+        },
+        {
+          "case": "tmp_write_readback",
+          "pass": true
+        },
+        {
+          "case": "create_input_asset",
+          "pass": true
+        },
+        {
+          "case": "create_refuses_overwrite",
+          "pass": true
+        },
+        {
+          "case": "binding_write_preserves_ids",
+          "pass": true
+        },
+        {
+          "case": "backend_enabled",
+          "pass": true
+        },
+        {
+          "case": "cinemachine_authoring",
+          "pass": true
+        },
+        {
+          "case": "cm_catalog_actual_types",
+          "pass": true
+        },
+        {
+          "case": "cm_pipeline_includes_real_body",
+          "pass": true
+        },
+        {
+          "case": "cm_replacement_requires_explicit_flag",
+          "pass": true
+        },
+        {
+          "case": "cm_pipeline_undo_restores_body",
+          "pass": true
+        },
+        {
+          "case": "cm_third_person_real_fields",
+          "pass": true
+        },
+        {
+          "case": "cm_noise_valid",
+          "pass": true
+        },
+        {
+          "case": "cm_orbit_created",
+          "pass": true
+        },
+        {
+          "case": "cm_group_members_real",
+          "pass": true
+        },
+        {
+          "case": "cm_obstacle_and_confinement_configured",
+          "pass": true
+        },
+        {
+          "case": "cm_component_schema_is_discovered",
+          "pass": true
+        },
+        {
+          "case": "cm_bad_property_is_atomic",
+          "pass": true
+        },
+        {
+          "case": "cm_removed_component_not_rebound",
+          "pass": true
+        },
+        {
+          "case": "cm_dolly_valid",
+          "pass": true
+        },
+        {
+          "case": "cm_custom_blend_asset",
+          "pass": true
+        },
+        {
+          "case": "cm_sequence_configured",
+          "pass": true
+        },
+        {
+          "case": "cm_mixer_weights_readback",
+          "pass": true
+        },
+        {
+          "case": "cm_state_rules_readback",
+          "pass": true
+        },
+        {
+          "case": "transparent_graphic_blocks",
+          "pass": true
+        },
+        {
+          "case": "raycast_target_changes_hit",
+          "pass": true
+        },
+        {
+          "case": "input_runs_in_game_frames",
+          "pass": true
+        },
+        {
+          "case": "cancel_releases_owned_keys",
+          "pass": true
+        },
+        {
+          "case": "cross_frame_pointer_click",
+          "pass": true
+        },
+        {
+          "case": "brain_selects_real_camera",
+          "pass": true
+        },
+        {
+          "case": "read_real_controls",
+          "pass": true
+        },
+        {
+          "case": "cm_impulse_emitted",
+          "pass": true
+        },
+        {
+          "case": "bounded_dynamic_frames",
+          "pass": true
+        },
+        {
+          "case": "pixels_change_over_time",
+          "pass": true
+        },
+        {
+          "case": "stop_keeps_play_mode",
+          "pass": true
+        },
+        {
+          "case": "invalid_session_is_rejected",
+          "pass": true
+        },
+        {
+          "case": "screen_capture_available",
+          "pass": true
+        }
+      ],
+      "raw_report_sha256": "bbbf4adbb68e4bde8b5abb60c2e904b4198ec98af5e179ffaf066dc8f3dff953"
+    },
+    {
+      "suite": "urp-2022-settled",
+      "editor": "2022.3.45f1",
+      "success": true,
+      "cases": [
+        {
+          "case": "formal_visual_commands_discovered",
+          "pass": true
+        },
+        {
+          "case": "actual_urp_and_renderer_readback",
+          "pass": true
+        },
+        {
+          "case": "native_pipeline_creation",
+          "pass": true
+        },
+        {
+          "case": "coincident_parent_lookat_rejected",
+          "pass": true
+        },
+        {
+          "case": "parent_lookat_uses_real_world_position",
+          "pass": true
+        },
+        {
+          "case": "stack_base_renderer_change_rejected",
+          "pass": true
+        },
+        {
+          "case": "stack_overlay_renderer_change_rejected",
+          "pass": true
+        },
+        {
+          "case": "native_shape_mesh_and_button",
+          "pass": true
+        },
+        {
+          "case": "bad_last_shape_field_rolls_back",
+          "pass": true
+        },
+        {
+          "case": "shape_edit_undo",
+          "pass": true
+        },
+        {
+          "case": "layout_shrunk_chamfer_stays_visible",
+          "pass": true
+        },
+        {
+          "case": "shrunk_shape_can_still_be_edited",
+          "pass": true
+        },
+        {
+          "case": "global_true_integer_no_precision_loss",
+          "pass": true
+        },
+        {
+          "case": "global_overlap_name_type_rejected",
+          "pass": true
+        },
+        {
+          "case": "invalid_global_last_entry_no_partial_write",
+          "pass": true
+        },
+        {
+          "case": "global_restore_preserves_external_difference",
+          "pass": true
+        },
+        {
+          "case": "global_integer_baseline_restored",
+          "pass": true
+        },
+        {
+          "case": "all_typed_global_values_native",
+          "pass": true
+        },
+        {
+          "case": "keyword_native_enable_restored",
+          "pass": true
+        },
+        {
+          "case": "active_global_scope_survives_terminal_history_eviction",
+          "pass": true
+        },
+        {
+          "case": "native_fullscreen_shader_compiles",
+          "pass": true
+        },
+        {
+          "case": "feature_map_matches_subasset_id",
+          "pass": true
+        },
+        {
+          "case": "feature_delete_requires_confirmation",
+          "pass": true
+        },
+        {
+          "case": "feature_delete_dryrun_preserves",
+          "pass": true
+        },
+        {
+          "case": "feature_delete_preserves_other_and_material",
+          "pass": true
+        },
+        {
+          "case": "native_volume_values_and_override_states",
+          "pass": true
+        },
+        {
+          "case": "invalid_volume_no_partial_write",
+          "pass": true
+        },
+        {
+          "case": "explicit_animation_root_offset_authoring",
+          "pass": true
+        },
+        {
+          "case": "ambiguous_track_target_component_rejected",
+          "pass": true
+        },
+        {
+          "case": "exact_second_component_binding",
+          "pass": true
+        },
+        {
+          "case": "duplicate_track_name_clip_rejected",
+          "pass": true
+        },
+        {
+          "case": "editmode_playback_rejected",
+          "pass": true
+        },
+        {
+          "case": "transient_globals_transactional_batch_rejected",
+          "pass": true
+        },
+        {
+          "case": "shape_and_director_save_reopen",
+          "pass": true
+        },
+        {
+          "case": "feature_identity_save_reopen",
+          "pass": true
+        },
+        {
+          "case": "transient_scope_play_transition_restored",
+          "pass": true
+        },
+        {
+          "case": "saved_global_driver_applies_play",
+          "pass": true
+        },
+        {
+          "case": "disabled_driver_apply_rejected_without_write",
+          "pass": true
+        },
+        {
+          "case": "inactive_driver_apply_rejected_without_write",
+          "pass": true
+        },
+        {
+          "case": "gpu_fullscreen_globals_change_pixels",
+          "pass": true
+        },
+        {
+          "case": "gpu_official_fullscreen_toggle",
+          "pass": true
+        },
+        {
+          "case": "gpu_native_volume_toggle",
+          "pass": true
+        },
+        {
+          "case": "two_gpu_global_consumers_and_local_override",
+          "pass": true
+        },
+        {
+          "case": "shape_center_real_hit",
+          "pass": true
+        },
+        {
+          "case": "transparent_cut_corner_passes_through",
+          "pass": true
+        },
+        {
+          "case": "native_mask_0_clips_shape_raycast",
+          "pass": true
+        },
+        {
+          "case": "native_mask_1_clips_shape_raycast",
+          "pass": true
+        },
+        {
+          "case": "canvas_group_blocks_shape_raycast",
+          "pass": true
+        },
+        {
+          "case": "native_shape_button_callback_once",
+          "pass": true
+        },
+        {
+          "case": "director_seek_drives_real_camera",
+          "pass": true
+        },
+        {
+          "case": "director_native_clock_moves_camera",
+          "pass": true
+        },
+        {
+          "case": "director_stop_graph_and_visible_depth",
+          "pass": true
+        },
+        {
+          "case": "driver_play_exit_restores_globals",
+          "pass": true
+        },
+        {
+          "case": "transient_scope_reload_restored_and_terminal",
+          "pass": true
+        }
+      ],
+      "raw_report_sha256": "64d0eb92f8ca8e484f90de536daa2b6a69b9ec6024b5a7e931f282c00807564f"
+    },
+    {
+      "suite": "urp-u6-settled",
+      "editor": "6000.3.22f1",
+      "success": true,
+      "cases": [
+        {
+          "case": "formal_visual_commands_discovered",
+          "pass": true
+        },
+        {
+          "case": "actual_urp_and_renderer_readback",
+          "pass": true
+        },
+        {
+          "case": "native_pipeline_creation",
+          "pass": true
+        },
+        {
+          "case": "coincident_parent_lookat_rejected",
+          "pass": true
+        },
+        {
+          "case": "parent_lookat_uses_real_world_position",
+          "pass": true
+        },
+        {
+          "case": "stack_base_renderer_change_rejected",
+          "pass": true
+        },
+        {
+          "case": "stack_overlay_renderer_change_rejected",
+          "pass": true
+        },
+        {
+          "case": "native_shape_mesh_and_button",
+          "pass": true
+        },
+        {
+          "case": "bad_last_shape_field_rolls_back",
+          "pass": true
+        },
+        {
+          "case": "shape_edit_undo",
+          "pass": true
+        },
+        {
+          "case": "layout_shrunk_chamfer_stays_visible",
+          "pass": true
+        },
+        {
+          "case": "shrunk_shape_can_still_be_edited",
+          "pass": true
+        },
+        {
+          "case": "global_true_integer_no_precision_loss",
+          "pass": true
+        },
+        {
+          "case": "global_overlap_name_type_rejected",
+          "pass": true
+        },
+        {
+          "case": "invalid_global_last_entry_no_partial_write",
+          "pass": true
+        },
+        {
+          "case": "global_restore_preserves_external_difference",
+          "pass": true
+        },
+        {
+          "case": "global_integer_baseline_restored",
+          "pass": true
+        },
+        {
+          "case": "all_typed_global_values_native",
+          "pass": true
+        },
+        {
+          "case": "keyword_native_enable_restored",
+          "pass": true
+        },
+        {
+          "case": "active_global_scope_survives_terminal_history_eviction",
+          "pass": true
+        },
+        {
+          "case": "native_fullscreen_shader_compiles",
+          "pass": true
+        },
+        {
+          "case": "feature_map_matches_subasset_id",
+          "pass": true
+        },
+        {
+          "case": "feature_delete_requires_confirmation",
+          "pass": true
+        },
+        {
+          "case": "feature_delete_dryrun_preserves",
+          "pass": true
+        },
+        {
+          "case": "feature_delete_preserves_other_and_material",
+          "pass": true
+        },
+        {
+          "case": "native_volume_values_and_override_states",
+          "pass": true
+        },
+        {
+          "case": "invalid_volume_no_partial_write",
+          "pass": true
+        },
+        {
+          "case": "explicit_animation_root_offset_authoring",
+          "pass": true
+        },
+        {
+          "case": "ambiguous_track_target_component_rejected",
+          "pass": true
+        },
+        {
+          "case": "exact_second_component_binding",
+          "pass": true
+        },
+        {
+          "case": "duplicate_track_name_clip_rejected",
+          "pass": true
+        },
+        {
+          "case": "editmode_playback_rejected",
+          "pass": true
+        },
+        {
+          "case": "transient_globals_transactional_batch_rejected",
+          "pass": true
+        },
+        {
+          "case": "shape_and_director_save_reopen",
+          "pass": true
+        },
+        {
+          "case": "feature_identity_save_reopen",
+          "pass": true
+        },
+        {
+          "case": "transient_scope_play_transition_restored",
+          "pass": true
+        },
+        {
+          "case": "saved_global_driver_applies_play",
+          "pass": true
+        },
+        {
+          "case": "disabled_driver_apply_rejected_without_write",
+          "pass": true
+        },
+        {
+          "case": "inactive_driver_apply_rejected_without_write",
+          "pass": true
+        },
+        {
+          "case": "gpu_fullscreen_globals_change_pixels",
+          "pass": true
+        },
+        {
+          "case": "gpu_official_fullscreen_toggle",
+          "pass": true
+        },
+        {
+          "case": "gpu_native_volume_toggle",
+          "pass": true
+        },
+        {
+          "case": "two_gpu_global_consumers_and_local_override",
+          "pass": true
+        },
+        {
+          "case": "shape_center_real_hit",
+          "pass": true
+        },
+        {
+          "case": "transparent_cut_corner_passes_through",
+          "pass": true
+        },
+        {
+          "case": "native_mask_0_clips_shape_raycast",
+          "pass": true
+        },
+        {
+          "case": "native_mask_1_clips_shape_raycast",
+          "pass": true
+        },
+        {
+          "case": "canvas_group_blocks_shape_raycast",
+          "pass": true
+        },
+        {
+          "case": "native_shape_button_callback_once",
+          "pass": true
+        },
+        {
+          "case": "director_seek_drives_real_camera",
+          "pass": true
+        },
+        {
+          "case": "director_native_clock_moves_camera",
+          "pass": true
+        },
+        {
+          "case": "director_stop_graph_and_visible_depth",
+          "pass": true
+        },
+        {
+          "case": "driver_play_exit_restores_globals",
+          "pass": true
+        },
+        {
+          "case": "transient_scope_reload_restored_and_terminal",
+          "pass": true
+        }
+      ],
+      "raw_report_sha256": "94dfd71fbf6cf925b7c2bb7c85bfb6dac16f52a48e1290361570a39bd163f49b"
+    },
+    {
+      "suite": "ui-2022",
+      "editor": "2022.3.45f1",
+      "success": true,
+      "cases": [
+        {
+          "case": "six_commands_discovered",
+          "pass": true
+        },
+        {
+          "case": "structured_settings_schema",
+          "pass": true
+        },
+        {
+          "case": "create_ui_canvas_object_schema",
+          "pass": true
+        },
+        {
+          "case": "create_ui_element_object_schema",
+          "pass": true
+        },
+        {
+          "case": "configure_ui_layout_object_schema",
+          "pass": true
+        },
+        {
+          "case": "configure_ui_layout_element_object_schema",
+          "pass": true
+        },
+        {
+          "case": "missing_camera_no_residue",
+          "pass": true
+        },
+        {
+          "case": "canvas_mode_undo_restores_geometry",
+          "pass": true
+        },
+        {
+          "case": "short_clip_canvas_distance",
+          "pass": true
+        },
+        {
+          "case": "overlay_omitted_camera_preserved",
+          "pass": true
+        },
+        {
+          "case": "same_overlay_mode_preserves_camera",
+          "pass": true
+        },
+        {
+          "case": "switch_camera_rejects_invalid_distance",
+          "pass": true
+        },
+        {
+          "case": "missing_font_no_residue",
+          "pass": true
+        },
+        {
+          "case": "unknown_rect_field_no_mutation",
+          "pass": true
+        },
+        {
+          "case": "buttons_have_bound_label_tree",
+          "pass": true
+        },
+        {
+          "case": "oracle_geometry_is_structured",
+          "pass": true
+        },
+        {
+          "case": "add_layout_undo_restores_whole_geometry",
+          "pass": true
+        },
+        {
+          "case": "unknown_layout_field_rejected",
+          "pass": true
+        },
+        {
+          "case": "unknown_layout_element_field_rejected",
+          "pass": true
+        },
+        {
+          "case": "same_layout_preserves_other_fields",
+          "pass": true
+        },
+        {
+          "case": "layout_replacement_requires_flag",
+          "pass": true
+        },
+        {
+          "case": "grid_drives_real_geometry",
+          "pass": true
+        },
+        {
+          "case": "layout_replacement_undo",
+          "pass": true
+        },
+        {
+          "case": "layout_undo_restores_child_geometry",
+          "pass": true
+        },
+        {
+          "case": "conflicting_rect_no_mutation",
+          "pass": true
+        },
+        {
+          "case": "real_3d_rect_edit",
+          "pass": true
+        },
+        {
+          "case": "rect_edit_undo",
+          "pass": true
+        },
+        {
+          "case": "atomic_exception_restores_state",
+          "pass": true
+        },
+        {
+          "case": "rollback_preserves_prior_undo",
+          "pass": true
+        },
+        {
+          "case": "create_undo_removes_whole_tree",
+          "pass": true
+        },
+        {
+          "case": "create_redo_restores_bound_tree",
+          "pass": true
+        },
+        {
+          "case": "world_camera_and_rotation_readback",
+          "pass": true
+        },
+        {
+          "case": "save_reopen_stable_identity",
+          "pass": true
+        },
+        {
+          "case": "save_reopen_bound_font",
+          "pass": true
+        },
+        {
+          "case": "world_button_hit_path",
+          "pass": true
+        },
+        {
+          "case": "world_button_real_callback",
+          "pass": true
+        },
+        {
+          "case": "rendered_world_ui_artifact",
+          "pass": true
+        }
+      ],
+      "raw_report_sha256": "1051084ad31b782939ba7d6a9e76a075ea527b313ba880de11a72cf6bf5d3383"
+    }
+  ],
+  "limits": [
+    "Editor automation only; no standalone Player build/run qualification.",
+    "Static index includes optional packages and two commands requiring Unity 6000.7+; live schema is authoritative.",
+    "An initial U6 cold import logged one AssetImportWorker crash; later independent authoring completed without new console errors. Original evidence retained, not erased.",
+    "Expected invalid-input rejection cases deliberately return structured failures and may write Console errors. These are distinct from unexpected product failures.",
+    "SSU tests consume local licensed assets; vendor assets are excluded from the distribution.",
+    "SSU2022 GPU contrasts passed but a stale-native-cache expectation failed; SSU U6 verifier stopped before import because URP cache was absent. These are not promoted to completed qualifications.",
+    "Full post-fix UI reruns were interrupted after the user narrowed scope; detached final ZIP delta checks replace that acceptance scope."
+  ],
+  "observedLiveCommandUnion": 275,
+  "unobservedCommandsRequire6000_7": [
+    "capture_editor_element",
+    "capture_runtime_element"
+  ],
+  "finalSourceChangeAndRetest": {
+    "file": "Editor/Commands/UI/UiInspectionCommands.cs",
+    "change": "Cast Scene.handle to int before generic OrderBy; Unity 6 SceneHandle is not comparable.",
+    "affectedSuites": [
+      "detached final ZIP delta acceptance, both Editors"
+    ],
+    "additionalCases": [
+      "snapshot_sorts_multiple_rects_root_and_scene",
+      "overlaps_consumes_sorted_snapshot"
+    ],
+    "priorSuiteScope": "Completed suites above precede the one-line SceneHandle fix; unrelated source unchanged. Do not infer full post-fix suite reruns."
+  },
+  "releaseScope": "User explicitly narrowed acceptance to new/modified items, batch Error capture and short completion. Final ZIP delta results are detached and hash-bound."
+}

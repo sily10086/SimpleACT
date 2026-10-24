@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "inputs": {
+    "root": "AI_CameraRecipe",
+    "cameraType": "Unity.Cinemachine.CinemachineCamera"
+  },
+  "preflight": [
+    {
+      "id": "rootAbsent",
+      "command": "find_gameobjects",
+      "parameters": {
+        "hierarchy_path": "/{{root}}"
+      },
+      "assert": [
+        {
+          "path": "count",
+          "op": "equals",
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "buildCamera",
+      "command": "batch",
+      "parameters": {
+        "operations": [
+          {
+            "id": "root",
+            "command": "create_gameobject",
+            "params": {
+              "name": "{{root}}"
+            }
+          },
+          {
+            "id": "focus",
+            "command": "create_gameobject",
+            "params": {
+              "name": "Focus",
+              "parent": {
+                "instanceId": "$root.instanceId"
+              }
+            }
+          },
+          {
+            "id": "camera",
+            "command": "create_cinemachine_camera",
+            "params": {
+              "name": "Camera",
+              "follow": {
+                "instanceId": "$focus.instanceId"
+              },
+              "look_at": {
+                "instanceId": "$focus.instanceId"
+              },
+              "priority": -100
+            }
+          },
+          {
+            "id": "parent",
+            "command": "set_parent",
+            "params": {
+              "target": {
+                "instanceId": "$camera.instanceId"
+              },
+              "parent": {
+                "instanceId": "$root.instanceId"
+              },
+              "world_position_stays": false
+            }
+          },
+          {
+            "id": "pipeline",
+            "command": "set_cinemachine_pipeline",
+            "params": {
+              "target": {
+                "instanceId": "$camera.instanceId"
+              },
+              "body": "third_person",
+              "aim": "composer",
+              "replace": true
+            }
+          },
+          {
+            "id": "shoulder",
+            "command": "configure_cinemachine_third_person",
+            "params": {
+              "target": {
+                "instanceId": "$camera.instanceId"
+              },
+              "distance": 7,
+              "shoulder": [
+                0.5,
+                1,
+                0
+              ],
+              "side": 0.25
+            }
+          },
+          {
+            "id": "composition",
+            "command": "configure_cinemachine_composition",
+            "params": {
+              "target": {
+                "instanceId": "$camera.instanceId"
+              },
+              "screen": [
+                0.6,
+                0.4
+              ],
+              "dead_zone": [
+                0.1,
+                0.15
+              ]
+            }
+          },
+          {
+            "id": "lens",
+            "command": "configure_cinemachine_lens",
+            "params": {
+              "target": {
+                "instanceId": "$camera.instanceId"
+              },
+              "fov": 48
+            }
+          }
+        ],
+        "transactional": true,
+        "on_error": "abort"
+      }
+    }
+  ],
+  "verify": [
+    {
+      "id": "cameraExists",
+      "command": "find_gameobjects",
+      "parameters": {
+        "hierarchy_path": "/{{root}}/Camera"
+      },
+      "assert": [
+        {
+          "path": "count",
+          "op": "equals",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "cameraPipeline",
+      "command": "inspect_cinemachine_pipeline",
+      "parameters": {
+        "target": {
+          "hierarchyPath": "/{{root}}/Camera"
+        }
+      },
+      "assert": [
+        {
+          "path": "parts",
+          "op": "contains",
+          "value": "ThirdPersonFollow"
+        },
+        {
+          "path": "parts",
+          "op": "contains",
+          "value": "Composer"
+        }
+      ]
+    },
+    {
+      "id": "cameraLens",
+      "command": "batch",
+      "parameters": {
+        "operations": [
+          {
+            "id": "handle",
+            "command": "get_component_properties",
+            "params": {
+              "target": {
+                "hierarchyPath": "/{{root}}/Camera"
+              },
+              "type": "{{cameraType}}"
+            }
+          },
+          {
+            "id": "lens",
+            "command": "inspect_cinemachine_component",
+            "params": {
+              "target": {
+                "instanceId": "$handle.component.instanceId"
+              }
+            }
+          }
+        ]
+      },
+      "assert": [
+        {
+          "path": "results[1].result.properties",
+          "op": "contains",
+          "value": "FieldOfView\":48"
+        },
+        {
+          "path": "results[1].result.truncated",
+          "op": "equals",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "currentBrain",
+      "command": "inspect_cinemachine"
+    }
+  ]
+}

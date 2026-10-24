@@ -1,0 +1,245 @@
+{
+  "platforms": [
+    "windows-x64"
+  ],
+  "candidate_editor_series": [
+    "2022.3",
+    "6000.0",
+    "6000.3"
+  ],
+  "historical_verification": {
+    "static_api_compilation": [
+      "2022.3.62f3",
+      "6000.3.26f1"
+    ],
+    "editor_verified": [
+      {
+        "version": "2022.3.62f3",
+        "package_install": true,
+        "unity_assembly_compilation": true,
+        "rpc_cases": 7,
+        "scope": [
+          "exact_editor_ready",
+          "command_discovery",
+          "structured_create",
+          "roslyn_authoring",
+          "prefab_readback",
+          "material_inherited_queue",
+          "console_capture"
+        ],
+        "eval_cache_regression_cases": 12
+      },
+      {
+        "version": "6000.3.26f1",
+        "package_install": true,
+        "unity_assembly_compilation": true,
+        "rpc_cases": 7,
+        "scope": [
+          "exact_editor_ready",
+          "command_discovery",
+          "structured_create",
+          "roslyn_authoring",
+          "prefab_readback",
+          "material_inherited_queue",
+          "console_capture"
+        ],
+        "bootstrap_terminal_result_recovery": true,
+        "eval_cache_regression_cases": 12
+      }
+    ],
+    "not_run_series": [],
+    "player_verification": "not_run",
+    "all_commands_verified": false,
+    "ui_core_verification": [
+      {
+        "version": "2022.3.45f1",
+        "pipeline_version": "0.8.0-exp.1+truecli.3",
+        "unity_assembly_compilation": true,
+        "rpc_cases": 15,
+        "commands": [
+          "get_ui_snapshot",
+          "explain_ui_layout",
+          "find_ui_overlaps"
+        ],
+        "headless_geometry_only": true,
+        "visual_occlusion": "not_implemented",
+        "ugui_tmp_adapters": "not_implemented"
+      }
+    ],
+    "extension_verification": [
+      {
+        "editor": "2022.3.45f1",
+        "cinemachine": "2.10.5",
+        "rpc_cases": 24,
+        "success": true
+      },
+      {
+        "editor": "2022.3.45f1",
+        "cinemachine": "3.1.4",
+        "rpc_cases": 24,
+        "success": true
+      },
+      {
+        "editor": "6000.0.52f1",
+        "cinemachine": "3.1.4",
+        "rpc_cases": 24,
+        "success": true
+      }
+    ],
+    "extension_optional_packages_absent_verified": true,
+    "full_original_baseline_not_rerun": [
+      "6000.0.52f1"
+    ],
+    "baseline_record_note": "editor_verified and ui_core_verification retain earlier release evidence; extension_verification records this 0.2.0 release. Historical evidence is not a rerun of new extensions.",
+    "cinemachine_advanced_verification": [
+      {
+        "editor": "2022.3.45f1",
+        "cinemachine": "2.10.5",
+        "commands": 33,
+        "rpc_cases": 42,
+        "success": true
+      },
+      {
+        "editor": "2022.3.45f1",
+        "cinemachine": "3.1.4",
+        "commands": 33,
+        "rpc_cases": 42,
+        "success": true
+      },
+      {
+        "editor": "6000.0.52f1",
+        "cinemachine": "3.1.4",
+        "commands": 33,
+        "rpc_cases": 42,
+        "success": true
+      }
+    ],
+    "current_bundle_version": "0.8.0",
+    "current_pipeline_version": "0.8.0-exp.1+truecli.9",
+    "ui_authoring_verification": [
+      {
+        "editor": "2022.3.45f1",
+        "pipeline_version": "0.8.0-exp.1+truecli.6",
+        "rpc_cases": 37,
+        "success": true,
+        "gpu_capture": true,
+        "input_callback_exactly_once": true,
+        "undo_and_reopen": true
+      },
+      {
+        "editor": "6000.0.52f1",
+        "pipeline_version": "0.8.0-exp.1+truecli.6",
+        "rpc_cases": 37,
+        "success": true,
+        "gpu_capture": true,
+        "input_callback_exactly_once": true,
+        "undo_and_reopen": true
+      }
+    ],
+    "ui_authoring_wrapper_upgrade_verification": {
+      "editor": "2022.3.45f1",
+      "old_pipeline_version": "0.8.0-exp.1+truecli.5",
+      "new_pipeline_version": "0.8.0-exp.1+truecli.6",
+      "old_backup_preserved": true,
+      "optional_ugui_absent": true,
+      "core_discovery_create_edit": true
+    },
+    "visual_authoring_verification": [
+      {
+        "editor": "2022.3.45f1",
+        "urp": "14.0.11",
+        "pipeline": "0.8.0-exp.1+truecli.7",
+        "cases": 53,
+        "success": true
+      },
+      {
+        "editor": "6000.0.52f1",
+        "urp": "17.0.4",
+        "pipeline": "0.8.0-exp.1+truecli.7",
+        "cases": 54,
+        "success": true
+      }
+    ],
+    "visual_runtime_release_api_compile": {
+      "editor": "2022.3.45f1",
+      "assemblies": [
+        "Unity.Pipeline.VisualCore",
+        "Unity.Pipeline.VisualUI"
+      ],
+      "defines": [],
+      "success": true,
+      "player_run": false
+    },
+    "visual_wrapper_upgrade": {
+      "editor": "6000.0.52f1",
+      "from_pipeline": "0.8.0-exp.1+truecli.6",
+      "to_pipeline": "0.8.0-exp.1+truecli.7",
+      "camera_shape_globals": true,
+      "backup_preserved": true,
+      "old_copy_origin": "Earlier isolated UI verifier; not a pristine upstream migration"
+    },
+    "ssu_editor_verification": [
+      {
+        "editor": "2022.3.45f1",
+        "urp": "14.0.11",
+        "pipeline": "0.8.0-exp.1+truecli.8",
+        "cases": 33,
+        "success": true,
+        "urp17_2d_local_repair": false
+      },
+      {
+        "editor": "6000.0.52f1",
+        "urp": "17.0.4",
+        "pipeline": "0.8.0-exp.1+truecli.8",
+        "cases": 35,
+        "success": true,
+        "urp17_2d_local_repair": true
+      }
+    ],
+    "ssu_optional_vendor_and_ugui_absent": {
+      "success": true,
+      "cases": 5
+    },
+    "ssu_wrapper_upgrade": {
+      "success": true,
+      "from_pipeline": "0.8.0-exp.1+truecli.7",
+      "to_pipeline": "0.8.0-exp.1+truecli.8",
+      "backup_preserved": true,
+      "origin": "Earlier isolated UI verifier, not pristine upstream"
+    },
+    "ssu_wrapper_authoring": {
+      "editor": "6000.0.52f1",
+      "success": true,
+      "cases": 5
+    },
+    "ssu_vendor_assets_included": false,
+    "ssu_wrapper_ui_gpu": {
+      "editor": "2022.3.45f1",
+      "cases": 7,
+      "success": true,
+      "canvas_group_and_rect_mask": true
+    },
+    "bootstrap_recovery": {
+      "real_directory_loss_cases": 8,
+      "receipt_race_cases": 8,
+      "success": true,
+      "same_request_id_and_deadline": true,
+      "one_real_upm_add": true,
+      "old_bootstrap_backup_and_meta_preserved": true,
+      "original_unknown_request_not_retroactively_completed": true
+    }
+  },
+  "current_release_verification": {
+    "bundle_version": "0.8.0",
+    "pipeline_version": "0.8.0-exp.1+truecli.9",
+    "editors": [
+      "2022.3.45f1",
+      "6000.3.22f1"
+    ],
+    "suite_count": 5,
+    "case_count": 229,
+    "success": true,
+    "report": "verification-0.8.0.json",
+    "scope": "Completed session regression suites only; final ZIP delta qualification is the detached acceptance record. Historical results below are not current qualifications."
+  }
+}

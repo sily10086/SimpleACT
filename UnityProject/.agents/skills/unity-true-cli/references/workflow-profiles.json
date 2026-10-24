@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "profiles": [
+    {"name":"camera","aliases":["camera","cinemachine","镜头","相机"],"tags":["cinemachine","rendering/camera"],"reference":"references/cinemachine.md","recipe":"assets/recipes/cinemachine-camera.json","queries":{"环绕":["orbit","freelook"],"第三人称":["third_person"],"构图":["composition"],"多目标":["group"],"轨道":["dolly","path"],"避障":["obstacles","confiner"],"震动":["impulse","noise"],"顺序":["sequence","manager"],"混合":["blend","mixer"]}},
+    {"name":"ui","aliases":["ui","界面","斜边UI","3d面板"],"tags":["ui/"],"reference":"references/ui-authoring.md","recipe":"assets/recipes/ui-panel.json","queries":{"斜边":["shape"],"布局":["layout","scaler"],"遮挡":["overlap","point","snapshot"],"层级":["order","snapshot"],"文字":["text","tmp"]}},
+    {"name":"tmp","aliases":["tmp","textmeshpro","文字","中文"],"tags":["ui/text"],"reference":"references/cli-extensions.md","queries":{"输入":["input"],"字体":["tmp_text"]}},
+    {"name":"input","aliases":["input","inputsystem","输入","操作"],"tags":["input/"],"reference":"references/cli-extensions.md","queries":{"绑定":["binding","actions"],"连续":["sequence"],"设备":["devices","controls","status"]}},
+    {"name":"rendering","aliases":["rendering","urp","shader","渲染","材质"],"tags":["rendering/"],"reference":"references/visual-authoring.md","queries":{"全局":["global"],"后处理":["urp_effect","volume"],"镜头":["camera"],"编译":["shader"]}},
+    {"name":"ssu","aliases":["ssu","特效材质"],"tags":["rendering/ssu","ui/ssu"],"reference":"references/ssu.md","queries":{"界面":["ui","graphic"],"效果":["effect","material"]}},
+    {"name":"observe","aliases":["observe","观察","连续观察","视频分析"],"tags":["capture/observation"],"reference":"references/cli-extensions.md","queries":{"持续":["observation","frames"]}}
+  ]
+}

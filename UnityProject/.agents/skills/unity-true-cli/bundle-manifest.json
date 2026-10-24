@@ -1,0 +1,3126 @@
+{
+  "name": "unity-true-cli",
+  "bundle_version": "0.8.0",
+  "cli_version": "1.0.0-beta.13",
+  "pipeline_upstream_version": "0.8.0-exp.1",
+  "platforms": [
+    "windows-x64"
+  ],
+  "files": [
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "dbe3c31aa10852c80af3630ddac0b7d37e243fd6fee40724a8f1218e28b019b9",
+      "size": 263
+    },
+    {
+      "path": "assets/com.unity.pipeline/.claude/skills/unity-pipeline/SKILL.md",
+      "sha256": "cf2638878028dcdc4ba784d9587f794734a7545a9ef0295926d749fde058f8ae",
+      "size": 9369
+    },
+    {
+      "path": "assets/com.unity.pipeline/CHANGELOG.md",
+      "sha256": "08e7b1616901fd268963658c1b575338fb2e416187f3c7cb73afc2bf2de5dd54",
+      "size": 30806
+    },
+    {
+      "path": "assets/com.unity.pipeline/CHANGELOG.md.meta",
+      "sha256": "29eb1ef7b9d103c2f12eb8a9a8a8217dcfb50ba88273382c7f0ea508cc60b039",
+      "size": 158
+    },
+    {
+      "path": "assets/com.unity.pipeline/CodeGen/CodeReloadInPlaceILPostProcessor.cs",
+      "sha256": "b408407723bacb033d13e56736fadb88f7f3616a83fe16a4e7975d36192ee2d8",
+      "size": 25182
+    },
+    {
+      "path": "assets/com.unity.pipeline/CodeGen/CodeReloadInPlaceILPostProcessor.cs.meta",
+      "sha256": "063dc67c5940e5d0d87abc2746e0987e16568b7658d0bb9f95a4d839b8ba174b",
+      "size": 240
+    },
+    {
+      "path": "assets/com.unity.pipeline/CodeGen/Unity.Pipeline.CodeGen.asmdef",
+      "sha256": "856e4f0f96c3a966fe51b36c7dc36d25d08998a70d027f2037568bde2e546b58",
+      "size": 521
+    },
+    {
+      "path": "assets/com.unity.pipeline/CodeGen/Unity.Pipeline.CodeGen.asmdef.meta",
+      "sha256": "b19fb3d5aa447e4d5046bafa67a87690e06afa863f8769bfc377a471a15badc4",
+      "size": 163
+    },
+    {
+      "path": "assets/com.unity.pipeline/CodeGen.meta",
+      "sha256": "24427124ab673d33de8c8b3df65210b942ccf1f3b8f5f549a04e1b958545231a",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/CODEOWNERS",
+      "sha256": "aa77ab468caeb0e47ee46e9d2edfbb42b50c54e12d1b5a985346212483f1cf63",
+      "size": 120
+    },
+    {
+      "path": "assets/com.unity.pipeline/CODEOWNERS.meta",
+      "sha256": "bf60c00ca98ef1095c120e8d688ca97f83982ce3a6c176df02782ec2299d8b97",
+      "size": 155
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/analytics.md",
+      "sha256": "b2917c00ebfec5b9eebe3109cd8531c03e1db6fc00f899eee8133c9f414a6730",
+      "size": 8402
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/authoring-commands.md",
+      "sha256": "1728f741ab99a2e79dc5ded3e9575cd1792a220a67ebcce0d454b6f3003afb94",
+      "size": 17061
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/code-reload.md",
+      "sha256": "59fa93f64c0e4ca3a38f5f7a651c6647528a8d1e1e5ec05ce8510829f08dcc1a",
+      "size": 13882
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/animation.md",
+      "sha256": "46419c6896d1101fc08e5082d45876d1d502dbc6a06be173daa55ac0da76ae77",
+      "size": 10587
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/assets-and-files.md",
+      "sha256": "659e50622131cc3fcade350011611801de55d67d035bd13972a0203ad32ae325",
+      "size": 9140
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/baking.md",
+      "sha256": "9f9d12dbd958ffced395ee9537cf81ff614307f6c45896e6dcc2de4422d99ce2",
+      "size": 6401
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/batch.md",
+      "sha256": "54cabfee224582cd385da2b326ef5f41ff2b9bc63dc5fd413b04497ac6369cf1",
+      "size": 10758
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/build-and-compilation.md",
+      "sha256": "02c373fea50bf795d1e5e3c3322f7db42b918a0e424c8f49ade1ded08326d988",
+      "size": 11341
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/capture.md",
+      "sha256": "5d4897bbf2df734a3a32654626ae102e378989d87b4f4fafcf28ca4bc99b833f",
+      "size": 6252
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/editor-lifecycle-and-observability.md",
+      "sha256": "01308e7c7b7d594ae669cb86b26d3e2c757d1dbd6ff8913025d53d25d00b38c8",
+      "size": 12269
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/gameobjects-and-components.md",
+      "sha256": "deb5565f1280cd12612cb2659f2786a760968251ab94836ee181d86fad61912a",
+      "size": 8376
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/materials.md",
+      "sha256": "63744a630695dcf0f0ade0dda5d3a2bb08e5c2fa11bab226171ea868ea2be279",
+      "size": 3822
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/navigation.md",
+      "sha256": "acff85b2fae2ff30e3c9d93d8ad4180dc0f7b98a912882e73d8c30aa013aa3b2",
+      "size": 1149
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/package-manager.md",
+      "sha256": "016119fe6c6cd014f286a30f016f234bf29d5f6dec881d44cbcf2fd1e22ec64b",
+      "size": 5577
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/prefabs.md",
+      "sha256": "cc46a181aea8626fb8dc89114ab6dd2246d57a6241ba46020bc0c6dfe6509729",
+      "size": 4542
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/project-settings.md",
+      "sha256": "5e7971548662a622f52db53b73a6f19178036c236b301b420786a5b469be0241",
+      "size": 12551
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/runtime.md",
+      "sha256": "7587709c56829aa5acab84d44050019345162ff2b92479b76cf6092947855a8a",
+      "size": 10448
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/scenes.md",
+      "sha256": "9ce48e8428e40d71c70b1fcbc0f61e0004eeca6de98af57825d2b77c32457023",
+      "size": 4026
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/scripts.md",
+      "sha256": "ded8ff2fb332789f2be2e8d0f7f29b4351b20bbd6c8c8c72b9d6e546e8c21bc6",
+      "size": 10742
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/commands/wait.md",
+      "sha256": "94379094e3e3bfd5798e95d7964556d2207e127a61e808e4310b7b4e11d59a18",
+      "size": 14265
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/connectivity.md",
+      "sha256": "93c1b45803ad4c186e9c6c93d09259ca89321bdcf42d4239c23d2d55a0796061",
+      "size": 33670
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/creating-commands.md",
+      "sha256": "4e107d08922cbd359c00be7db54548e80b4514c8372c22229f9532774fce54fc",
+      "size": 21490
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/filter.yml",
+      "sha256": "7ea32f9e8d492069b7ff2f8677c0130cfee28a8e25934cd246c5a6f32242265d",
+      "size": 1202
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/images/codereload-watcher-panel.png",
+      "sha256": "2d1d8d440a10a1d6ab85428cc33c1259dd2dfa3afa865f0e68a903d9b7e48806",
+      "size": 45951
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/index.md",
+      "sha256": "0291f8d034182f52fd9e61d1ec49103e258cd6fd3c86f8930391f61290357981",
+      "size": 22557
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/runtime-setup.md",
+      "sha256": "c4315e6c8c121c45002f6205abb9f8c08aef1d483006c8d2e4c52a2d2fb01d96",
+      "size": 6907
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/safety-and-mutations.md",
+      "sha256": "04acb413a3dce076232f3a4262ac5667dcaea3050fff5a4f275bef31e51f55cb",
+      "size": 5018
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/samples.md",
+      "sha256": "08ddbf0b83a14e985627217b4a14e0b0d29362b4fcb1109ef28738c86b44014c",
+      "size": 1335
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/TableOfContents.md",
+      "sha256": "3bbecdb14ae76d32d69f24e3c8f7f1f275bb80477c1dbe731da45855a4ab13df",
+      "size": 1348
+    },
+    {
+      "path": "assets/com.unity.pipeline/Documentation~/testing.md",
+      "sha256": "a2e6bc842ab0deb2cc45b871ec1cb4c6512fb345bbdeb9ee3bc28ef13e326ece",
+      "size": 5199
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Authoring/AuthoringUndoScope.cs",
+      "sha256": "52300bd257c561dea033c00df09471f8480f8b478149696bcb422c4308bc86c3",
+      "size": 2306
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Authoring/AuthoringUndoScope.cs.meta",
+      "sha256": "879c2ee0f59ba07cb03a43d358d1394760afb86fa43efba45c6fbca7390abda1",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Authoring/ObjectResolver.cs",
+      "sha256": "706a12cc8fa683e1e36f003cdbe486fbe74f5098f2fa0fa8a0e51ea28f35d482",
+      "size": 9447
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Authoring/ObjectResolver.cs.meta",
+      "sha256": "ead7eea1eaae80685388244de15e78c54e2898f4ff5251818a0ad853ce07b13f",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Authoring/ProjectPaths.cs",
+      "sha256": "a767c4906cdb830b10a4c90475964502045c33801ab95613bdeed9cc7bc5099b",
+      "size": 6465
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Authoring/ProjectPaths.cs.meta",
+      "sha256": "b2cda01c86a230f72bce4e3b9cf21eb31f77876a2acfc70d2a9a7860f86c60e4",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Authoring.meta",
+      "sha256": "96354206dbc4647df48385bd784a9c8a6c140c3bf29c6b1eefe3c87273c93342",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/BuildProcessors/PipelineRuntimeBuildProcessor.cs",
+      "sha256": "d7da03994d16b001a2f17655e782d35d6ba81f9ef1632e18f0256cb039d9c6a3",
+      "size": 19220
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/BuildProcessors/PipelineRuntimeBuildProcessor.cs.meta",
+      "sha256": "db1c0e4df3b851979e224b43af6e6d4225ca55ba7bd75a9e9f6109b000c67cef",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/BuildProcessors.meta",
+      "sha256": "ac02496a5c216d5aef258b9a0d55ed08300a97a08d9aa9342768d96e115446d9",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/CliEditorProgress.cs",
+      "sha256": "f28464aecdbe6e38363cb542534be40a257ff39fec05e32dc24d3b03ead98177",
+      "size": 2651
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/CliEditorProgress.cs.meta",
+      "sha256": "50c29483f8aff2b1d0a81f6c79bd5bd4abd14fce3b14c3ba9d52ae3cdd76b2d8",
+      "size": 218
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Animation/AnimationClipCommands.cs",
+      "sha256": "d459cdf299bcbaaf2e99f205ba2cce540e9c0a83f78a60cd9c4b5af4aa035f1b",
+      "size": 19674
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Animation/AnimationClipCommands.cs.meta",
+      "sha256": "f9096542607aa515acdb9672ac37dfe0804446fea708adf870f8f979708bc9e1",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Animation/AnimatorControllerCommands.cs",
+      "sha256": "31300d683ccd67ad74ccb34511b19fd815caf1fbcd9e3654c342315fcd3d7eab",
+      "size": 38239
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Animation/AnimatorControllerCommands.cs.meta",
+      "sha256": "6e8a288b2754f1166e470a432a94c9f08797718999b3995c4d6aa4730fb75ded",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Animation/TimelineCommands.cs",
+      "sha256": "46bcb3b58d0d2f70d5b0ae0805b8430b9820ee24f15df07114a9a3af25bd2935",
+      "size": 28675
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Animation/TimelineCommands.cs.meta",
+      "sha256": "3a2cc541a943e55a4e9b9e1400c551f1f5ae33b17a9d8b6e77771e9579658de3",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Animation/TimelineGuard.cs",
+      "sha256": "d20fac8437b86f374e991799df23688444f4d656e89d4a088e1524dae5877d19",
+      "size": 2478
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Animation/TimelineGuard.cs.meta",
+      "sha256": "379f2eda0f2e46f7e80b4ba41d489e12cbca16b01e693b2d24103989860b392e",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Animation.meta",
+      "sha256": "a7c5bd8595587e90dd492a3acbcf258dba3741283cedc118abf1e6dae4ad4d61",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Assets/AssetCommands.cs",
+      "sha256": "ecd779fb9622206d1d25b84dca05154249da578e4b4fa95c8adc9ce5525ba82a",
+      "size": 33510
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Assets/AssetCommands.cs.meta",
+      "sha256": "55316a0aaa1ef4b6546dfe6c6836b9c3693f3e82d85339eb336ac920541ad722",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Assets/AssetImportCommands.cs",
+      "sha256": "653838d1bc5c5f8bb6689ce4e95c6781e1ea45a504ce66ed003e607a7b6e157d",
+      "size": 31257
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Assets/AssetImportCommands.cs.meta",
+      "sha256": "89d86143ec620e33ba315683b2e44a27528fa676a8f0b81bbcd1728fcc36e919",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Assets/FindAssetsResult.cs",
+      "sha256": "03bbaede72b3f27297c80c018fe2c09c4f98dfec628325edad9b989a27792a9e",
+      "size": 1455
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Assets/FindAssetsResult.cs.meta",
+      "sha256": "a1e48c17b8fea19afdeea0ad3f3ab97495cdcce396a1c9d6bb1dd888b6b2bc74",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Assets/FolderCommands.cs",
+      "sha256": "37de2403bab065076b9e1add72ce1875502a96c567686da5c863926c7b3a1873",
+      "size": 2164
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Assets/FolderCommands.cs.meta",
+      "sha256": "914811153741b76b199cdd3a7926c443ee211e222073b547737e0f3e441d3241",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Assets/TextFileCommands.cs",
+      "sha256": "6b0b99f38ee01a6964ce1cddd37393af62a6ac174a94ed1eb791eff3b78dabc9",
+      "size": 5804
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Assets/TextFileCommands.cs.meta",
+      "sha256": "03f22c3d5c79e198c732515681983bda0ec910634e54db5f8243afc26247c026",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Assets.meta",
+      "sha256": "50d4c1b23e0f31417d8c6810b20f50ae59e12d815a93c177f78fb2714d6713dc",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Authoring/AuthoringConfigCommands.cs",
+      "sha256": "8d0038841677fe7791fd840853c67b1a351b4029b390b80bd406f2237c883dd4",
+      "size": 1482
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Authoring/AuthoringConfigCommands.cs.meta",
+      "sha256": "d2ea19b6211b7536790e1a623470ff3309ca844c7a32c9f36c5297f98b6623aa",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Authoring.meta",
+      "sha256": "f81e0e889b936f045242275b0d804b62cc49c53236003dc44cc485d3068450f2",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/AutoTickCommand.cs",
+      "sha256": "86c8c67ae154e9801df85a77646023cc39b7fde5efb687ee9a344a6bfe1d1b2c",
+      "size": 8500
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/AutoTickCommand.cs.meta",
+      "sha256": "0bf5fa57cd181e3533aa9c8dd313569fdfe4149b277f29799901b474c16cb1d5",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Baking/BakeSceneGuard.cs",
+      "sha256": "e25a68b536090a51b5967058d1e68a6c77f095922106edf3f2fcf2e09ecd8835",
+      "size": 1841
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Baking/BakeSceneGuard.cs.meta",
+      "sha256": "0d552b937ef46556425f2b5dc313a6985c90620a0640d6492a26cfd39090ee22",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Baking/LightingBakeCommands.cs",
+      "sha256": "3787811c2bdd02ee1993039b7d12597db5d959d05e204e1933ebbf1da045715b",
+      "size": 27019
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Baking/LightingBakeCommands.cs.meta",
+      "sha256": "f777ff0e9c62741581db4827fc1946b8131efc49616a68ab981275d9d3b43e47",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Baking/NavMeshBakeCommands.cs",
+      "sha256": "4130e8f4b85c22034b2e8fdd011e8c72685bb5fc5d067d03d05e295a8e3c5955",
+      "size": 17192
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Baking/NavMeshBakeCommands.cs.meta",
+      "sha256": "4c7880a6e126113dc1e3ec24f8c419af3df64d062e71039bd0e2f02db2e8d9b8",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Baking/OcclusionBakeCommands.cs",
+      "sha256": "97e4771212bb6c8f24190c3af10a996e09c006a107e323b11dda441badd32e21",
+      "size": 11805
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Baking/OcclusionBakeCommands.cs.meta",
+      "sha256": "f878ea63a4f92cca813c44823ea9032be99e40b6352f0d64d83b61daf1572ddf",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Baking.meta",
+      "sha256": "9a468646517c78dfdc9b9580e8fca13ca200221abf7622b8db0627cfbf8e52a4",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Batch/BatchCommand.cs",
+      "sha256": "9c87368c8366f883f5c46e8dd6d30eacdf2deae1a97f69aa11cab4914151ee6c",
+      "size": 39187
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Batch/BatchCommand.cs.meta",
+      "sha256": "9623218b01a7c72a92a3d4a2f77d8905e82a47e95714d3c6df1c85ae8178bab6",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Batch/BatchInput.cs",
+      "sha256": "bbc24e495f9d8867a825fa18cfe5a02ce09d9725c69323335d2ac0dbd9920553",
+      "size": 2432
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Batch/BatchInput.cs.meta",
+      "sha256": "6ad22bc9f1823a071f1bb3e034c94fe3ef9ef3c0a8416650a4a2740dd2c29c47",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Batch/BatchReferenceResolver.cs",
+      "sha256": "b7eccf045017e17430925392e171f2900b6ba064c0e9ed367f00c42d8d72ce4d",
+      "size": 9465
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Batch/BatchReferenceResolver.cs.meta",
+      "sha256": "79ae8803c73b48c059e39449b5ad5c352c290b23c94affd3da2060f650a05216",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Batch/BatchResult.cs",
+      "sha256": "7742b31a44c82f1b86a3a5f90b8dc53f00641a0aca100c8b98380ce49dc3c186",
+      "size": 4834
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Batch/BatchResult.cs.meta",
+      "sha256": "f02ed85d1b626d3efe8f054925fa23074afa723bef9645b1afa7efafb0e229b5",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Batch.meta",
+      "sha256": "de15eefc2794f3996407bc7eca7a0be608dcfbbda67b013ae41d2d602672fc18",
+      "size": 169
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Build/BuildCommand.cs",
+      "sha256": "929deab5a01498aae8c4c1c4335d02ff9bf3945c1127455c63aa91a05b88bcba",
+      "size": 25074
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Build/BuildCommand.cs.meta",
+      "sha256": "aaa963ca236abae2a35835087522797531ff9c6db3e3ea36f550f6379a1be5cf",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Build/BuildConfigCommands.cs",
+      "sha256": "6016bd1d787fdafe16aa23e6f5192b7cc2118c7ce59e39d56bef0dda709552ba",
+      "size": 14927
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Build/BuildConfigCommands.cs.meta",
+      "sha256": "9b97d60b37bf50cdcb134eeb932bfa815176b1fba871b4c65fee2440bb2183c1",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Build/BuildModels.cs",
+      "sha256": "240c6c50cb9e330fd76593d7c84fb7a30ab8dc24891b7297a43c34d21f82c37e",
+      "size": 13259
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Build/BuildModels.cs.meta",
+      "sha256": "c7c9f24a8d34703e427ef880497f53a0bce2852dee4d8adb2442abb531d9b5a6",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Build/SwitchBuildTargetCommand.cs",
+      "sha256": "daa3a38a5825365bb7d6a0974c6a6eed227b444e5d7c0f3b48de23bf9586fa09",
+      "size": 10095
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Build/SwitchBuildTargetCommand.cs.meta",
+      "sha256": "e3bcdd1f8b81e745f59f39ef99d992e3e69e7803bf4a9e2edd219ee68041742d",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Build.meta",
+      "sha256": "ce81c6e2eaf964dcbe2971c2888ac5154b8ea895526b051420f989aac35bd175",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Capture/CaptureCommands.cs",
+      "sha256": "6359d3cdcaa523af5a0f436cb88e1a8a13bf5efc908aa938efeefa7093725bcb",
+      "size": 24607
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Capture/CaptureCommands.cs.meta",
+      "sha256": "ede35071143c1aaab424b95110d36f2589333502b07c165c715c681c335df67c",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Capture/VisualObservationCommands.cs",
+      "sha256": "08542da2cacab2eab6a619d1a212b0a9f9a7d7aeba8386f1a480afbc68a2547e",
+      "size": 13757
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Capture/VisualObservationCommands.cs.meta",
+      "sha256": "3fd9c184218d92127c4259fc486401095a79b35381d61dcd58e22227bfc1e7b0",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Capture.meta",
+      "sha256": "e73f750f79bb44489f18ecbb8ead22379df6307803a44bf606f98c2d66369a54",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/CaptureEditorElementCommand.cs",
+      "sha256": "035f4a233d07ed861ff1575b9650cbd9f8cff92f194deff860bdac307d98dc3d",
+      "size": 4165
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/CaptureEditorElementCommand.cs.meta",
+      "sha256": "7f5b80b846b43711848d0c90275f812f06793e5ffa4ad81f39f6bd6dccbfc894",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/EditorStatusCommand.cs",
+      "sha256": "9b51393f4ab3425f36c9da9a739d712d38428d0c309e3eb69237c741d2e01fce",
+      "size": 1992
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/EditorStatusCommand.cs.meta",
+      "sha256": "18745ffb39e3754a51aa38dbfcf9d1b19d45b8910a43ddde5e1173eb585d6a71",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/FocusEditorCommand.cs",
+      "sha256": "443e68042bad3dad82e811f6261b1a6d5b821d52f8c974e8c4da007b6d0df1b1",
+      "size": 4776
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/FocusEditorCommand.cs.meta",
+      "sha256": "191f3ab06dcf56dec8ed176586f18ff298e821148f08b20fffae4ea8f6e714ce",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/GameObjects/ComponentCommands.cs",
+      "sha256": "6c01aeca7517abdae6c3ba1a61e1734da49057c5c6f77a1bdbf4defe2041307d",
+      "size": 11010
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/GameObjects/ComponentCommands.cs.meta",
+      "sha256": "0ff62aa0e3bdabab64f51c8e4c27661646fdc71b1de6d11146b6b409d0b75094",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/GameObjects/ComponentPropertiesResult.cs",
+      "sha256": "88daa83c0bbec666d08da4a858ae13ded98f56485dfc4145368245b7c7b7d92c",
+      "size": 1102
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/GameObjects/ComponentPropertiesResult.cs.meta",
+      "sha256": "be9e336a8d28aff4b565b0fe48a39767b64d03005a41c9cc2dd34e1fc5b094cd",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/GameObjects/CreateGameObjectsResult.cs",
+      "sha256": "3d4edc6f96f1c2a1996267166d1e42b5a43105a7383bd60794490496f9e16db8",
+      "size": 1282
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/GameObjects/CreateGameObjectsResult.cs.meta",
+      "sha256": "00b3f65dc2a3e9b618e2f2529158e674fff8bc10983e25c03a2aee1b5e25eae7",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/GameObjects/FindGameObjectsResult.cs",
+      "sha256": "ac5cd3fae79e08d672f38f5365a90e5994212426bd7de61cd430a2af84ce4d18",
+      "size": 1163
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/GameObjects/FindGameObjectsResult.cs.meta",
+      "sha256": "840ff69fb221c4f2ab4e2ef91977a0e666854dbe6b25763806ffdd84ceae50ca",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/GameObjects/GameObjectCommands.cs",
+      "sha256": "464544dd28115c47c64be19e275b3a1ed99f4988b45ce0e2a3a983233f89b5e6",
+      "size": 27053
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/GameObjects/GameObjectCommands.cs.meta",
+      "sha256": "8e96ab011f87ab756c11e772da4fec2ac648b6d8a7113983781e4a05900874d3",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/GameObjects/SerializedPropertyConverter.cs",
+      "sha256": "c6afbdca0d84cedb20d2f548560de22707de243108ba3f50bd6b523dd15216ec",
+      "size": 11097
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/GameObjects/SerializedPropertyConverter.cs.meta",
+      "sha256": "9be707a9733dd1e6a312bf11cc15858226a58f8c60c61324a02f5ff94f59c66d",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/GameObjects/TypeResolver.cs",
+      "sha256": "010477c03e56a7e34b92293f181b8a410d167ec1b42be846e06d843ce33606c4",
+      "size": 3457
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/GameObjects/TypeResolver.cs.meta",
+      "sha256": "c044ba48eb76deeed438928fae73234ef401a5bbacd9c35f41041082c5963f90",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/GameObjects.meta",
+      "sha256": "a4b1b605092b7cb33e343f03c128506bf553132756074b004792f1a737ea68d8",
+      "size": 169
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Materials/MaterialCommands.cs",
+      "sha256": "7f16ab276d1d042ae2f54aca02fc78e7a890ab6d7a25e1e7ac518c1d994386e2",
+      "size": 19901
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Materials/MaterialCommands.cs.meta",
+      "sha256": "2cecb3f36a2dbea3f648340a4c85c1560b28d659be520d946db6aa03bd54162b",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Materials/MaterialResults.cs",
+      "sha256": "d0fd5b17b98a7ad4e538e3b4704b8c224c971231436f3a6c0026aaf2d4ee7a6e",
+      "size": 5563
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Materials/MaterialResults.cs.meta",
+      "sha256": "71101ecf14c75c41224836720e1fa0a8a8517be79e9f7f346ab66c8f81fb23f1",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Materials/MaterialValueConverter.cs",
+      "sha256": "d6e05dab4b7d6aa6ae5018060298878f9343291556c9888669e906680dd8d01c",
+      "size": 15173
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Materials/MaterialValueConverter.cs.meta",
+      "sha256": "2b2b858883ac1b5e855ca8b492d25abd6f7c2b7298c7dc50229ad66601249ec3",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Materials/ShaderCommands.cs",
+      "sha256": "c6239d85a4db9cc4fbb8c13e6bc4b440e518c150212265adf49b92f3b3ad3929",
+      "size": 8258
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Materials/ShaderCommands.cs.meta",
+      "sha256": "c7c46edacacb003ea1069c9a12014f5ff4ee24cb2ef738bcd441863b06d7e230",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Materials.meta",
+      "sha256": "ecbe40a5a0ccab03e659df0a46e57bfb693f5495482653b2b9e969841c99c9f6",
+      "size": 169
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/MenuItemCommand.cs",
+      "sha256": "58dfde4ea23e19b9c5d54a1a0615a20807564f3f5c0cb025c0bd0590f44b52d0",
+      "size": 10568
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/MenuItemCommand.cs.meta",
+      "sha256": "28520e880d7cf4eb5198c7e70265e86da6cbd6491680d80c61378443495b5424",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Navigation/NavigationCommands.cs",
+      "sha256": "b860b012a13991dcb16724db60be9ee05d21af9b7715a1d4fab0e5468cd8c013",
+      "size": 11520
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Navigation/NavigationCommands.cs.meta",
+      "sha256": "017d08e5354e67abc7498c7f99ea285077c2d9ca33dd8c36a67311359e51a467",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Navigation.meta",
+      "sha256": "806ad60dd9c698a2ac519718382cccc1b669696d556ac98e703f61fdca8829e7",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Observability/PerformanceCommands.cs",
+      "sha256": "95b9e614311afc6fc7d3d36b40d20df0a9940144f34d2de15c3b9b3278354fb0",
+      "size": 6923
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Observability/PerformanceCommands.cs.meta",
+      "sha256": "b5dd907ede1fb4444950a71b9c29a1f6eef769716286171d26a80f52745e1c80",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Observability.meta",
+      "sha256": "0cef75eb0161beeff22e8ba22dac994895bd3d1bef3d86c41fe7f7e192206c73",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/PackageManager/PackageIdentifier.cs",
+      "sha256": "4ce9e8f261a3dbdf2b5df0c99d9c2fff03ac36f851d93f09e7bb97ac59fabb4b",
+      "size": 6611
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/PackageManager/PackageIdentifier.cs.meta",
+      "sha256": "b8dbfe8370a7f2205da90d845cf6d0c085a449255c3f08ce6053e074bbbda022",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/PackageManager/PackageManagerCommand.cs",
+      "sha256": "1bacfa753ba056c3153ed1eeb001b268e5471d47d04c07d1b561fa41aff88ed7",
+      "size": 29392
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/PackageManager/PackageManagerCommand.cs.meta",
+      "sha256": "e0583ec3e0c00ab67be40e75554027f65fe8733e1cc87f8b66fddd20fdab533f",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/PackageManager/PackageManifest.cs",
+      "sha256": "af2d3578567035cc5c3ca386fa593e9b52507333fb256536642987922b8812c7",
+      "size": 2852
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/PackageManager/PackageManifest.cs.meta",
+      "sha256": "bd384e99ef3979760454de12029033fcd566077072429cb32ff5a788d8baf7df",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/PackageManager/PackageModels.cs",
+      "sha256": "7910a453e17b9aa595d6d50d802e894693cfe142823d098ef3266a4353dbe4d2",
+      "size": 9492
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/PackageManager/PackageModels.cs.meta",
+      "sha256": "4d9b70b619854a49b44dd7bb5f8577983e48c1bed515b123bdbe2460ac7c0330",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/PackageManager.meta",
+      "sha256": "da492a12f4f6f23127a4746630e5a5ab3a5ba403be36599403399c8499dd06e0",
+      "size": 171
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/PlayModeCommands.cs",
+      "sha256": "720cb318b984c5543ffe6bffafec9abe9730f24292dd4d02d209f6f2db917caf",
+      "size": 1947
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/PlayModeCommands.cs.meta",
+      "sha256": "30df8edae25fe893e776dab12d756d1f0e1e2d22ab43b5a9c3ca927ec6192184",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Prefabs/PrefabCommands.cs",
+      "sha256": "46f6e1d5c2cbe960bc4e285f9bd05f377985a280ad07a271ac34c0ec1c53444b",
+      "size": 23092
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Prefabs/PrefabCommands.cs.meta",
+      "sha256": "3f1d235512f38b5fa07a8b69a61e5a3b6bab0179be50998db82ad9d1a3e3ad55",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Prefabs.meta",
+      "sha256": "c76609511e1d59f9d95a97179d5ec2871d7cb34be8dfd66a0925fa6aaade2e8e",
+      "size": 169
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectAudit/ProjectAuditCommands.cs",
+      "sha256": "b4940655222227cf94d6a058ec29ae5ac20033ade6198c01d453b56ed8bb09e9",
+      "size": 28196
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectAudit/ProjectAuditCommands.cs.meta",
+      "sha256": "f7788928f88e51cb13245cb836a013ccaeb3df8a3087d9829372961792a96278",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectAudit.meta",
+      "sha256": "1ed0b6154372e3b354969faba117b61585d529c85a39e893f5d6c14b9f969aef",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/AudioSettingsCommands.cs",
+      "sha256": "3b39b59424a4f988742b7900093bd3cdf0d1b4457e83e95f127650dd41f99def",
+      "size": 5049
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/AudioSettingsCommands.cs.meta",
+      "sha256": "cc21fe0b069e1a04801dc0065f3e67a950ab3233b9fac9fa545bf08cc4e3ec5c",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/GraphicsSettingsCommands.cs",
+      "sha256": "ce739a9997549596e09979114d1f510b7df4d8b244d1ad82c5e8a31fa299f5b4",
+      "size": 4187
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/GraphicsSettingsCommands.cs.meta",
+      "sha256": "9ab423e5eb46c8f8357ee5096c028797875cb74eeddf70e0b30af4920b8ce121",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/InputSettingsCommands.cs",
+      "sha256": "b9a8e307f23098863bc97b80a31872a6fb415fc1dc7de47fe4dc5fccc780f762",
+      "size": 6409
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/InputSettingsCommands.cs.meta",
+      "sha256": "c4a50ecd6e55a9e6b78769accfb6e4f39cc1509ff5b52fbe888cce0030708c41",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/PhysicsSettingsCommands.cs",
+      "sha256": "1440af8ee8591d18ab1292a91eee79309cd2fead119e6dab85e07db036633efa",
+      "size": 4559
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/PhysicsSettingsCommands.cs.meta",
+      "sha256": "0bae455369ce0e7a14504e475cc5b39a4be67a8b79b6dc01aa5d901fb31a3ce3",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/PlayerSettingsCommands.cs",
+      "sha256": "b938aa9bec4aeaabae3cca881a429bf303bd0e3d99230e961dfd196fa0f5213a",
+      "size": 6386
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/PlayerSettingsCommands.cs.meta",
+      "sha256": "58d7b3e03dcd0d33dd876d1adf6f42e45a1a0ceb6593164a6a735b71cd7b8a02",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/ProjectSettingsAsset.cs",
+      "sha256": "d9da8ce76ec1726c39f8b165925fb1a4e4c94cdbd3c3d23b192152dc35378d2f",
+      "size": 937
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/ProjectSettingsAsset.cs.meta",
+      "sha256": "f0cdbf6b906295dd057d7e45143f7e22611801144ba40c8d0b8933a09071f789",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/ProjectSettingsCommand.cs",
+      "sha256": "c7b619fa1a406053252f3dfe1918253eb301e7fafa89f363a2ccadad837461a8",
+      "size": 6194
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/ProjectSettingsCommand.cs.meta",
+      "sha256": "b4fac8dd119742398cb52e9b1e077b852cf1876638ea11ecbe5140010c691433",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/ProjectSettingsResponse.cs",
+      "sha256": "e9d6dddc786243a67c0daa56a92cbc1068d302ebbb77b5c073cd61cc9b15bfbf",
+      "size": 2908
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/ProjectSettingsResponse.cs.meta",
+      "sha256": "3136d4d17d224ad2c1213a131fa3e9bf32607f06deb03c0d3cef354af2502398",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/QualitySettingsCommands.cs",
+      "sha256": "7acbbb0de63138dac267ec116481e49cce5766137cc8c83e1d59da6379520a5b",
+      "size": 4562
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/QualitySettingsCommands.cs.meta",
+      "sha256": "6d13e25b127f92d9f26adf8cb1bad42c423078d61835bee75c472577fc809b96",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/RuntimePipelineSettingsCommands.cs",
+      "sha256": "f166647b93aba677f0b671df035f831c74376b61154ad3b3d79762dde0a9b119",
+      "size": 9296
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/RuntimePipelineSettingsCommands.cs.meta",
+      "sha256": "dc7f150faa80aebbe122fdba5768907d72149c52717e18acf0a8822d5c8b6df0",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/TagsLayersCommands.cs",
+      "sha256": "09b02c540f3d9b2c0b7d219d049378f89ad6e74f75016a4333335dc140a86524",
+      "size": 6355
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/TagsLayersCommands.cs.meta",
+      "sha256": "059b51b05edd4532c2d60ca4e787106ba70b2dc86e455dea5682053d1caf3df4",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/TimeSettingsCommands.cs",
+      "sha256": "dd6fd7aa93b911180a6dfc016d4d92ca592c18fdc885af41d4bca84447832318",
+      "size": 3836
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings/TimeSettingsCommands.cs.meta",
+      "sha256": "f056669836eacd9875a1b4384e64c01b9603a2cbf21a1fab71d6549c4cb424e1",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ProjectSettings.meta",
+      "sha256": "4e5f4131592f0289d7d1d8a21d56f286f2a0c28fa6485313181a60afbbfcfa4f",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/PushReloadCommand.cs",
+      "sha256": "ff6a5a3e66b4c5af6b7ba3700fc0cd8cf466c7a8b57b0ae823d312f8247d3295",
+      "size": 25680
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/PushReloadCommand.cs.meta",
+      "sha256": "cd2e356c46b3d0661f1ab9c759a892823ce02f6b78f4171b4ec5ec8ccb40ed95",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/RecompileCommand.cs",
+      "sha256": "9635249b1ae4ceb5bf87b71b6351be3f0adc337c40aa61eb3dd27a986ad73fd7",
+      "size": 9949
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/RecompileCommand.cs.meta",
+      "sha256": "923e2165fdc57a55b3f30cbdfe63759ae66c291839941aea795fe0186d8050f7",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scenes/SceneCommands.cs",
+      "sha256": "ebbef38b7cba50ff2d57a75c91203a20fcfb473ad9ea79e1e0625b7d974a6276",
+      "size": 19542
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scenes/SceneCommands.cs.meta",
+      "sha256": "a3dec9092a64aab69acb8872de859ac73be59aa7149ed320aba35103072f4bfa",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scenes/SceneHierarchy.cs",
+      "sha256": "186675c70a81c67a999bc1eeda234381c637c5a93ab949a5c84b3daac928ea1c",
+      "size": 3531
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scenes/SceneHierarchy.cs.meta",
+      "sha256": "01a02d2ebc8c2bf4184a95db38f236ded41510377e781445cbcf9346c92d9356",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scenes.meta",
+      "sha256": "ced3ecd39d94538d3eb060f4250c152ffbec3ebc931245dd5a8ae9042f12e52b",
+      "size": 169
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ScreenshotCommand.cs",
+      "sha256": "a3a40cdff0e8100789c29a97f23025cbe0054e5fc160b3e10a56390691718050",
+      "size": 8003
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/ScreenshotCommand.cs.meta",
+      "sha256": "377221a7b408e6299e7c29e0b1ee710007a492f91b9b7f33365e5eaf39735310",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scripts/AttachScriptCommand.cs",
+      "sha256": "ed87cc7e90945c3212a86a07943b733d63d18d7021ed39cf942020f18d6e03ed",
+      "size": 7971
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scripts/AttachScriptCommand.cs.meta",
+      "sha256": "bfa0fc01d91327a39f97f385456a82ac858d7f853bfc86c7fdf2ff0b571dd7cc",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scripts/CreateScriptCommand.cs",
+      "sha256": "2eb2a5e4233c50e59957820adc0f745c2ab37616dcb8e145db9f1f40c5c835fe",
+      "size": 8046
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scripts/CreateScriptCommand.cs.meta",
+      "sha256": "7dea00025b88333f5f655bbc32146408d14b3950877607c63f23a31954ac3d6c",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scripts/RunScriptCommand.cs",
+      "sha256": "87b26e15719c9203ec3367f559897d5bafcdeac6e00a2e1500f3220dec8ccba9",
+      "size": 35451
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scripts/RunScriptCommand.cs.meta",
+      "sha256": "2046f0278ea14a178a876b8d4d7b079cffc09690e548ec7bb394bbe829064c2e",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scripts/ScriptTypeResolver.cs",
+      "sha256": "4cd0d9ff50e51eb03cc27e90f2b2a87c155847e127bbd423ee0237d760fd82fb",
+      "size": 6493
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scripts/ScriptTypeResolver.cs.meta",
+      "sha256": "46fcf5344123264f4289c8578bc38f6e82ad1f128bd8deec4670c6f03e358d4f",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scripts/SerializedFieldCommands.cs",
+      "sha256": "2fd398f79a00cfa6599badcf5e5f36d5fca89a9ad1aa2b5f44063138ed43fae8",
+      "size": 13358
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scripts/SerializedFieldCommands.cs.meta",
+      "sha256": "cbaa1805f36da34fd6cf338c2858fcfa5372d2a812c58b6d3965df4683de7aac",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scripts/SerializedPropertyConverter.cs",
+      "sha256": "b1937b2b47daedfdd792a5b6b2111f46ef23b098addad7f39a9d43f5cfe2d0ac",
+      "size": 12249
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scripts/SerializedPropertyConverter.cs.meta",
+      "sha256": "e18983336196c592427f2eb4f028efd00e4d728fda87a77646daa9409937bdad",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/Scripts.meta",
+      "sha256": "fb54dd644bad2e5e4c9d81c4b81ad74a907ff51659cb5c6e8c5e50545d7f4fc2",
+      "size": 169
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/TestCommands.cs",
+      "sha256": "51644dc54dc1206fd670872f0ea5d885014c18026dc2a11e1f2a6ba14093f159",
+      "size": 8915
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/TestCommands.cs.meta",
+      "sha256": "9d50fdeaa43769b9639eed447662d423a1212158a2c114654cffaf36a6ff413e",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/UI/UiInspectionCommands.cs",
+      "sha256": "9d29c3f9ec001ef74618145d56b27ff706339d6d7ac144fab4b6007403ac7131",
+      "size": 19969
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/UI/UiInspectionCommands.cs.meta",
+      "sha256": "7d295e15d114b347611ddd74e27e152f11535275f31485ba5ca71e64dd188410",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/UI.meta",
+      "sha256": "0c4a05b519781dcb7433cf9f507bcd9a623920c3ddcdd841804abea4812593d2",
+      "size": 169
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/WaitConditionEvaluator.cs",
+      "sha256": "ac217333b3fbd5e0f7da1bf20a8b9c0aaeab43a258a2e5c9198b3d1683cf775c",
+      "size": 37600
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/WaitConditionEvaluator.cs.meta",
+      "sha256": "680e83f906e21fc6b4930e52f21d1b1092abf005be3032d0d4837c70a483daf6",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/WaitForCommands.cs",
+      "sha256": "4460c2af57add5ad72d1c9f3c763e040c369ce823a820bbe2c450675da6ac7f0",
+      "size": 26792
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/WaitForCommands.cs.meta",
+      "sha256": "a228a7c200bc56d55ebcf88644289b0c0f5c897295a2c06ac634bef1cee4a6ef",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/WaitRegistry.cs",
+      "sha256": "73d6a8ef6d23a3999b791bbe2fb2f926120665a5c95cf732e36f7dea81a2f074",
+      "size": 27574
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands/WaitRegistry.cs.meta",
+      "sha256": "7063b0217a291e8d08f50ed5a286a1fbb203f674d590237ac08e8927dcd4f978",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Commands.meta",
+      "sha256": "c973b04516d639a4c15c0dd0d4a4b953aba138c928db7f4cf9fc9fe3b38b76ba",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Compatibility/LegacyAnalytics.cs",
+      "sha256": "723da786d7013ed7de88fdd35f85f7b909b807aa10bf48ec8bc6a6fb6202b6c5",
+      "size": 1882
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Compatibility/LegacyAnalytics.cs.meta",
+      "sha256": "09ad5eda2afe73e80dcaeb0c18d13a27fad97fe4936b399aaedbc2e60b62b29f",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Compatibility/LegacyConsoleCounts.cs",
+      "sha256": "949293bc1150670351bc07f48d48b50645dc8f0479192518b7f14d122d554365",
+      "size": 967
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Compatibility/LegacyConsoleCounts.cs.meta",
+      "sha256": "3a4444b45e84da979fc191ea25dc121613ae2870c867e7640ff1f828b5ea965f",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Compatibility.meta",
+      "sha256": "7b32b26a438ce591de7088e59368a2d33e510f9362d16616d659ee76419f6957",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Console/EditorConsoleCaptureBootstrap.cs",
+      "sha256": "9952d17f7d57b851e845492b158e6a83385f1d79550ac3f03882dde112ad0ecb",
+      "size": 3913
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Console/EditorConsoleCaptureBootstrap.cs.meta",
+      "sha256": "5bef12adc7492a08b9fa7044420719362e530fb0d1c3e333cd372f3443a9714b",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Console/EditorConsoleEntries.cs",
+      "sha256": "98f83ae850b6d6776a092e6e3340bc224369f674e461fccd642c23e10f07ba6b",
+      "size": 10220
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Console/EditorConsoleEntries.cs.meta",
+      "sha256": "cb7f35015d34f939ff4afc27d6560d284ec46cb152bc96fd49619b0f311ca403",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Console/EditorConsoleGroundTruth.cs",
+      "sha256": "480757851524d731add5ba2ac65c012099eeda9503d8226c5689f07f03905209",
+      "size": 9438
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Console/EditorConsoleGroundTruth.cs.meta",
+      "sha256": "68ddaef41fba4dafe9531f433b000250b627c79389012fadfe44e9dc7ae99642",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Console.meta",
+      "sha256": "1ee017d638ba81c3092743c5fd8dea6d483fe83dd94438dad5c4aaa4fe35739e",
+      "size": 169
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorCodeReloadWatcher.cs",
+      "sha256": "dc14107a4951df7c421b2bc48be146e9e024f79261369d87e7d17888a083e724",
+      "size": 36587
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorCodeReloadWatcher.cs.meta",
+      "sha256": "7d9f9103a1b95c018410a11f6bb1b2892b3c5a52e633c406d3d8160dd1366a28",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorDialogStateMirror.cs",
+      "sha256": "e2d3dc0d1383b47037edd1e1cf49ef7b2654ed5d5706fceb275d1904f3fb667c",
+      "size": 2057
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorDialogStateMirror.cs.meta",
+      "sha256": "d8725ce45f881b070edefc2c2ca86126546c99bab1c075f73396473be3488f23",
+      "size": 217
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorPipelineConfig.cs",
+      "sha256": "580f42fa37546628af93e26c0551ed6e0864cc5c51507b0d749793c44735cec2",
+      "size": 13894
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorPipelineConfig.cs.meta",
+      "sha256": "220b552a7a718bb5e31a6949470becd55d877639381e77e1f58ff78e0e55a35f",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorPipelineConfigEditor.cs",
+      "sha256": "4412f9581d1b3db225f1a44742b35cc060258b35bed1710e0876384e9fbe58b0",
+      "size": 14489
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorPipelineConfigEditor.cs.meta",
+      "sha256": "6879a66fa5159c6f4293bb3714ee795822076731d51b06f069c60da0b85e0068",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorPipelineLegacyAssetNotice.cs",
+      "sha256": "c202b62c75d4aaae776fdee54152f08dc2e967c0a149411cc1e3133678d27803",
+      "size": 4656
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorPipelineLegacyAssetNotice.cs.meta",
+      "sha256": "44ff1d3d4fee057f26ed6a0047233539ffaf170e9eeee2c533e0f240d8234722",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorPipelineServer.cs",
+      "sha256": "53edab49714d8a0299eb1c42885517b277624faea49c22f6933a88544a4fb27c",
+      "size": 18349
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorPipelineServer.cs.meta",
+      "sha256": "7b3abb3c6f979be65fff4332333731b6f384a8bb9a707635cd2d5201cf01f49e",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorPipelineSettingsProvider.cs",
+      "sha256": "16c6e30493d8f5bcba0ea3eca6265127660f2c4817498dfb12f8f1d7fa3820bc",
+      "size": 5929
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorPipelineSettingsProvider.cs.meta",
+      "sha256": "90c11a347a2192c02c31661835386bb6770e19392e6b60e18e7b6b47cd08563a",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorPipelineStartup.cs",
+      "sha256": "987288424fe755d765e787bc077085d25a7f24093537a24b738e1e425020f3fd",
+      "size": 16374
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorPipelineStartup.cs.meta",
+      "sha256": "0022e70eb15edd768bb08eb5ca821e8a3df3f54cf613139268f19e56b3c31ba9",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorProgressMirror.cs",
+      "sha256": "68d1bea0a868e54b1441f66116162de3a80ca3a00b8930b5aaf1fabfd3370b14",
+      "size": 2629
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/EditorProgressMirror.cs.meta",
+      "sha256": "4e57c43463d464fecf98ec9e312366de5cabc62d2ce4616b13c93d2c9b3f9b5b",
+      "size": 218
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Cinemachine2/CinemachineAdvancedCommands.cs",
+      "sha256": "8f4ceb24a1e721675e11bb2a001b0fc703e03b0faf2c07200905b0131eccfd99",
+      "size": 39972
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Cinemachine2/CinemachineAdvancedCommands.cs.meta",
+      "sha256": "b9d87d7567a973b99019913ad8314c92ef5a1bfcad6320b7c36b40c589483030",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Cinemachine2/CinemachineCommands.cs",
+      "sha256": "139c97c7804cc0e0d5bebdcbb37b6480e58d1fda6d3e4417642c42248467a666",
+      "size": 9200
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Cinemachine2/CinemachineCommands.cs.meta",
+      "sha256": "02b82187f831ffe9a629bc3a5e42b9ceeb654aef27eecd5b3943394137ba4ee8",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Cinemachine2/Unity.Pipeline.Cinemachine2.Editor.asmdef",
+      "sha256": "0fe4c8cba11e9d457bf9e848b7b12e67844cd9c97e9865a90a8dc790327c53e6",
+      "size": 437
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Cinemachine2/Unity.Pipeline.Cinemachine2.Editor.asmdef.meta",
+      "sha256": "efec9cb5f840f5090e121e213bc702b0ac6a83093c7f64d20615f7764f27f324",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Cinemachine2.meta",
+      "sha256": "db74c127c45971a03ef2792a7347cf2efbb38b408d4f7d377493bb2ac4ee2964",
+      "size": 169
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Cinemachine3/CinemachineAdvancedCommands.cs",
+      "sha256": "7187ecfa044075933f5741ced3b5c2e5f9651522a668aa2f7e25ed6565c2f847",
+      "size": 40264
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Cinemachine3/CinemachineAdvancedCommands.cs.meta",
+      "sha256": "09ae805af46bb56f27ad7f03be7ab64e6041430a34e55afa29cb8c7008f1f603",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Cinemachine3/CinemachineCommands.cs",
+      "sha256": "8cf829454e97171d5b784f42a6b111f50ed2454902922f944c6f14ce1e56ba82",
+      "size": 9143
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Cinemachine3/CinemachineCommands.cs.meta",
+      "sha256": "9ed6cca868d4039597ad59f975294747e398f44e226ebcd377eb382ad90cfef4",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Cinemachine3/Unity.Pipeline.Cinemachine3.Editor.asmdef",
+      "sha256": "495d8a9a14b6004bea72fdadd2c9c4837a00e408fe458c027d097ca847053638",
+      "size": 489
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Cinemachine3/Unity.Pipeline.Cinemachine3.Editor.asmdef.meta",
+      "sha256": "a5b70f93224a39d2dee2587157b2f35259190ce6b257407db7369b3329da8084",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Cinemachine3.meta",
+      "sha256": "e00a68d7f1bfb5ef01e846d1579fe4e5c600c3db780174141f5d08107de21cc5",
+      "size": 169
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/ExtensionFileWrites.cs",
+      "sha256": "02baba3285c252c23e10a379d34ec0e7822ceb487f7068a3a6a1fe602446ec32",
+      "size": 1873
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/ExtensionFileWrites.cs.meta",
+      "sha256": "b10fe89f51a96123887b9b3392881aa29423e6a8a0d9312c3318f4ada874c0a2",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/ExtensionObjects.cs",
+      "sha256": "e1b2d8b028d1d25c9e390408d57d7b21c95bf9bce67c9c14332b923e86f67601",
+      "size": 3463
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/ExtensionObjects.cs.meta",
+      "sha256": "0bfad9fe0cb25354135637ac738b9c823f850d68d0eb10b7bc798db99c5519a6",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/ExtensionProperties.cs",
+      "sha256": "e3ccdfb1c5d5f9ef529bf9918db056d402349cf98e65aac989d4c39ab71dd5b3",
+      "size": 2222
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/ExtensionProperties.cs.meta",
+      "sha256": "ae3e233413723100f44b8571dab513c26aa6884d6a75d6d4b8d02e371d31f1f0",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Input/InputSequenceCommands.cs",
+      "sha256": "8d186eb88b4227a82c865d643464a9ed1d70af2fcab51378c96c31ba85d48633",
+      "size": 8700
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Input/InputSequenceCommands.cs.meta",
+      "sha256": "7eda905db158935daf8400d657f38e6d82a94182a4b1eceb9b53ea15fa78d2c8",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Input/InputSystemCommands.cs",
+      "sha256": "a9005facd5b2c05c09d372e41f7f30a9e86ad4502d501ab2da474e229ff075d6",
+      "size": 12009
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Input/InputSystemCommands.cs.meta",
+      "sha256": "f7a5dedd2fc8597c65499e2185a3b126f0c8c33468b91daf3b3ca1bb8c129f5b",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Input/Unity.Pipeline.Input.Editor.asmdef",
+      "sha256": "5b2683a635229293f6c93c47d5606ad168cb4e8739261c8801d2bb0645fc4697",
+      "size": 208
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Input/Unity.Pipeline.Input.Editor.asmdef.meta",
+      "sha256": "18f83d907380881e026ae2f421589da33def90c1b6cf2275f859ed07405e7f1f",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Input.meta",
+      "sha256": "4a9dac452655aac8f0f860838a7f896c853b2873b5fc5b233edc232b92a3da58",
+      "size": 169
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/RenderCameraCommands.cs",
+      "sha256": "97e1627609ec76076c3d06f54e152299bd9e39a2b46e7c3808890c272017f127",
+      "size": 9108
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/RenderCameraCommands.cs.meta",
+      "sha256": "839f4981d808496b33a37a75878b561902423d2d858eb1725e7437cf237c5862",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/ShaderGlobalCommands.cs",
+      "sha256": "89d0d6c0937e7cc574847cefae0bfa81001875978757bc20506d18a95b84d589",
+      "size": 14723
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/ShaderGlobalCommands.cs.meta",
+      "sha256": "c80ff7f91ea3139fb74b00129b26e4e297ca18a6eacbea3a2cb8ec82a74eed5a",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/SsuMaterialCommands.cs",
+      "sha256": "fe764eaa8815cd03bf48e1688d24274566686c983ca4b5c4419a9879ad5654ce",
+      "size": 20680
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/SsuMaterialCommands.cs.meta",
+      "sha256": "f94f4c37285b441046824cb0e5075c34a151a2e856567cb1022bd23e37834fe8",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/SsuRendererCommands.cs",
+      "sha256": "22f56bbd0abacb6fa65a6a53cfc620e2263bd4e3f7d2708376da612244d1f240",
+      "size": 3348
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/SsuRendererCommands.cs.meta",
+      "sha256": "2c64be2b6a56b6afd2ceab60a2c4fee3ba1f11de468aacd2ba721d03a972f275",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Timeline/DirectorCommands.cs",
+      "sha256": "8e5f2d72e413d5d76558148e3166b2ddaaaa83daac67a027a692fa59827c5da4",
+      "size": 11293
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Timeline/DirectorCommands.cs.meta",
+      "sha256": "5698ad3066c638786883eb8f670cd33f1f1420fa562c87d975d4d4d6ee48b49f",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Timeline/Unity.Pipeline.Timeline.Editor.asmdef",
+      "sha256": "c7414f43c091070d80181bc6386f8da504eded11e069a9a69577ad4f0831d814",
+      "size": 353
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Timeline/Unity.Pipeline.Timeline.Editor.asmdef.meta",
+      "sha256": "479f52e5352cdf545708578b5a0688e56988b60431395da155ad79afdfed8a40",
+      "size": 166
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/Timeline.meta",
+      "sha256": "d949265640d1e33a2afc23b5e0f963ecc1bdf489e2aa96aa952de81e2a9efbc4",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/TMP/TmpCommands.cs",
+      "sha256": "1ecacbe2d69d09fcf506c9c8c742a442dc182319bcdbd8b448586022e9732bde",
+      "size": 4052
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/TMP/TmpCommands.cs.meta",
+      "sha256": "f6d9ce6bedd4308c69e00ad9a18751b1f82dd1dee40ed7adcd51e4beb03a0836",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/TMP/Unity.Pipeline.TMP.Editor.asmdef",
+      "sha256": "2ce5d3b40b46ec3dbe38574a59fc5d445550c61e44bd21d3e2065a90e196d194",
+      "size": 427
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/TMP/Unity.Pipeline.TMP.Editor.asmdef.meta",
+      "sha256": "c2ecd8deaf91db5b3917a0b7c9d23644e184bc5e05cc51944c03d6a3b17e5404",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/TMP.meta",
+      "sha256": "9c7d1c921a2b7d1651f3d2916ac8a14405adf0212cf777f22addfe7efaa30252",
+      "size": 169
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UGUI/SsuUiCommands.cs",
+      "sha256": "0f1cab3f4c2bae78fb000ca661dbb337e3c567a86cac8390e67ca08cb279b6b6",
+      "size": 9709
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UGUI/SsuUiCommands.cs.meta",
+      "sha256": "09e8f94e168adf8d8cfca18fbd976fffc819ae708007d9ffeeaaef08ddb97ccb",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UGUI/UiAuthoringCommands.cs",
+      "sha256": "2788f7772bf87b00a709d40c7ab39cebd9caf110ddd161e0c1ce84e25d330fa6",
+      "size": 5978
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UGUI/UiAuthoringCommands.cs.meta",
+      "sha256": "08f067245ceea6df5889d3cdd6502b3df706cc5f8db97c8c8a3a6b6e19faa865",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UGUI/UiBuilderCommands.cs",
+      "sha256": "bde47e3d2fc2cfd5e600b480d47c5c985b14701b27cddf84fb2c22481f3b2cc9",
+      "size": 12484
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UGUI/UiBuilderCommands.cs.meta",
+      "sha256": "df3374de0ec2f00f5b64b1a87bf6ee8db8b1139ba0b7456fcce800c14fd0e21c",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UGUI/UiComponentCommands.cs",
+      "sha256": "acd0eeadf5e4c987b460764c993f5e9ec93b82065294bc2b430e7c932f8c7635",
+      "size": 9762
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UGUI/UiComponentCommands.cs.meta",
+      "sha256": "08cde30ce8eda523e108f3c9bbef9c4de4c3dd43f8cc48194b18b256cb79754c",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UGUI/UiShapeCommands.cs",
+      "sha256": "f3d740cf53be421a52165b1deb7b58030204ae6a925250ad2875752b1af70e29",
+      "size": 10465
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UGUI/UiShapeCommands.cs.meta",
+      "sha256": "2fc288a3513f6f9564a51703cd119868d2deb5e6bf5e01f14741685649ba74c0",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UGUI/Unity.Pipeline.UGUI.Editor.asmdef",
+      "sha256": "158f71693733e5305c5626d69359ee7fd7e5fd15e8488557fe90e3dd69c376fb",
+      "size": 369
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UGUI/Unity.Pipeline.UGUI.Editor.asmdef.meta",
+      "sha256": "b6a35f950b10a2eb14ffc84f94f4fa1f568ad4e8411e724d51bab4eefc169bfa",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UGUI.meta",
+      "sha256": "edfdbb9fcabddf694eebf239f066275860853dd9e8ba97602c0aed9cc1d53ae5",
+      "size": 169
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UiOrderCommands.cs",
+      "sha256": "f48facad562448490402f378a2d432612bdcd1a2c3ccb2af36a85d8ae11d5eec",
+      "size": 3186
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UiOrderCommands.cs.meta",
+      "sha256": "9885a13f6cda14691bce753af369034fb4a1a91d53e01f07e59dbfa94ad84618",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UiStructureCommands.cs",
+      "sha256": "d27a1021d467ce6633b5e23a4a494376fc0385235e40e030637e68f0de4e18d5",
+      "size": 16016
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/UiStructureCommands.cs.meta",
+      "sha256": "946f4d5debbe19ca6e27fe2306fd2460ab3442285f961ec6ea7e6cf03dbada40",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/URP/Unity.Pipeline.URP.Editor.asmdef",
+      "sha256": "67d9050f6946755c7dba16f45b7288ed58781e33c53a957544ecc51979f0eb4d",
+      "size": 537
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/URP/Unity.Pipeline.URP.Editor.asmdef.meta",
+      "sha256": "a0998abe196f285f534fc72e8d1d743694034d222dfe413042a5ec8a7131b843",
+      "size": 166
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/URP/UrpCameraCommands.cs",
+      "sha256": "b2c2b1c11037af1ac5acbb21effa4570647ce8a5e1160d481c5ecfcadcf0b853",
+      "size": 16108
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/URP/UrpCameraCommands.cs.meta",
+      "sha256": "824653e45d52629693f5153096dbf6c96c4ca7217bb2d604638e07b64565fd86",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/URP/UrpFullScreenCommands.cs",
+      "sha256": "ee6e2ea9547635293b00d12720d369c8435a6768dbb5b85e0144e2e0260ba978",
+      "size": 11462
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/URP/UrpFullScreenCommands.cs.meta",
+      "sha256": "f519acd68e721be584b64547c8325960fc5bc338f809bc35c154353e6f542a53",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/URP/UrpVolumeCommands.cs",
+      "sha256": "bf9cb03167165ca9ea362fd09b295f21e2107a97830c50491f3c7d585f85389c",
+      "size": 13748
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/URP/UrpVolumeCommands.cs.meta",
+      "sha256": "477d396fa30935e646b57616fe81cd62bc9277cfc454193a26beda30b47ea064",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/URP.meta",
+      "sha256": "fec94ddd50162dd5caebd9394eef4fa5afa4e642874ef1051a2342f960a68a4a",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/VisualAuthoring.cs",
+      "sha256": "60a74aea452dc73636109a089c6f3af985523b1fb7c4953eb8a8bf801eb91706",
+      "size": 2228
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions/VisualAuthoring.cs.meta",
+      "sha256": "79c1ba4e60c07f2b35de8808d2b8057bbe4c0e37e974f398251ee6e94a7314ac",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Extensions.meta",
+      "sha256": "f7ef1aa44d7b212bee9e381014790a03d0237da4735cb73b48906ed9a22bebdf",
+      "size": 169
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/PipelineAnalytics.cs",
+      "sha256": "a040759f48de9ba78912fecaec9f759f12df1c72ed04ff083628bf9d61b37e2f",
+      "size": 15924
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/PipelineAnalytics.cs.meta",
+      "sha256": "f5eed4cfe267555da14842d72919b5f7c04c5a67ffcda91efa1b50b0336f287a",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/PipelineTransactionLog.cs",
+      "sha256": "a3248367e75795db797b54ceb313bdd07d39951d29a2219a6aa447e9733396c7",
+      "size": 6437
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/PipelineTransactionLog.cs.meta",
+      "sha256": "180ce0fcb4df11c241702362f01a0033d71d52312aeff267d8db2601f0667ef6",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/PushSigner.cs",
+      "sha256": "b5d24bc9cb6d9e3e864ae5ac6e28f5503b2ed842954f067397d3bd0c9c2ab0d4",
+      "size": 13016
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/PushSigner.cs.meta",
+      "sha256": "5044dfaca3abef93868b6d2990362c3487f57ca313bd5feced32bf7a0d05df77",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/PushSigningKey.cs",
+      "sha256": "a00b15549ac6630c6db99b162f0af210c3bf8ca0768495e5609c5b5d75117d9a",
+      "size": 3747
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/PushSigningKey.cs.meta",
+      "sha256": "93b8c42123bbf6852c3ef3f71ba5adda9813762f49e6b9b0db284d1410744631",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/RuntimePipelineConfigEditor.cs",
+      "sha256": "0d6ff0088708578a266148b0e770699c342d1b092c9678bebf8dd5ea256f5c53",
+      "size": 6909
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/RuntimePipelineConfigEditor.cs.meta",
+      "sha256": "cc7cd3f6ec1c20a287b6fe905552c81795ae36a24727fba0477b555940c5ed8b",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/RuntimePipelineSettingsProvider.cs",
+      "sha256": "93ea3b029ec6f7aa2dc695b09523764eb48b45c868eaa2c4ac1725cb0cc7bc26",
+      "size": 4529
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/RuntimePipelineSettingsProvider.cs.meta",
+      "sha256": "66ec06cc8ce6b127de6d4cffa7b60c543a494b42b5d20a4b24656084bc448bba",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Testing/PipelineTestRunner.cs",
+      "sha256": "6936c90167a02cb3a803ab1090368ecc8eb4d9f5a4ce62bb13adbef0e7f7e8d3",
+      "size": 35638
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Testing/PipelineTestRunner.cs.meta",
+      "sha256": "d16c71a3777a944d9506a1bff60f5eaef9f16ff1708bfffc9c599ee6702b0bc1",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Testing/TestResultCollector.cs",
+      "sha256": "2f564e9719c4d044ccda85569fbbb8421b08c665dbc641eae7021e246b276c4e",
+      "size": 7109
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Testing/TestResultCollector.cs.meta",
+      "sha256": "1fb83f1d2c063ee0a62e0472bfca894ac37bb70070f8988918482afd14c6fe93",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Testing.meta",
+      "sha256": "d9c0a5fc52394bcbbca86b6111a8ec350a107cc1782a6a63d87774bb0f4874db",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/TypeCacheCommandDiscovery.cs",
+      "sha256": "a334131af7c1492da61e4523e5f36863a4f0599654b5e96618ad67797816f019",
+      "size": 854
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/TypeCacheCommandDiscovery.cs.meta",
+      "sha256": "5157f6185c06f8e263d5e29794bef8021ac4c7ffb43d0ce5096722d6f609e14a",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Unity.Pipeline.Editor.asmdef",
+      "sha256": "c14bdf8048776d85ef198d9cda90514ccc1ebff0c9508a4a508fc852324dd66f",
+      "size": 581
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor/Unity.Pipeline.Editor.asmdef.meta",
+      "sha256": "6a148b62c0b59251871241f65f4e0d0c4eada33cad817c02af388e95b734eafb",
+      "size": 166
+    },
+    {
+      "path": "assets/com.unity.pipeline/Editor.meta",
+      "sha256": "da696551e81b1550411b14ec4dc2851f304c24c99fdc326f6cc9a8de8f360278",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/LICENSE.md",
+      "sha256": "35d72abfdaec2a1a80a565885ef9a92f10f78de3266ce769f9a76c17c9c45dbf",
+      "size": 517
+    },
+    {
+      "path": "assets/com.unity.pipeline/LICENSE.md.meta",
+      "sha256": "3d4f7930cab4832c7823d4148701bfa80ba265ade1739875a33b42ac8873507a",
+      "size": 158
+    },
+    {
+      "path": "assets/com.unity.pipeline/package.json",
+      "sha256": "0bbaadb14da5725dff95b310a02e7a680bf78198e5e5f79ccac8ffd08dde7621",
+      "size": 1570
+    },
+    {
+      "path": "assets/com.unity.pipeline/package.json.meta",
+      "sha256": "9552a2c99d7c3fd62e0747077e770fd1f86f1251f4d74d48102620168f67406c",
+      "size": 163
+    },
+    {
+      "path": "assets/com.unity.pipeline/README.md",
+      "sha256": "84fc78ded831ea60cc3f56ec220363ccd1d71544f1cd7da2560c42638892e445",
+      "size": 3648
+    },
+    {
+      "path": "assets/com.unity.pipeline/README.md.meta",
+      "sha256": "e476bd67fb5a5664656584b5957e0d8913a1f44d28800ee5166b9830f8eed783",
+      "size": 158
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Analyzers/IlInterpreterAnalyzer.dll",
+      "sha256": "54bb208a5a52d4a18ecaf7861d362bc9fcb99823eee0c6d106c720f4d085913e",
+      "size": 18944
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Analyzers/IlInterpreterAnalyzer.dll.meta",
+      "sha256": "4a86821287302f1c3b62c3c6f18da47d0bfb5741cb09f38d3a38fca919b45b30",
+      "size": 748
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Analyzers.meta",
+      "sha256": "430b8d2008ec53c357e23ce911467e7a0c2d2af510a67fdb27f0fbaa2bbbbac5",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/AssemblyInfo.cs",
+      "sha256": "8fbbbd151dc3cff2a343264f64245195b6d70a7ea837f204ad43489872a154c0",
+      "size": 585
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/AssemblyInfo.cs.meta",
+      "sha256": "e248ca5f852cc3deb20eeaadc7b4029b25952cfeca7872027b6e04d3826012bc",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Attributes/CliArgAttribute.cs",
+      "sha256": "e3cbeb6cccee6ed4bc104b3553c721a6b5ecbf28d3e36fdfb8a88d1814b3524a",
+      "size": 2061
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Attributes/CliArgAttribute.cs.meta",
+      "sha256": "cc8a9bae9135a85f2e0d08677b4b62ab4b5041e1151a943324bf6dc4fb5f47b2",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Attributes/CliCommandAttribute.cs",
+      "sha256": "38512960857c4db8e93ffa9d9f3ed7b4b4bc4ddfbb4832ca7d71c501903ad0ac",
+      "size": 2316
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Attributes/CliCommandAttribute.cs.meta",
+      "sha256": "777ca2d4e1182c021002409ee77a57e9dfaadae25c89f89f62d1d03bb27ef7ac",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Attributes/CodeReloadAttributes.cs",
+      "sha256": "1420be5d486cd46f32d2ebd2a4de8f71eb7cf9b5d37edd5f8a920e16a139d768",
+      "size": 3313
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Attributes/CodeReloadAttributes.cs.meta",
+      "sha256": "55f5e59cb6479eb30de78b94296559fa2d46d8da23c4cea3753427b5909db026",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Attributes/Unity.Pipeline.Attributes.asmdef",
+      "sha256": "20fa728d1b4f5b89e3f1516fb5496d40a1f7435622483483e19a7b6fbfa47579",
+      "size": 384
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Attributes/Unity.Pipeline.Attributes.asmdef.meta",
+      "sha256": "ccb473bb79d2fc718abfee581981090da08355d9afea3acf7c1ae6b4158bf316",
+      "size": 166
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Attributes.meta",
+      "sha256": "fae90c4800bdb868add716f7deaa99bebfc86383d25551dff3923f3e8af2c877",
+      "size": 171
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload/AccessibilityValidator.cs",
+      "sha256": "3eb41539f64f81f707b232a6dd07b7fc09e22f14e321517d9a728fd2c94f5764",
+      "size": 10204
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload/AccessibilityValidator.cs.meta",
+      "sha256": "a685f45c43ba4b5d7c336c0d71530cb453ab1e4c8cf771316831fa246858954b",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload/CodeReloadActivity.cs",
+      "sha256": "aafc3ea7dc4857c4c702057559c7e7eafb23132373483a7c11720d17ac492910",
+      "size": 2974
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload/CodeReloadActivity.cs.meta",
+      "sha256": "754046bcf61ec062b6e6e1c46ee21c5cdacab8e4900ec2f68e21c33d3a7f947f",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload/CodeReloadBaseline.cs",
+      "sha256": "09891afff2e4d3849d1e4f6550be69614f17655dbce952521dc222d6a808e7ef",
+      "size": 14081
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload/CodeReloadBaseline.cs.meta",
+      "sha256": "dc0510b02efe12b6fa140145e9c324a03a7d11433bfa8c58ebdb6e2f97538209",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload/CodeReloadRegistry.cs",
+      "sha256": "2440b455a9a8703d5b465c69765137e6415f5eddb08cab4e64b2cb7366603ba0",
+      "size": 33962
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload/CodeReloadRegistry.cs.meta",
+      "sha256": "13c6838e62e1bfb9aa05e1c236b18c8cecd0b6303c094ed5bf2fe1c61562889b",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload/InPlaceReloadProcessor.cs",
+      "sha256": "6fbc5b495a17fcf0c90703cb93eb8d0f9a5a386adc89222fe9bd9bb72a9fd9c4",
+      "size": 36455
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload/InPlaceReloadProcessor.cs.meta",
+      "sha256": "8302f47f3cc6de9d7f13c7f6008fe075fb1a30ce54839ad7cc2cd49ac32af780",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload/PipelineCodeReloadConnect.cs",
+      "sha256": "e2373e54b4629f4eadbf0d31af18639131895b8adc31e63a3b58c85383dedb13",
+      "size": 9199
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload/PipelineCodeReloadConnect.cs.meta",
+      "sha256": "db23bfca907d03912f135e93ae94a8c35f49ed0b7e8162f1c975933a550ab124",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload/PushEnvelope.cs",
+      "sha256": "109d7182da7c77da8b4e6af20d0edf13f563eb057c35aa56ff620473d54565c3",
+      "size": 15814
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload/PushEnvelope.cs.meta",
+      "sha256": "c70847040dd2ab08e863676a15e025b8a8356370936febc20cbf1c028c7aa2d3",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload/SourceCodeTransformer.cs",
+      "sha256": "bece62880b2a4605f329fb6536ffd957bc5507e5af61045c55c8adc72eb0cfda",
+      "size": 33670
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload/SourceCodeTransformer.cs.meta",
+      "sha256": "4910325673335de958501df05eba1dda5a3c4877f00a18b16739d1a74880708e",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/CodeReload.meta",
+      "sha256": "bf63e247627e02e1b225d2782ae22056161a6eecd083e3ce1c8fbb836626443e",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/CaptureRuntimeElementCommand.cs",
+      "sha256": "bfcb50b642ef49238f8e9ee543e9ac5f20b857e6b23401b37820fa1500cccbef",
+      "size": 6768
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/CaptureRuntimeElementCommand.cs.meta",
+      "sha256": "9d3b57536e44b2568d15a1035fe7e7449c9a86d9caaa242e0a744317cb3f504e",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/CodeEvalCommand.cs",
+      "sha256": "10a9e70ce5777550dbdd5218866f38132dad538228395e80f3d365a2ce308f67",
+      "size": 7477
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/CodeEvalCommand.cs.meta",
+      "sha256": "e90464213f148a436cb5f5b2621ef4f0df44ad71d95c97b62935c21c70a93457",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/CodeReloadCommands.cs",
+      "sha256": "c820b9e8996eed54126345b0f685d7a87d88645820aca5a808a999b527efeb26",
+      "size": 22082
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/CodeReloadCommands.cs.meta",
+      "sha256": "7102bd25cee5c2e0e06daf703a1ea34ab6f00ea29d53f932d4cc8e4529352111",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/ConsoleCommand.cs",
+      "sha256": "98f50d8e42c6deee871c21ed45e1ad5a0c299f9d8c427e95c57dd941d3f5a090",
+      "size": 6638
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/ConsoleCommand.cs.meta",
+      "sha256": "ab43585a03acd3600fab369d88577deb7bea4a937a884b5f38f49131dea0b8a2",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/EvalTelemetryCommand.cs",
+      "sha256": "c37e1a312e3914ec27517d9352c6f1d70a869d6a516670b0543f4bc393b3fe4d",
+      "size": 2532
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/EvalTelemetryCommand.cs.meta",
+      "sha256": "95ee4b2b66cfedbe440d4d09787198d785e22653e323f571340bd73639044d7d",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/RuntimeApplicationCommand.cs",
+      "sha256": "924d42725c27d9502677dce6e7492a093c968d615dcb99073d1953fe637ca27d",
+      "size": 3431
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/RuntimeApplicationCommand.cs.meta",
+      "sha256": "f1bb59c98d593a4cb08ebdf60c4999e362e52b06d60dc16a5b4cc6fa7657193e",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/RuntimeInputCommand.cs",
+      "sha256": "7dd2d31caffa2d9486d37ff92ca5e49086b73dd6041d8bf543034791c855c79a",
+      "size": 9414
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/RuntimeInputCommand.cs.meta",
+      "sha256": "81a382e5a2acf904b9dd392980e83ea21781f864861d20f95b2abc2a0d5700b3",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/RuntimeLogCommand.cs",
+      "sha256": "3b7d79e00dfd43b5b02757eeb16dfadb1f574a362e793e96b26cdb22846409a7",
+      "size": 1811
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/RuntimeLogCommand.cs.meta",
+      "sha256": "7772cf59d7eca68fb7299315950e78acd6119ebfff0376ce9c7177af31ffceea",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/RuntimeStatusCommand.cs",
+      "sha256": "c79b592e89923cfcfb4ce0e50c9414cc324b9d140378e177e32d204eae25bbde",
+      "size": 9930
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/RuntimeStatusCommand.cs.meta",
+      "sha256": "1a0407ed711bfa630b4176b6baccda5883c2c7a4346118acb9d32cc2f69595e8",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/VisualElementCaptureSupport.cs",
+      "sha256": "9ba54bf7f88c1fd873f7cab25c9bce87fafd88907e5e1f81d0790868d16a60c6",
+      "size": 17372
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands/VisualElementCaptureSupport.cs.meta",
+      "sha256": "84a5b6f742c6bb2644ab502d2f6e79e841653e6216338851c425e386e3192466",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Commands.meta",
+      "sha256": "c495ba658b2f1247a7c631895a1479fad67bc49704e7d7e16a75ee2c6321cc0f",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/BasePipelineServer.cs",
+      "sha256": "18dbf11eedefbd355cfdb2fb7dcd1342ecd6a404011ee4bf3f0d84ac0c3d3d1f",
+      "size": 143934
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/BasePipelineServer.cs.meta",
+      "sha256": "7af71b3db6852ed4e2e68b6e0a6390db180382b78108f3c51d3b27ca8b0ae048",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/CliProgress.cs",
+      "sha256": "4182e9504f26efcf16d3ed5a4d44f97f36db7043035673b26bb2fc07e0e9ab18",
+      "size": 10355
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/CliProgress.cs.meta",
+      "sha256": "7852e8f9cadbaa0702713a5302f1acde927a50bd4fec67fc62c0a626639a18b2",
+      "size": 218
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/CommandExecutionInfo.cs",
+      "sha256": "40b1aadb653122c5d124f62e24ca910ad7f2bb42e7eda98ff14d92208adaa346",
+      "size": 4514
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/CommandExecutionInfo.cs.meta",
+      "sha256": "f239996b44d63c860da23adb0b0e73d4a97cc06d2994d66ced81e27dc1ed898f",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/CommandInfo.cs",
+      "sha256": "ad6fe3824988ed6643c74c821ac72b210de5804fdd5fdffb973fcd0d764b4225",
+      "size": 6875
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/CommandInfo.cs.meta",
+      "sha256": "e2eea20218a95627f4248c8c98a53ee6a5680b6dd4c0e3b0823f5a804609b181",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/CommandLineBinder.cs",
+      "sha256": "ac48a2b2902725e6a66371d1bb52faa34a90ec5014b69d74ff8b9dd0d4105b41",
+      "size": 24832
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/CommandLineBinder.cs.meta",
+      "sha256": "7302a64c6921ff940a1036d49520601b4410f3fd3621ec84820de5de203b843c",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/CommandLineTokenizer.cs",
+      "sha256": "86d59f0f024bd6c3adec7ced31c745342ae02646de4e3575b9b7ade28c26d78e",
+      "size": 5181
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/CommandLineTokenizer.cs.meta",
+      "sha256": "4aedba4ad680cf01ed816ce1297bb865d3cfea3700dad171237e46560269d7f9",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/CommandRegistry.cs",
+      "sha256": "1cb3de3d566801fe9eecd5be4b2088bbdadeee12bacbea9649e59e569a60aa4a",
+      "size": 17337
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/CommandRegistry.cs.meta",
+      "sha256": "d89ecdfdd75e88c4535fa19dcaa361e92c5992ad85851d8637eea1fdfe74e052",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/DialogStateTracker.cs",
+      "sha256": "89e771a1655525fc8be1f66353e848ae032b01099e3b822cf2cecbffd4704ad1",
+      "size": 3951
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/DialogStateTracker.cs.meta",
+      "sha256": "a264eb8ec0de5986f0d85ed40543a704b431887d41a9880a50279679f82aa085",
+      "size": 217
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/Dispatcher.cs",
+      "sha256": "4f6bd0ebff3d12e47084e4fbcffc02a074bbcdde77aaa082e1d1a45d79f078ee",
+      "size": 11390
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/Dispatcher.cs.meta",
+      "sha256": "866d70a4906c8fb3ba8fa56d24f8731b4fbb708e7db19c5a5989801fea110513",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/ExecResponseSerializer.cs",
+      "sha256": "c624856be53574f0b8d6cbb7b090a445542811a7d29e36f0bc58175357bcdd42",
+      "size": 8048
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/ExecResponseSerializer.cs.meta",
+      "sha256": "cee269cba8d9d9ef41167bb9c8b17ded56dc80ebfb88a060530722cb1d655da6",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/FilePermissions.cs",
+      "sha256": "d0d886b30f6db74cf75fa5e041cf7b4dff046f5b70026c7015bdf6c2b93845c4",
+      "size": 4022
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/FilePermissions.cs.meta",
+      "sha256": "6244ed48a927be81ff14221cd11cbea6dcc405e2ebf7542b500f0304808e9dad",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/ICommandDiscovery.cs",
+      "sha256": "56a67e3457ea494b27113863e2ae4039e7e97d26eb3cfc33419a5027b6d62b06",
+      "size": 733
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/ICommandDiscovery.cs.meta",
+      "sha256": "27d1796d948309d96c66059d9bab3b08a87e89ce4454095e26d5e1978e81376f",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/IStructuredCommandInput.cs",
+      "sha256": "373e4609917046ab3044eb1995aa8babaffae05c87f5bcf9b7f773a4af0ac670",
+      "size": 1629
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/IStructuredCommandInput.cs.meta",
+      "sha256": "abe574c8fb6973d1d6cd3b04e5afe874769fdfeb8f89aeb3d7fe5dcce031d947",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/JsonSchemaGenerator.cs",
+      "sha256": "905709a655023a3efabd08a46491133d8fdc13e6dc3a3e0740f1fe5973298706",
+      "size": 12366
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/JsonSchemaGenerator.cs.meta",
+      "sha256": "b697cf106d0049f22b260835c139ed367cb734f44adeb2cc80d190d4f3e5e089",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/MaxLengthStream.cs",
+      "sha256": "43391242c1fbe17c99f625b190fbd0a202bfc0054ab68787b7c6e0519bb0f881",
+      "size": 3738
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/MaxLengthStream.cs.meta",
+      "sha256": "7095078873803da5fb9b14cab7ef854265e1e0ebd2691335c7fc15a0ababe3a6",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/ParameterInfo.cs",
+      "sha256": "88cfc4502e6094953e73adfe8185af157a144da67836ea43b410b6570d0ec374",
+      "size": 2334
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/ParameterInfo.cs.meta",
+      "sha256": "7ae6502dae38fdd120811b829e8290a1adea34fbcf4593ee1a2e0e0ee48ae609",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/PipelineJobs.cs",
+      "sha256": "5cc8d4f765ccd1afc74d6eca064c5a4a81b7f1eb7045283f532572999a1ecbc3",
+      "size": 10482
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/PipelineJobs.cs.meta",
+      "sha256": "49f51c04a1a6b4987a15e39afb0e31e1dd0117987121e465756ed3f232e1f7d0",
+      "size": 218
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/PipelineUtils.cs",
+      "sha256": "16c890cbf55c1b6eb8e76416da6a6dfcb3c9377a55ffd5ca758f19ed52bec109",
+      "size": 11100
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/PipelineUtils.cs.meta",
+      "sha256": "d408dad26af5f384ea4b60fd301b57c2947a775754c96ee4e73132e47b541c60",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/RotatingFileBackup.cs",
+      "sha256": "5e44d751213e4c6a8072f1633c8de5ff79ff4f621b113d1be70c9e396854a5e5",
+      "size": 1395
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/RotatingFileBackup.cs.meta",
+      "sha256": "dbf65330ae0dd1977e165d5a4be78fda823201cd4827182c50d18e698b19d8ef",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/StatusFileReader.cs",
+      "sha256": "a10f6890b0a9878ad153dc5b424f66c8a6c5cffb76dd13c2eaf1bb8b2750ebed",
+      "size": 4319
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common/StatusFileReader.cs.meta",
+      "sha256": "e84c326ba046e2ec7ca126a13999a6268e6171c2399e15dffbea2e1a09e970a1",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Common.meta",
+      "sha256": "d5841c4cccdb95d594f4ed39cb5add2b10c5b44bced410b65a910dcb3f92338f",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Compilation/CodeReloadCompiler.cs",
+      "sha256": "b235f1ca839e784ed0a208b8b2fe627ebc69f3961e83d34fb7f5ba624aa30fc4",
+      "size": 28550
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Compilation/CodeReloadCompiler.cs.meta",
+      "sha256": "e0fa0e4e48d13399d61eb7e77d2570c951ef70e56e6681a7bb88036b4b41340b",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Compilation/EvalCodeCompiler.cs",
+      "sha256": "d2e89710cb07e60fdc107ebeec4e0a26f063a2f68afab5bb8cfd775315bbced0",
+      "size": 14221
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Compilation/EvalCodeCompiler.cs.meta",
+      "sha256": "4fd133fd94528c60b91578174c3937dbd5693d740175778f766e54d2796c1d8d",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Compilation/IlInterpreterHostBindings.cs",
+      "sha256": "fca76addb09bc98b556562fe2fef6af316e1157d244c194c0080ca87cc8d731d",
+      "size": 9267
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Compilation/IlInterpreterHostBindings.cs.meta",
+      "sha256": "ccaeea2ab18fb8ca6a28a757b8f77e7b80a60a97b7266be978cc7f1d7abacdb6",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Compilation/InterpolationToFormatRewriter.cs",
+      "sha256": "87db01a3a33445b65ce3c2066a511073182b3fb7939e8f48cf2cb5b7bfaac065",
+      "size": 4701
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Compilation/InterpolationToFormatRewriter.cs.meta",
+      "sha256": "599461ccfd43d636839dcb90b3f3ed8c1a59a435384844a73366dfa549453340",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Compilation/InterpreterCodeReloadExecutor.cs",
+      "sha256": "622768296aa159ed9bde9daaba3f8e2eaf6ea9023270c638671d0097d26022dd",
+      "size": 21518
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Compilation/InterpreterCodeReloadExecutor.cs.meta",
+      "sha256": "dd3ab69923e0b9fc3fa4ea649b3ea6d31c4d9d6a990a592660163fb0e332e4ce",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Compilation/RoslynCompilationService.cs",
+      "sha256": "70ab22aaad473df12cfa3232b2b723dfbe37cfb3d3c1f03b957f51402a09e36d",
+      "size": 27285
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Compilation/RoslynCompilationService.cs.meta",
+      "sha256": "ef1d656c2f428f7d03cb8b0bfe64a98bf66c1e9596fa1218a2a64e248cce3f10",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Compilation.meta",
+      "sha256": "abbf5da47d8d6956015166af94a0569b44fe2054c8ca9c71e46b034989385dff",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Console/ConsoleLogBuffer.cs",
+      "sha256": "8d62147a3f1da16f2b2962b9e3ed6f92bdb79842ca85c8b8c0c6c85e711ced28",
+      "size": 17223
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Console/ConsoleLogBuffer.cs.meta",
+      "sha256": "4819581f84e6aada7065d4d7c97cd1b20fafb0c595daaa5015013d04048361f1",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Console/ConsoleLogCapture.cs",
+      "sha256": "da96d75a0a32781a8d73fb2f0703affd4fd747d5b16521f4d14f01719ab30dad",
+      "size": 4296
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Console/ConsoleLogCapture.cs.meta",
+      "sha256": "4b724b229b8dec3cdba6362c97bf8214a4a6a096e5507bce45c5877b807da10a",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Console.meta",
+      "sha256": "c203cf4245a299a4b93bad07903a02e275f862731f94fea4f3c16bff0c44404c",
+      "size": 169
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/AssemblyInfo.cs",
+      "sha256": "614eb5c442c87273fd9a0a27518ac9e2ff87412f5643eab73e068babed2b816f",
+      "size": 1113
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/AssemblyInfo.cs.meta",
+      "sha256": "9ddb7458c1e26b978aa84b549db3ddf342f94db31e1a1cf5850c9568e73094ef",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/HostBinding.cs",
+      "sha256": "051db16ad7e3ba3694411d7e446769f75bdcf8e609eeaab5f109d2b00e4a7dee",
+      "size": 194071
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/HostBinding.cs.meta",
+      "sha256": "78efa64eac67ea7fa2c381805512d60c039ca261f6c0ec593e23c9aa8057594d",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/IFrameAllocator.cs",
+      "sha256": "f348e599438632399e9c2fd3cc18f23bc1eace93cefd51504ea661697a0941df",
+      "size": 794
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/IFrameAllocator.cs.meta",
+      "sha256": "e46a69c0c38c7a60a75cb9e5f2b0196c159a517380342894358a3b2845383d85",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/IrDisassembler.cs",
+      "sha256": "118fa581affd96c98a6de5623b527d377e31afd1a4ea4250de1d43499c7f7775",
+      "size": 4606
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/IrDisassembler.cs.meta",
+      "sha256": "5bf7e5b81dc0b64ce4904373169f2e8f9beff9efc0c8226f222b594bc3d58f70",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/IScript.cs",
+      "sha256": "3185674cf87bd5aea832be5d778b97a422addebd6d2da2e0d81207ba7ee574f9",
+      "size": 659
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/IScript.cs.meta",
+      "sha256": "7f6d2937c57624c57206470b9e996b5720ab195ea68e6addb6d4035eea7a78bd",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/MarshalFrameAllocator.cs",
+      "sha256": "4f70ee5748e9a09a1f198c1ddd6831548c69d24dfdf2e9931c57ad92665702d4",
+      "size": 740
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/MarshalFrameAllocator.cs.meta",
+      "sha256": "0ae9dee5efd60650ebb4c812dc3ac6950d0aed11f7907e6bc7fcbce3283b873e",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/Op.cs",
+      "sha256": "509fe1159eb820991ccfcb79dd3a0d0b49df80ca47337a254cfd6caf4f987167",
+      "size": 19078
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/Op.cs.meta",
+      "sha256": "7997f6c8675b6945d24aa15cdd8f31ed7f3691e48a88a2facdfd9969b117f1ed",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/ScriptDelegateAdapter.cs",
+      "sha256": "17a47b6958f954fb7811f2c5f830833be9299bb9c8c97cad20b458a323382c5e",
+      "size": 6636
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/ScriptDelegateAdapter.cs.meta",
+      "sha256": "55a33b8bdff48643eb828dea10f9a641cba3c0b4a462ca97e1bfd050234865ce",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/ScriptEnumerator.cs",
+      "sha256": "c55054927652de7bef0141fa5723457c9d266d91c0854990b2824bb33732957b",
+      "size": 4599
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/ScriptEnumerator.cs.meta",
+      "sha256": "12a085c4edc69aef6a8aa922449f615c62cf9d18621ec09d7d98b17129b720db",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/ScriptException.cs",
+      "sha256": "2fe52fbea8733ebf2ef6e86b9568615a8b41f9c73f6fa5640285eec6319e108c",
+      "size": 2317
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/ScriptException.cs.meta",
+      "sha256": "0d14655e2b6aeb0fdddbae35b0569e7f62e9cd73b976e3f85afdbace4f8c4c4b",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/ScriptInterpreter.cs",
+      "sha256": "6d933588951382e940049c3a0f43ab990325d56ce4687213ad8b3c3f86ec8616",
+      "size": 586880
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/ScriptInterpreter.cs.meta",
+      "sha256": "cf002ec3820845c8c8d8aebf72e0f39f4fed99d2b51cc48781194ccda98c0e7e",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/ScriptObject.cs",
+      "sha256": "61b2e2d24a1e7f4711aa5d80a0144ece75ffbf0b8c68f1a92bcb4fa1d7f79a79",
+      "size": 9474
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/ScriptObject.cs.meta",
+      "sha256": "6c6cfa44a4423d90ef84dbef4837680bb8d231974220d08d4ff4fdbc6d2c6481",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/Unity.Pipeline.IlInterpreter.asmdef",
+      "sha256": "893f68f0db0eaf6e1f407e79b9536183bae181f36e8e75e7fe33bf6dd19c07c8",
+      "size": 435
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/Unity.Pipeline.IlInterpreter.asmdef.meta",
+      "sha256": "15c8bc983e5e4a20a693b526567a00314d3be792b01eed102215bf2e0fe7fca6",
+      "size": 166
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/Value.cs",
+      "sha256": "0acc6e16730aa6044b1e43563a49cd8cec4047b88033d74757ec30f4cb251120",
+      "size": 717
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/Value.cs.meta",
+      "sha256": "45d051187969c0152a039beada38221a64361cd733493c525255d9387bbd253b",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/Vm.cs",
+      "sha256": "197dee5eda8ad8ff17b06dffa3e448051784b68a315c6badd85c4675379a5d7a",
+      "size": 390
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/Vm.cs.meta",
+      "sha256": "fe6d11482753d6981637269f1d81b9a5f8fab36b3ec0a25796b387f4b5a22d35",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/VmEngine.cs",
+      "sha256": "3b3c412474bfbfd27ebc0be891d20b00a447ea68346335e56937a43e5e9ea68e",
+      "size": 161312
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter/VmEngine.cs.meta",
+      "sha256": "2488191640962738b2f2a0f1259445072cfc4b7bb0933ce581426adf512d8a83",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/IlInterpreter.meta",
+      "sha256": "3402e11e7e0861249e215855ef1bc15632259afb8550b370b06635de551ea7a1",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/ArgProblem.cs",
+      "sha256": "45111ef1ffd1314f3f18f251ba0d825b08f3fc979df4d88a7b922a8f51e3ed80",
+      "size": 4455
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/ArgProblem.cs.meta",
+      "sha256": "5e6add2bb1f1f6221879415ec8602adcdc5a8380db45e654be1b7eef7176c05e",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/AuthoringResult.cs",
+      "sha256": "5a4ea1a84aab0bc89940e69a75a577aa0dab208cd791842594320447f7be46f8",
+      "size": 1610
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/AuthoringResult.cs.meta",
+      "sha256": "01c37d5e564a72869992dc2386d5b99f01f72ad8308bc8e04bfb105751ef7c18",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/BaseResponse.cs",
+      "sha256": "0bb29a059fb99f8aa1445cf9cce4965cfc4fb179587660834fc03504852dec82",
+      "size": 2567
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/BaseResponse.cs.meta",
+      "sha256": "54c42c1263129f6d8deedc8b5f2b6e5d71511236e009866b0c33071701df97f3",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/CommandExecutionRequest.cs",
+      "sha256": "53f7e4eb64c3c3066b955f0c7b75f1748f84db0107e65cb5b63152ec18969986",
+      "size": 8548
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/CommandExecutionRequest.cs.meta",
+      "sha256": "1dedec8fa6bd53b8857cfcf74cf129cc21cc2fc6eadcd12d90ac138d2e97704e",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/CommandExecutionResponse.cs",
+      "sha256": "8dfc44b78bcef6f7bfd48f65733fd125f011431769c234c3c878f3ecb029d888",
+      "size": 9752
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/CommandExecutionResponse.cs.meta",
+      "sha256": "4ed3be020b4ad3542b9b8554f2ce1a94a107ea3d0076269b2734cec2fbf2eaf0",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/ConsoleGroundTruth.cs",
+      "sha256": "30a7e05f1fef2f50b3aa402fdc9e47e5d7824a76c54d0fa2b5495cfb7765c3cb",
+      "size": 2678
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/ConsoleGroundTruth.cs.meta",
+      "sha256": "dad431ca27e3e94a5da6ff609ce038c1fc60feef357065c5d1697d0be83d5bda",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/ConsoleLogEntry.cs",
+      "sha256": "f7dea856520930d9aebd634b672910135bd39e41673d6efe8c9e309eb528cdd0",
+      "size": 2388
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/ConsoleLogEntry.cs.meta",
+      "sha256": "7e0e5f3830fa99038b0a8b0a89d297de0dc67aafe890f001b958f5f4e10ae218",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/ConsoleLogResponse.cs",
+      "sha256": "318896c460130f45b0543dcac611d6259137138e501570b8bec12f12f61d311b",
+      "size": 4378
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/ConsoleLogResponse.cs.meta",
+      "sha256": "293d2dc526eb876523b9eda14e003b6f1991213ed8c3bc8ce7719cc10c8ec799",
+      "size": 60
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/EvalResponse.cs",
+      "sha256": "323b0dbd1e5dafb04eb8c18aa9bd060dbfd4b6beea9395c3aaa6664640c94de9",
+      "size": 4784
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/EvalResponse.cs.meta",
+      "sha256": "bdde284d29f91608adeac10d3756b93c9439af1528b8f2b3a3b015a2c8e20190",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/InstanceDescriptor.cs",
+      "sha256": "5d0ffd5b63ea290e21a2360088838e47d71d6bb1da15590dfa6d0e74927c0d85",
+      "size": 11079
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/InstanceDescriptor.cs.meta",
+      "sha256": "3629a9e0149142bb7c51bede4f09dcc04a684513f1959a8faf296201f7800e95",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/ObjectRef.cs",
+      "sha256": "6434e05dcd96b2142bc60e5ec290a21fbe5afaba3b2f5ed3d3d5c1d325c76594",
+      "size": 2463
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/ObjectRef.cs.meta",
+      "sha256": "001d14b4f0fa3b48fb646058d2edfdcc55d9f9c13ebdb22515dab659ff29eab7",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/ObjectRefConverter.cs",
+      "sha256": "e4eed75e9a765330d512639e05e78ce6f1bbfe11ee9e94d441a4580d1e857faf",
+      "size": 10187
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/ObjectRefConverter.cs.meta",
+      "sha256": "10feb7206e159555567a508343c4391793158829f56c49d933baaffee43e342b",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/RuntimeInstanceDescriptor.cs",
+      "sha256": "59765bd42d05aa39cbb8a59115c63fca2ccd528e0d853b350f0bfd46e8051757",
+      "size": 9426
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/RuntimeInstanceDescriptor.cs.meta",
+      "sha256": "a1f9642f4e00bd7e9f74134b29129cb89b4c607143729efcfdc3eb84f78b3e46",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/StatusResponse.cs",
+      "sha256": "719f5d6e11b8a8355000f6b21c5db410c03674e8b5e1eb8a0a253f83ad232df2",
+      "size": 1903
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/StatusResponse.cs.meta",
+      "sha256": "a7d8233298456751149bc78ca03a952b688b35e1d4fe188aa531e06415e8a5f6",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/TestExecutionResponse.cs",
+      "sha256": "9ca8b2682423cb3a7cabf6725992c242425ebd51c8de022566754caf89b40df2",
+      "size": 1354
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/TestExecutionResponse.cs.meta",
+      "sha256": "82d789708b1c129d5e8911fd3a6f4881c1872fdef0bffc379d66b46c45df33c4",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/TestResult.cs",
+      "sha256": "46248ef8a4cf0fa7b4977a44ed0bda2c98c539f0558065b832c2b5bfadc8af1d",
+      "size": 763
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/TestResult.cs.meta",
+      "sha256": "be0edb981de6258efa280155e3fabe38f424e8e1827eb5b4b561ca5aa8712e34",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/TestSummary.cs",
+      "sha256": "de25b89b3057124c90ca7d0ec46aa90383e878ecbae91377e61a97425cb16a1e",
+      "size": 942
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models/TestSummary.cs.meta",
+      "sha256": "c942f3c3e2b083d2ede323dfe6582ff14690a597caeae06be2d8ff79007757f9",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Models.meta",
+      "sha256": "2f9e92b906740627582b7d85b3396e5a0637d1e0397dac310a274e4dabc8a8e8",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/PlayerSupport/CodeReloadStatusOverlay.cs",
+      "sha256": "26a4ee1eaeb50cd8a520f4a5608fa53b085ca9841d1652bd4da480fea1676bff",
+      "size": 5219
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/PlayerSupport/CodeReloadStatusOverlay.cs.meta",
+      "sha256": "4ee06afa4950f3618933597204fddba9d06f1f1f3dc103a34fc2e97d2dae41cb",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/PlayerSupport/FrameStatsSampler.cs",
+      "sha256": "4fea7762b2f3846def1869a909aeacf87fd6c5e7d85b9404ef9c8f77406c7a60",
+      "size": 10052
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/PlayerSupport/FrameStatsSampler.cs.meta",
+      "sha256": "ef5af32abf5e77391f89f42988602db1ec2f281d8639cbed4659de85acaa0dd1",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/PlayerSupport/RuntimePipelineBootstrap.cs",
+      "sha256": "b7f3d87364ce63e2b0243df717d9af00c74bc50d862874b6fb5ddf30ddcf8568",
+      "size": 3167
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/PlayerSupport/RuntimePipelineBootstrap.cs.meta",
+      "sha256": "bc6a2bd399530da2e63531769960e72df719fb97144ed44a7606f0f3daeaf69b",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/PlayerSupport/RuntimePipelineBuildInfo.cs",
+      "sha256": "3eb786195d123ef7bda055fa07a2a89985f22cd1031e35f0aa8dbe955934f33a",
+      "size": 1834
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/PlayerSupport/RuntimePipelineBuildInfo.cs.meta",
+      "sha256": "099c5530b6083473b63bfe704473be7c6c3af03ff05a4f654d817a6d94cd89fd",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/PlayerSupport/RuntimePipelineConfig.cs",
+      "sha256": "30665443117ed2d29190754a78c64e040aec19d84accde3bf2b682a82676be72",
+      "size": 20145
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/PlayerSupport/RuntimePipelineConfig.cs.meta",
+      "sha256": "4185fe69f5c4f60e78a635054b529d0b566e73f411d2c6a781123375be462c1e",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/PlayerSupport/RuntimePipelineDriver.cs",
+      "sha256": "2b303ac8c3c481c4f2aa4f79260659b6a6c7a5c3a93e3718ff91aa0a46de8378",
+      "size": 36914
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/PlayerSupport/RuntimePipelineDriver.cs.meta",
+      "sha256": "0f408fafc43516c4e692037fea3b1044adc85be619fb3b7eac259c3508362941",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/PlayerSupport/RuntimePipelineServer.cs",
+      "sha256": "f06b7fa8782f41ffae7039997cb8ad0a56fb91bb47a170936c7820977bc44e74",
+      "size": 3990
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/PlayerSupport/RuntimePipelineServer.cs.meta",
+      "sha256": "35c17531b11cc0c1d96d5d8451db485ef7981beb11ffb8c7eeaf26e4b8211b93",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/PlayerSupport.meta",
+      "sha256": "bea89df5d6329d300475ac4c72902451b64d15854d4820e59b4d9da011a85e34",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Plugins/CodeAnalysis/CHECKSUMS",
+      "sha256": "ad6b074e96831ebe5965d4f815a0b4d7db70164a37bf73ee313a6c34b2a528e6",
+      "size": 1528
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Plugins/CodeAnalysis/CHECKSUMS.meta",
+      "sha256": "1f9c4140f25c8d7d8aa6df6e55ff2a0cca5783d9b463fc4141201b35a7c14057",
+      "size": 155
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Plugins/CodeAnalysis/UnityPipeline.Microsoft.CodeAnalysis.CSharp.dll",
+      "sha256": "6ca7115fb0256a4d415a73fe7e264d23c89d6d4019ac463fe519bc9097fbdf9b",
+      "size": 5758464
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Plugins/CodeAnalysis/UnityPipeline.Microsoft.CodeAnalysis.CSharp.dll.meta",
+      "sha256": "c18877975786c248e2bb9ce44adb4ad439eb5c14c438aa87e01074a3078353ab",
+      "size": 960
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Plugins/CodeAnalysis/UnityPipeline.Microsoft.CodeAnalysis.dll",
+      "sha256": "83836addf8d51df5d6d8cff3c43c1663655bdd85eb539b44a56dcd96ff2297a0",
+      "size": 2589696
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Plugins/CodeAnalysis/UnityPipeline.Microsoft.CodeAnalysis.dll.meta",
+      "sha256": "8ea9a8d529e12199df198b179742c7e2b4625fbf04d2c119d1eb6d809fab45c7",
+      "size": 960
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Plugins/CodeAnalysis/UnityPipeline.System.Collections.Immutable.dll",
+      "sha256": "fb05543596e537d7a4383c7330b181cf31151e985578c57a8b5eef00c6c8a460",
+      "size": 243712
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Plugins/CodeAnalysis/UnityPipeline.System.Collections.Immutable.dll.meta",
+      "sha256": "6f333e08453682b9fa3f605a4dead4f1a3fb08eb465b4eeee0a071b4a69b4389",
+      "size": 960
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Plugins/CodeAnalysis/UnityPipeline.System.Reflection.Metadata.dll",
+      "sha256": "3de473fbc3e3e01eef020cb82cb6a3eb288959e24e65175182a818c9d09dbe01",
+      "size": 517120
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Plugins/CodeAnalysis/UnityPipeline.System.Reflection.Metadata.dll.meta",
+      "sha256": "1d1c66b9bb2e8a94017781468293f71e3cd8c55610f17387189cc19299c62943",
+      "size": 960
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Plugins/CodeAnalysis/UnityPipeline.System.Runtime.CompilerServices.Unsafe.dll",
+      "sha256": "6f2becafbd15867d52bfad08f77a23d26c818e55473d6347aef41130572f14f7",
+      "size": 6656
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Plugins/CodeAnalysis/UnityPipeline.System.Runtime.CompilerServices.Unsafe.dll.meta",
+      "sha256": "f97d3a7a668a05f14970f57012578e8c150efb0751b51a31e7ba0a8d7d44f8a0",
+      "size": 960
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Plugins/CodeAnalysis.meta",
+      "sha256": "2cdd9f6eecd0fbad29aefd9f164e80da58e36cee6e607e1df878058cc839a7ac",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Plugins.meta",
+      "sha256": "76b50b5478cdd8cfff3a09fb05bd415451d430434a8935f72cde3a05d2c586ae",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/SecurityTokenManager.cs",
+      "sha256": "6f8700ffaf7ce06bdbf2a0f6b82d677b1c3dbf03056ab9f04354123cd0b32b89",
+      "size": 6371
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/SecurityTokenManager.cs.meta",
+      "sha256": "dea58f8841d519851cbb5b1e313cfc4a84315e212adab83f672c39f24408ae85",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Telemetry/EvalUsageFingerprinter.cs",
+      "sha256": "712f5186c8096fe4f341293b1b59b4a7844cc5401a642233d39b9ed4f97433f3",
+      "size": 22626
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Telemetry/EvalUsageFingerprinter.cs.meta",
+      "sha256": "066b1ed1d51d0bfe0b7dcb36b63e71fae14940492d8eee7642ab9c22827e4c43",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Telemetry/EvalUsageReport.cs",
+      "sha256": "444c1f5b58414119e7906488f370a345dabc08b43a5875ff39ee22e64bd52a1e",
+      "size": 11707
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Telemetry/EvalUsageReport.cs.meta",
+      "sha256": "80c711a20aa4ff05695767302dedcbc0d7f57b7799c72fd812d79ed931ced47f",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Telemetry/EvalUsageTelemetry.cs",
+      "sha256": "70feb6b3651664c2ef6ecf749e0a303f9e61accf4d7ae071fa6c25351d270d49",
+      "size": 23856
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Telemetry/EvalUsageTelemetry.cs.meta",
+      "sha256": "283752511a78d94a80ef4634ef29a6ac5cb980b62d3da4a188c631fb49c127e6",
+      "size": 59
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Telemetry.meta",
+      "sha256": "46ed885322d25eea3705f65b245493689b83ca219b5354a6636915965184ff0b",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Unity.Pipeline.asmdef",
+      "sha256": "ac00be61d5333b60ff61859e95e70e62f6708d7970bcabbd963ccdf540ae1c31",
+      "size": 1195
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/Unity.Pipeline.asmdef.meta",
+      "sha256": "47905eb23225fe961b8de27766517efa96688aca40d72e1ef047987461394d78",
+      "size": 166
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/VisualCore/GlobalShaderDriver.cs",
+      "sha256": "ef0e3b86c90d979e7c86cd341fde5abc9aa3fa952c2ef402543bae0e8c83cd00",
+      "size": 1414
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/VisualCore/GlobalShaderDriver.cs.meta",
+      "sha256": "0e082a4551e862c7735599e31d6da7c0640f6295e9a7bb7c2048197f660810a2",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/VisualCore/GlobalShaderProfile.cs",
+      "sha256": "80bcda8626437d0bd6300d849f796ec765faae6fb368670718ded058652881bf",
+      "size": 6610
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/VisualCore/GlobalShaderProfile.cs.meta",
+      "sha256": "eef89b3e473bfdac4e0f03407920cd225a63dd9e46441c7f7cf8a16a846957d2",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/VisualCore/Unity.Pipeline.VisualCore.asmdef",
+      "sha256": "852909c35f0962152e1f908d3fcdb40969c2c10b52efb7e9056c3e9bd51e1361",
+      "size": 75
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/VisualCore/Unity.Pipeline.VisualCore.asmdef.meta",
+      "sha256": "063907e06df0f34a8e54468e2dd8ed6ea12b092bfa044f4f67aa97d18380698b",
+      "size": 166
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/VisualCore.meta",
+      "sha256": "4a93db003a968886cd8e4f4b9f404e1f2f71d3f43a7a54660d602cc984734ea6",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/VisualUI/PipelineShapeGraphic.cs",
+      "sha256": "026e49022bb2999790091eb0afecdf976457fe0f68757f53be28b2279507295e",
+      "size": 8250
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/VisualUI/PipelineShapeGraphic.cs.meta",
+      "sha256": "02409fd5c9c4acb1d6c3c8ebc668dfe319217ba269da5b981d17dab2f8e15fda",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/VisualUI/SsuGraphicBridge.cs",
+      "sha256": "bdf4c138cae44299d27d9f37968e605110175e617fb43614db1802cca4e9ff8e",
+      "size": 11670
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/VisualUI/SsuGraphicBridge.cs.meta",
+      "sha256": "18d30682370ca9c90ca6a78e3a84d3222019493f59ebaaad28f11a238ba541e1",
+      "size": 243
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/VisualUI/Unity.Pipeline.VisualUI.asmdef",
+      "sha256": "6815de03dd247e7e0539a4f20f331cc684575630a2f577f7a5701ae602fc4533",
+      "size": 233
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/VisualUI/Unity.Pipeline.VisualUI.asmdef.meta",
+      "sha256": "aa13ba82134d47cac4fb51ee8d08cffea1e6d65331c97fc5ef795f5a8cb65969",
+      "size": 166
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime/VisualUI.meta",
+      "sha256": "92c756ad946cdb8748933b735264659a7843881c28b448199bb2bfd89a293916",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Runtime.meta",
+      "sha256": "9a06b4ad26f88ba912a976d234f57ca0e791b9ed60c1f126a8e9a19e8c374eb2",
+      "size": 172
+    },
+    {
+      "path": "assets/com.unity.pipeline/Third Party Notices.md",
+      "sha256": "edb1f62b93337299b1c1f94282026d36b7da976f3201588bd772e6b0e7f2b3dd",
+      "size": 6892
+    },
+    {
+      "path": "assets/com.unity.pipeline/Third Party Notices.md.meta",
+      "sha256": "feafdca468192538154855f178bf0e2f5525dd4eff7799d643f457a55040773f",
+      "size": 158
+    },
+    {
+      "path": "assets/recipes/cinemachine-camera.json",
+      "sha256": "43a4edb027af5286f00256fbd658c42829662638d0f3353611cb095cbcbabf03",
+      "size": 5190
+    },
+    {
+      "path": "assets/recipes/ui-panel.json",
+      "sha256": "90201881b7ecec5b13f7b9c4cc9584e967d91c70aa28d0403b96a1074f86bbe2",
+      "size": 5046
+    },
+    {
+      "path": "references/ai-workflow.md",
+      "sha256": "e95f4580812552ed2bdbbd2872374b2f7c971dff6daa683ec2220467311d9be6",
+      "size": 5190
+    },
+    {
+      "path": "references/cinemachine.md",
+      "sha256": "eb021d8e10cddadada3c0415338bf027ad960fe855021c46a61364028f0ddc60",
+      "size": 6556
+    },
+    {
+      "path": "references/cli-extensions.md",
+      "sha256": "8c75b52f2fc1996f1395b2f4dfe2348eae75d769d6c1f5ad4e3025927a958b9a",
+      "size": 8806
+    },
+    {
+      "path": "references/command-index.json",
+      "sha256": "d85e2e56292b807d3c39d1bdbe5d8b753751b2b294702be0978a3d9c72188472",
+      "size": 241594
+    },
+    {
+      "path": "references/command-index.md",
+      "sha256": "0f8ef8bbfa5a1103f87c4bc517a5a2686516115160590a0fd7999fad4ea761f4",
+      "size": 73133
+    },
+    {
+      "path": "references/compatibility.json",
+      "sha256": "cfc2a8fa0466f1f63df65d7189ec6ff9351adf4f8f4d68cf68bdef267c757803",
+      "size": 7108
+    },
+    {
+      "path": "references/implementation.md",
+      "sha256": "ce1c2f9542c71361cb519417ba5e60f7da999f9704c32b2e20a621ceb80d7fb5",
+      "size": 4235
+    },
+    {
+      "path": "references/provenance.json",
+      "sha256": "b9db3dacc8a8840b5011ce585e3a5415d3568849c994b81af5db95539f9cae19",
+      "size": 25020
+    },
+    {
+      "path": "references/ssu.md",
+      "sha256": "e4e6842eb2d0b8e3ae10ea992846641961da8f71bc7971e3d1b95f9c2523eaef",
+      "size": 7878
+    },
+    {
+      "path": "references/ui-authoring.md",
+      "sha256": "c022e1fcfc1d85c7ad215e335a261bc66c5ed768f4f1de36f48d396226ac0c36",
+      "size": 5476
+    },
+    {
+      "path": "references/ui-inspection.md",
+      "sha256": "6c49134f6b15f1fae91d0e9947bc7d218f147317c1650c2041d42ffc97b4728b",
+      "size": 4190
+    },
+    {
+      "path": "references/verification-0.8.0.json",
+      "sha256": "ca6553b42662f681d350f66de33abb451e2ae2b42a82d23c62c78ca200cbffb0",
+      "size": 26039
+    },
+    {
+      "path": "references/visual-authoring.md",
+      "sha256": "2fe02082e056911f144842eb5096fb31d4282d4d001dbbda021a91c72e8e62c7",
+      "size": 10844
+    },
+    {
+      "path": "references/workflow-profiles.json",
+      "sha256": "cc5ee5a99379ccbe0fafc87ede08ea7b07476769038349e64d6e8f2d8a429d62",
+      "size": 1916
+    },
+    {
+      "path": "runtime/windows-x64/unity.exe",
+      "sha256": "9a63636402d8a087e9b67621f31b15fbe0f48eba130a91bdefb88b68aa717b20",
+      "size": 28111784
+    },
+    {
+      "path": "scripts/analyze_ai_workflow.py",
+      "sha256": "6224ec849bab19a2ce94888bedc3d5395904412126a355547e988f1ca7ef5518",
+      "size": 26189
+    },
+    {
+      "path": "scripts/Install-Pipeline.ps1",
+      "sha256": "9f942ffbb430005923f761fd23d10e3ebe557b890216a4ab79ccf2d4c319d6c8",
+      "size": 777
+    },
+    {
+      "path": "scripts/Install-SSU.ps1",
+      "sha256": "b39ff3d9e3943cae54d8bb2818e26e2e1009aa71b2e0fb73e1d196b7813ff58d",
+      "size": 9077
+    },
+    {
+      "path": "scripts/Invoke-Unity.ps1",
+      "sha256": "a61424631310dd7af2a962d248bf40c7197b6aa2bd9170829a47e217a9ceadff",
+      "size": 3676
+    },
+    {
+      "path": "scripts/Invoke-UnityRecipe.ps1",
+      "sha256": "6b6bc4b5103a4a9313cbd88b274ff9465591b5bbebe22d44212d8a24d47f8e94",
+      "size": 22602
+    },
+    {
+      "path": "scripts/PackageBootstrap.cs.txt",
+      "sha256": "965a75b95beff52c527bef7623906d555b86509aa1d4ed2ee7979757201b9fc4",
+      "size": 7064
+    },
+    {
+      "path": "scripts/PipelineInstallation.ps1",
+      "sha256": "60b7ead7f1790828cf4d00ca5228782a0867bc392412f6a47906863a5faaf40c",
+      "size": 12573
+    },
+    {
+      "path": "scripts/Repair-SSUUrp2D.ps1",
+      "sha256": "3c495a9577a3c004aa990c34419d57d78e449843025e6148e3c2997f4039afa8",
+      "size": 5385
+    },
+    {
+      "path": "scripts/Start-UnityTask.ps1",
+      "sha256": "de5d364c88b484a075792e7069f588485047d2c2d007905abc1e8b59d79ad922",
+      "size": 7000
+    },
+    {
+      "path": "scripts/UnityContext.ps1",
+      "sha256": "55ed6c042913ce5ed98f8c1e4fec6c15d7b3ec655b669063aed313036355e240",
+      "size": 11416
+    },
+    {
+      "path": "scripts/UnityInvocation.ps1",
+      "sha256": "a8fe5df525241de6eb1c89aa9b8d388fb901d8d0fc538d56e414ff858f13b6fc",
+      "size": 13819
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "6aa5b6700767b67b02b06b52d08c2b90f50c45eaf11ae92a5d43c708ba17d4d6",
+      "size": 7413
+    }
+  ]
+}

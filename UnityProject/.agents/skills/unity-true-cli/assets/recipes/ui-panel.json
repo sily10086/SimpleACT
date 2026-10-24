@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "inputs": {
+    "root": "AI_UIPanelRecipe",
+    "text": "系统就绪"
+  },
+  "preflight": [
+    {
+      "id": "uiRootAbsent",
+      "command": "find_gameobjects",
+      "parameters": {
+        "hierarchy_path": "/{{root}}"
+      },
+      "assert": [
+        {
+          "path": "count",
+          "op": "equals",
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "buildPanel",
+      "command": "batch",
+      "parameters": {
+        "operations": [
+          {
+            "id": "canvas",
+            "command": "create_ui_canvas",
+            "params": {
+              "name": "{{root}}",
+              "mode": "overlay"
+            }
+          },
+          {
+            "id": "shape",
+            "command": "create_ui_shape",
+            "params": {
+              "name": "Panel",
+              "parent": {
+                "instanceId": "$canvas.handle.instanceId"
+              },
+              "settings": {
+                "shape": "chamfer",
+                "cuts": [
+                  20,
+                  8,
+                  20,
+                  8
+                ],
+                "tint": [
+                  0.04,
+                  0.1,
+                  0.18,
+                  0.95
+                ],
+                "gradient_end": [
+                  0.02,
+                  0.04,
+                  0.08,
+                  0.95
+                ],
+                "border_width": 2,
+                "border_tint": [
+                  0.1,
+                  0.8,
+                  1,
+                  1
+                ],
+                "raycast_target": false
+              },
+              "rect": {
+                "size_delta": [
+                  520,
+                  160
+                ],
+                "anchored_position": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          {
+            "id": "label",
+            "command": "create_ui_element",
+            "params": {
+              "name": "Title",
+              "parent": {
+                "instanceId": "$shape.root.instanceId"
+              },
+              "kind": "empty",
+              "rect": {
+                "size_delta": [
+                  440,
+                  88
+                ],
+                "anchored_position": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          {
+            "id": "text",
+            "command": "add_component",
+            "params": {
+              "target": {
+                "instanceId": "$label.root.instanceId"
+              },
+              "type": "TMPro.TextMeshProUGUI"
+            }
+          },
+          {
+            "id": "font",
+            "command": "set_component_properties",
+            "params": {
+              "target": {
+                "instanceId": "$text.instanceId"
+              },
+              "properties": {
+                "m_fontAsset": "{{font}}",
+                "m_RaycastTarget": false
+              }
+            }
+          },
+          {
+            "id": "content",
+            "command": "set_tmp_text",
+            "params": {
+              "target": {
+                "instanceId": "$text.instanceId"
+              },
+              "text": "{{text}}",
+              "font_size": 32,
+              "auto_size": false
+            }
+          }
+        ],
+        "transactional": true,
+        "on_error": "abort"
+      }
+    }
+  ],
+  "verify": [
+    {
+      "id": "panelExists",
+      "command": "find_gameobjects",
+      "parameters": {
+        "hierarchy_path": "/{{root}}/Panel"
+      },
+      "assert": [
+        {
+          "path": "count",
+          "op": "equals",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "panelShape",
+      "command": "inspect_ui_shape",
+      "parameters": {
+        "target": {
+          "hierarchyPath": "/{{root}}/Panel"
+        }
+      },
+      "assert": [
+        {
+          "path": "valid",
+          "op": "equals",
+          "value": true
+        },
+        {
+          "path": "shape",
+          "op": "equals",
+          "value": "Chamfer"
+        },
+        {
+          "path": "cuts",
+          "op": "equals",
+          "value": [
+            20,
+            8,
+            20,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "panelText",
+      "command": "inspect_tmp_text",
+      "parameters": {
+        "target": {
+          "hierarchyPath": "/{{root}}/Panel/Title"
+        }
+      },
+      "assert": [
+        {
+          "path": "text",
+          "op": "equals",
+          "value": "{{text}}"
+        },
+        {
+          "path": "font.assetPath",
+          "op": "equals",
+          "value": "{{fontPath}}"
+        }
+      ]
+    }
+  ]
+}
