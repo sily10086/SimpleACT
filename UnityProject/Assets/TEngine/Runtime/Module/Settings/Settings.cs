@@ -33,9 +33,24 @@ namespace TEngine
         [SerializeField]
         private UpdateSetting updateSetting;
 
+        [SerializeField]
+        private GameObjectPoolSetting gameObjectPoolSetting;
+
         public static AudioSetting AudioSetting => Instance.audioSetting;
 
         public static ProcedureSetting ProcedureSetting => Instance.procedureSetting;
+
+        /// <summary>
+        /// 获取游戏对象池配置资产。
+        /// </summary>
+        public static GameObjectPoolSetting GameObjectPoolSetting
+        {
+            get
+            {
+                Settings settings = Instance;
+                return settings != null ? settings.gameObjectPoolSetting : null;
+            }
+        }
 
         public static UpdateSetting UpdateSetting
         {

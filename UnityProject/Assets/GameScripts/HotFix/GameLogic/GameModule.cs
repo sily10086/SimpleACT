@@ -84,6 +84,14 @@ public class GameModule
     public static ILocalizationModule Localization => _localization ??= Get<ILocalizationModule>();
     
     private static ILocalizationModule _localization;
+
+    // /// <summary>
+    // /// 获取游戏对象池模块。
+    // /// </summary>
+    // public static IGameObjectPoolModule GameObjectPool => _gameObjectPool ??= Get<IGameObjectPoolModule>();
+    //
+    // private static IGameObjectPoolModule _gameObjectPool;
+    
     #endregion
     
     /// <summary>
@@ -114,5 +122,6 @@ public class GameModule
         _scene = null;
         _timer = null;
         _localization = null;
+        // _gameObjectPool = null;
     }
 }

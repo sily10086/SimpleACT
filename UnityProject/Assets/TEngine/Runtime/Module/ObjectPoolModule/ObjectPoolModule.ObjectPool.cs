@@ -233,6 +233,22 @@ namespace TEngine
 
                 return null;
             }
+            /// <summary>
+            /// 尝试获取默认名称的对象。
+            /// </summary>
+            public bool TrySpawn(out T obj)
+            {
+                return TrySpawn(string.Empty, out obj);
+            }
+
+            /// <summary>
+            /// 尝试获取指定名称的对象，复用 Spawn 的计数与参数检查。
+            /// </summary>
+            public bool TrySpawn(string name, out T obj)
+            {
+                obj = Spawn(name);
+                return obj != null;
+            }
 
             /// <summary>
             /// 回收对象。

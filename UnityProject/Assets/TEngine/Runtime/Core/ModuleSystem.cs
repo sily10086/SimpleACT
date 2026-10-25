@@ -100,6 +100,45 @@ namespace TEngine
         }
 
         /// <summary>
+        /// 尝试获取已经存在的游戏框架模块。
+        /// </summary>
+        /// <typeparam name="T">要获取的游戏框架模块接口类型。</typeparam>
+        /// <param name="module">已存在的游戏框架模块，不存在时为 null。</param>
+        /// <returns>模块已存在时返回 true。</returns>
+        /// <remarks>
+        /// 与 <see cref="GetModule{T}"/> 不同，本方法不会创建模块、不会注册模块，也不会执行 OnInit。
+        /// 供只读查看与退出清理等场景使用，避免“查看”操作改变运行状态。
+        /// </remarks>
+        public static bool TryGetModule<T>(out T module) where T : class
+        {
+            module = null;
+
+            Type interfaceType = typeof(T);
+            if (!interfaceType.IsInterface)
+            {
+                return false;
+            }
+
+            if (_moduleMaps.TryGetValue(interfaceType, out Module cached))
+            {
+                module = cached as T;
+                return module != null;
+            }
+
+            // 接口键未命中时，按命名约定解析实现类型键，与 GetModule 的查找规则保持一致
+            string moduleName = Utility.Text.Format("{0}.{1}, {2}", interfaceType.Namespace,
+                interfaceType.Name.Substring(1), interfaceType.Assembly.GetName().Name);
+            Type moduleType = Type.GetType(moduleName);
+            if (moduleType == null || !_moduleMaps.TryGetValue(moduleType, out Module implementation))
+            {
+                return false;
+            }
+
+            module = implementation as T;
+            return module != null;
+        }
+
+        /// <summary>
         /// 创建游戏框架模块。
         /// </summary>
         /// <param name="moduleType">要创建的游戏框架模块类型。</param>

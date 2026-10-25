@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Reflection;
+using Cysharp.Threading.Tasks;
 using GameLogic;
 #if ENABLE_OBFUZ
 using Obfuz;
@@ -30,17 +31,22 @@ public partial class GameApp
         Log.Warning("======= Entrance GameApp =======");
         Utility.Unity.AddDestroyListener(Release);
         Log.Warning("======= StartGameLogic =======");
-        StartGameLogic();
+        StartGameLogicAsync().Forget();
     }
     
-    private static void StartGameLogic()
+    /// <summary>
+    /// 完成模块初始化与预热后，再进入依赖对象池的玩法启动步骤。
+    /// </summary>
+    private static async UniTask StartGameLogicAsync()
     {
-        
+
     }
+    
     
     private static void Release()
     {
         SingletonSystem.Release();
+        GameModule.Shutdown();
         Log.Warning("======= Release GameApp =======");
     }
 }

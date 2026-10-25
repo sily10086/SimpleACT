@@ -1,0 +1,571 @@
+// ============================================================================
+// 待启用：GameObjectPoolMonitor（运行时可视化组件）的 Inspector
+// ----------------------------------------------------------------------------
+// 为什么不放进 Assets/TEngine/Editor/GameObjectPool/：
+//   本文件引用 5 个当前工程尚不存在的 Runtime 类型——
+//     GameObjectPoolMonitor、GameObjectPoolInfo、GameObjectPoolInstanceInfo
+//     （IGameObjectPoolModule 已由第 03 步建好；GameObjectPoolModuleState 已在
+//     2026-10-25 17:00 删除、PooledInstanceState 已在 2026-10-25 18:10 删除）
+//   此刻放进去会让 TEngine.Editor 程序集直接编译失败，
+//   破坏第 02 步「基线可编译」的验收标准（Unity 有编译错误就进不了 Play Mode）。
+//
+// 启用时机：第 14 步（Monitor 运行时代码落地之后）。
+// 启用步骤：
+//   1) 去掉扩展名 .txt，改名为 GameObjectPoolMonitorInspector.cs
+//     移入 Assets/TEngine/Editor/GameObjectPool/
+//   2) 新建同名 .meta，guid 沿用 7dcdf01fe4cb4fb3a8a75ef4347a45df
+//   3) **删除状态显示**：模块已取消生命周期状态机，GetStateName 与
+//      DrawModuleState 里的状态开关整段去掉（搜索 GameObjectPoolModuleState、
+//      GetStateName、IsInitialized、LifecycleVersion，共 4 处）
+//   4) module.DefinitionCount 已改名 ConfigCount，同步那一处
+//   5) **删除实例状态列**：`PooledInstanceState` 已于 2026-10-25 18:10 删除，
+//      实例侧只剩 IsSpawned。搜索 PooledInstanceState、instance.State.ToString()
+//      两处（约 360、400 行）：原先的「只看借出」过滤改成 `snapshot[i].IsSpawned`，
+//      状态列改成显示「借出 / 空闲」；快照结构里相应不再有 State 字段
+//   6) 核对 GameObjectPoolInfo / GameObjectPoolInstanceInfo 的字段名
+//      与第 12 步产出的运行快照结构完全一致
+//
+// 来源：从会话记录 35731790…jsonl 第 130 行的 Read 结果逐行还原，539 行原文，
+//      命名空间已由 TEngine.Editor.Inspector 改为 TEngine.Editor.GameObjectPool，
+//      并补 using TEngine.Editor.Inspector;（基类 GameFrameworkInspector 在此）。
+// ============================================================================
+using System;
+using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
+using TEngine.Editor.Inspector;
+using UnityEditor;
+using UnityEngine;
+
+namespace TEngine.Editor.GameObjectPool
+{
+    /// <summary>
+    /// 游戏对象池可视化组件的 Inspector。
+    /// <remarks>
+    /// 只读取模块快照并转发显式命令，不因绘制而创建模块或对象池。
+    /// 命令在列表枚举结束后统一执行，避免绘制过程中修改正在枚举的集合。
+    /// </remarks>
+    /// </summary>
+    [CustomEditor(typeof(GameObjectPoolMonitor))]
+    internal sealed class GameObjectPoolMonitorInspector : GameFrameworkInspector
+    {
+        private readonly List<GameObjectPoolInfo> _poolInfos = new List<GameObjectPoolInfo>(24);
+        private readonly List<GameObjectPoolInstanceInfo> _instanceInfos = new List<GameObjectPoolInstanceInfo>(256);
+        private readonly Dictionary<string, List<GameObjectPoolInstanceInfo>> _instanceSnapshots =
+            new Dictionary<string, List<GameObjectPoolInstanceInfo>>();
+        private readonly Dictionary<string, bool> _expandedPools = new Dictionary<string, bool>(24);
+        private readonly Dictionary<string, bool> _spawnedOnly = new Dictionary<string, bool>(24);
+        private readonly Dictionary<string, int> _instancePages = new Dictionary<string, int>(24);
+
+        private SerializedProperty _autoRefresh;
+        private SerializedProperty _refreshInterval;
+        private SerializedProperty _showOnlyCreatedPools;
+        private SerializedProperty _showOnlySpawnedPools;
+        private SerializedProperty _searchPoolName;
+        private SerializedProperty _showInstanceList;
+        private SerializedProperty _instancePageSize;
+
+        private GameObjectPoolSetting _settingAsset;
+        private float _nextRefreshTime;
+        private Vector2 _scrollPosition;
+        private Action _pendingCommand;
+        private bool _refreshRequested = true;
+        private IGameObjectPoolModule _snapshotModule;
+        private float _nextRepaintTime;
+
+        public override void OnInspectorGUI()
+        {
+            base.OnInspectorGUI();
+            serializedObject.Update();
+
+            IGameObjectPoolModule module = null;
+            bool hasModule = Application.isPlaying && ModuleSystem.TryGetModule(out module);
+            _settingAsset = hasModule ? module.Setting : FindBoundSetting();
+
+            DrawDisplayOptions();
+            if (serializedObject.ApplyModifiedProperties())
+            {
+                _refreshRequested = true;
+            }
+
+            if (!Application.isPlaying)
+            {
+                ClearSnapshot();
+                EditorGUILayout.HelpBox("进入播放模式后可查看对象池的运行状态。", MessageType.Info);
+                return;
+            }
+
+            if (!hasModule)
+            {
+                ClearSnapshot();
+                EditorGUILayout.HelpBox("游戏对象池模块尚未初始化，当前没有可显示的运行数据。", MessageType.Warning);
+                return;
+            }
+
+            DrawModuleState(module);
+
+            if (_refreshRequested || !ReferenceEquals(_snapshotModule, module)
+                || _autoRefresh.boolValue && Time.realtimeSinceStartup >= _nextRefreshTime)
+            {
+                CopySnapshot(module);
+            }
+
+            DrawPoolList(module);
+
+            if (_pendingCommand != null)
+            {
+                Action command = _pendingCommand;
+                _pendingCommand = null;
+                command();
+                CopySnapshot(module);
+            }
+
+        }
+
+        /// <summary>
+        /// 缓存显示字段并订阅按间隔重绘，不注册或创建运行模块。
+        /// </summary>
+        private void OnEnable()
+        {
+            _autoRefresh = serializedObject.FindProperty("autoRefresh");
+            _refreshInterval = serializedObject.FindProperty("refreshInterval");
+            _showOnlyCreatedPools = serializedObject.FindProperty("showOnlyCreatedPools");
+            _showOnlySpawnedPools = serializedObject.FindProperty("showOnlySpawnedPools");
+            _searchPoolName = serializedObject.FindProperty("searchPoolName");
+            _showInstanceList = serializedObject.FindProperty("showInstanceList");
+            _instancePageSize = serializedObject.FindProperty("instancePageSize");
+
+            ClearSnapshot();
+            EditorApplication.update += OnEditorUpdate;
+        }
+
+        /// <summary>
+        /// 关闭面板时解除编辑器回调。
+        /// </summary>
+        private void OnDisable()
+        {
+            EditorApplication.update -= OnEditorUpdate;
+        }
+
+        /// <summary>
+        /// 只在自动刷新间隔到达时请求重绘，避免持续自触发 Repaint。
+        /// </summary>
+        private void OnEditorUpdate()
+        {
+            if (!Application.isPlaying || !_autoRefresh.boolValue || Time.realtimeSinceStartup < _nextRepaintTime)
+            {
+                return;
+            }
+            _nextRepaintTime = Time.realtimeSinceStartup + Mathf.Max(0.1f, _refreshInterval.floatValue);
+            Repaint();
+        }
+
+        /// <summary>
+        /// 绘制展示选项。
+        /// </summary>
+        private void DrawDisplayOptions()
+        {
+            EditorGUILayout.LabelField("TEngine 游戏对象池", EditorStyles.boldLabel);
+
+            EditorGUILayout.PropertyField(_autoRefresh, new GUIContent("自动刷新"));
+            EditorGUILayout.PropertyField(_refreshInterval, new GUIContent("刷新间隔（秒）"));
+
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.PropertyField(_showOnlyCreatedPools, new GUIContent("只看已创建"));
+            EditorGUILayout.PropertyField(_showOnlySpawnedPools, new GUIContent("只看有借出"));
+            EditorGUILayout.EndHorizontal();
+
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.PropertyField(_searchPoolName, new GUIContent("池名过滤"));
+            EditorGUILayout.PropertyField(_showInstanceList, new GUIContent("展开实例列表"));
+            EditorGUILayout.EndHorizontal();
+
+            EditorGUILayout.PropertyField(_instancePageSize, new GUIContent("每页实例数"));
+
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.ObjectField(new GUIContent("配置资产"), _settingAsset, typeof(GameObjectPoolSetting),
+                false);
+            EditorGUI.BeginDisabledGroup(_settingAsset == null);
+            if (GUILayout.Button("定位", GUILayout.Width(48f)))
+            {
+                EditorGUIUtility.PingObject(_settingAsset);
+            }
+            EditorGUI.EndDisabledGroup();
+            EditorGUILayout.EndHorizontal();
+
+            EditorGUILayout.Space(4f);
+        }
+
+        /// <summary>
+        /// 绘制模块状态。
+        /// </summary>
+        /// <param name="module">对象池模块。</param>
+        private void DrawModuleState(IGameObjectPoolModule module)
+        {
+            EditorGUILayout.BeginVertical("box");
+            EditorGUILayout.LabelField($"状态：{GetStateName(module.State)}", EditorStyles.boldLabel);
+            EditorGUILayout.LabelField($"配置数量：{module.DefinitionCount}    运行池数量：{module.PoolCount}");
+
+            EditorGUILayout.BeginHorizontal();
+            if (GUILayout.Button("手动刷新"))
+            {
+                _refreshRequested = true;
+            }
+
+            if (GUILayout.Button("清空全部空闲实例"))
+            {
+                _pendingCommand = () => ClearAllUnused(module);
+            }
+            EditorGUILayout.EndHorizontal();
+            EditorGUILayout.EndVertical();
+        }
+
+        /// <summary>
+        /// 绘制对象池列表。
+        /// </summary>
+        /// <param name="module">对象池模块。</param>
+        private void DrawPoolList(IGameObjectPoolModule module)
+        {
+            if (_poolInfos.Count == 0)
+            {
+                EditorGUILayout.HelpBox("没有可显示的对象池。", MessageType.Info);
+                return;
+            }
+
+            string keyword = _searchPoolName.stringValue;
+            _scrollPosition = EditorGUILayout.BeginScrollView(_scrollPosition, GUILayout.MaxHeight(600f));
+
+            int visibleCount = 0;
+            for (int i = 0; i < _poolInfos.Count; i++)
+            {
+                GameObjectPoolInfo info = _poolInfos[i];
+                if (!IsVisible(info, keyword))
+                {
+                    continue;
+                }
+
+                visibleCount++;
+                DrawPoolEntry(module, info);
+            }
+
+            if (visibleCount == 0)
+            {
+                EditorGUILayout.HelpBox("当前筛选条件下没有对象池。", MessageType.Info);
+            }
+
+            EditorGUILayout.EndScrollView();
+        }
+
+        /// <summary>
+        /// 绘制单个对象池条目。
+        /// </summary>
+        /// <param name="module">对象池模块。</param>
+        /// <param name="info">对象池快照。</param>
+        private void DrawPoolEntry(IGameObjectPoolModule module, GameObjectPoolInfo info)
+        {
+            string poolName = info.PoolName ?? string.Empty;
+            if (!_expandedPools.ContainsKey(poolName))
+            {
+                _expandedPools.Add(poolName, false);
+            }
+
+            if (!_spawnedOnly.ContainsKey(poolName))
+            {
+                _spawnedOnly.Add(poolName, false);
+            }
+
+            if (!_instancePages.ContainsKey(poolName))
+            {
+                _instancePages.Add(poolName, 0);
+            }
+
+            EditorGUILayout.BeginVertical("box");
+
+            EditorGUILayout.BeginHorizontal();
+            bool wasExpanded = _expandedPools[poolName];
+            _expandedPools[poolName] = EditorGUILayout.Foldout(wasExpanded,
+                $"{poolName}（{(info.IsPoolCreated ? "运行中" : "未创建")}）", true);
+            if (_expandedPools[poolName] != wasExpanded)
+            {
+                _refreshRequested = true;
+                Repaint();
+            }
+
+            GUILayout.FlexibleSpace();
+            EditorGUILayout.LabelField($"总数 {info.TotalCount}  借出 {info.SpawnedCount}", GUILayout.Width(160f));
+            EditorGUILayout.EndHorizontal();
+
+            EditorGUILayout.LabelField(
+                $"空闲 {info.IdleCount}  峰值 {info.PeakSpawnedCount}  累计创建 {info.CreatedCount}  " +
+                $"复用 {info.ReusedCount}  待回收 {info.DelayedCount}  失败 {info.FailedSpawnCount}",
+                EditorStyles.miniLabel);
+
+            if (_expandedPools[poolName])
+            {
+                EditorGUILayout.LabelField(
+                    $"容量目标 {info.Capacity}  实例上限 {(info.MaxInstanceCount > 0 ? info.MaxInstanceCount.ToString() : "不限")}  " +
+                    $"自动释放 {info.AutoReleaseInterval:F1}s  过期 {info.ExpireTime:F1}s  优先级 {info.Priority}",
+                    EditorStyles.miniLabel);
+                EditorGUILayout.LabelField($"预热目标 {info.PrewarmTarget}", EditorStyles.miniLabel);
+                if (info.IsPrewarming)
+                {
+                    EditorGUILayout.LabelField($"正在预热至 {info.PendingPrewarmTarget}", EditorStyles.miniLabel);
+                }
+                EditorGUILayout.ObjectField("预制体", info.Prefab, typeof(GameObject), false);
+
+                EditorGUILayout.BeginHorizontal();
+                EditorGUI.BeginDisabledGroup(info.PoolRoot == null);
+                if (GUILayout.Button("定位池根"))
+                {
+                    EditorGUIUtility.PingObject(info.PoolRoot.gameObject);
+                }
+                EditorGUI.EndDisabledGroup();
+
+                if (GUILayout.Button("预热到目标"))
+                {
+                    int target = info.PrewarmTarget > 0 ? info.PrewarmTarget : info.Capacity;
+                    _pendingCommand = () => module.PrewarmAsync(poolName, target).Forget();
+                }
+
+                if (GUILayout.Button("清空闲实例"))
+                {
+                    _pendingCommand = () => module.ClearUnused(poolName);
+                }
+
+                if (GUILayout.Button("释放池"))
+                {
+                    _pendingCommand = () => ReleasePool(module, info);
+                }
+                EditorGUILayout.EndHorizontal();
+
+                if (_showInstanceList.boolValue)
+                {
+                    _spawnedOnly[poolName] = EditorGUILayout.ToggleLeft("只看借出实例", _spawnedOnly[poolName]);
+                    DrawInstanceList(module, info, _spawnedOnly[poolName]);
+                }
+            }
+
+            EditorGUILayout.EndVertical();
+        }
+
+        /// <summary>
+        /// 绘制分页的实例列表。
+        /// </summary>
+        /// <param name="module">对象池模块。</param>
+        /// <param name="info">对象池快照。</param>
+        /// <param name="spawnedOnly">是否只看借出实例。</param>
+        private void DrawInstanceList(IGameObjectPoolModule module, GameObjectPoolInfo info, bool spawnedOnly)
+        {
+            string poolName = info.PoolName ?? string.Empty;
+            _instanceInfos.Clear();
+            if (_instanceSnapshots.TryGetValue(poolName, out List<GameObjectPoolInstanceInfo> snapshot))
+            {
+                for (int i = 0; i < snapshot.Count; i++)
+                {
+                    if (!spawnedOnly || snapshot[i].State == PooledInstanceState.Spawned)
+                    {
+                        _instanceInfos.Add(snapshot[i]);
+                    }
+                }
+            }
+
+            if (_instanceInfos.Count == 0)
+            {
+                EditorGUILayout.LabelField("没有实例。", EditorStyles.miniLabel);
+                return;
+            }
+
+            int pageSize = Mathf.Max(10, _instancePageSize.intValue);
+            int pageCount = Mathf.Max(1, (_instanceInfos.Count + pageSize - 1) / pageSize);
+            int page = Mathf.Clamp(_instancePages[poolName], 0, pageCount - 1);
+            _instancePages[poolName] = page;
+
+            EditorGUILayout.BeginHorizontal();
+            if (GUILayout.Button("上一页", GUILayout.Width(60f)) && page > 0)
+            {
+                _instancePages[poolName] = page - 1;
+            }
+
+            EditorGUILayout.LabelField($"{page + 1} / {pageCount}（共 {_instanceInfos.Count} 个）",
+                EditorStyles.miniLabel, GUILayout.Width(160f));
+
+            if (GUILayout.Button("下一页", GUILayout.Width(60f)) && page < pageCount - 1)
+            {
+                _instancePages[poolName] = page + 1;
+            }
+            EditorGUILayout.EndHorizontal();
+
+            int start = page * pageSize;
+            int end = Mathf.Min(start + pageSize, _instanceInfos.Count);
+            for (int i = start; i < end; i++)
+            {
+                GameObjectPoolInstanceInfo instance = _instanceInfos[i];
+                EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.LabelField($"#{instance.InstanceId}", EditorStyles.miniLabel, GUILayout.Width(90f));
+                EditorGUILayout.LabelField(instance.State.ToString(), EditorStyles.miniLabel, GUILayout.Width(70f));
+                EditorGUILayout.LabelField($"租约 {instance.LeaseVersion}", EditorStyles.miniLabel,
+                    GUILayout.Width(70f));
+
+                if (instance.DelayedRemainingSeconds > 0f)
+                {
+                    EditorGUILayout.LabelField($"延时 {instance.DelayedRemainingSeconds:F1}s",
+                        EditorStyles.miniLabel, GUILayout.Width(90f));
+                }
+
+                EditorGUILayout.ObjectField(instance.GameObject, typeof(GameObject), true);
+                EditorGUILayout.EndHorizontal();
+            }
+        }
+
+        /// <summary>
+        /// 判断对象池是否满足当前筛选条件。
+        /// </summary>
+        /// <param name="info">对象池快照。</param>
+        /// <param name="keyword">池名关键字。</param>
+        /// <returns>满足条件时返回 true。</returns>
+        private bool IsVisible(GameObjectPoolInfo info, string keyword)
+        {
+            if (_showOnlyCreatedPools.boolValue && !info.IsPoolCreated)
+            {
+                return false;
+            }
+
+            if (_showOnlySpawnedPools.boolValue && info.SpawnedCount <= 0)
+            {
+                return false;
+            }
+
+            string poolName = info.PoolName ?? string.Empty;
+            return string.IsNullOrEmpty(keyword)
+                   || poolName.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0;
+        }
+
+        /// <summary>
+        /// 释放对象池，存在借出实例时要求明确确认强制销毁。
+        /// </summary>
+        /// <param name="module">对象池模块。</param>
+        /// <param name="info">对象池快照。</param>
+        private void ReleasePool(IGameObjectPoolModule module, GameObjectPoolInfo info)
+        {
+            string poolName = info.PoolName ?? string.Empty;
+            if (info.SpawnedCount <= 0)
+            {
+                module.ReleasePool(poolName);
+                return;
+            }
+
+            bool confirmed = EditorUtility.DisplayDialog("释放对象池",
+                $"{poolName} 仍有 {info.SpawnedCount} 个实例处于借出状态，强制释放会直接销毁这些对象。是否继续？",
+                "强制释放", "取消");
+
+            if (confirmed)
+            {
+                module.ReleasePool(poolName, true);
+            }
+        }
+
+        /// <summary>
+        /// 清理全部对象池的空闲实例。
+        /// </summary>
+        /// <param name="module">对象池模块。</param>
+        private static void ClearAllUnused(IGameObjectPoolModule module)
+        {
+            List<GameObjectPoolInfo> infos = new List<GameObjectPoolInfo>();
+            module.FillPoolInfos(infos);
+
+            for (int i = 0; i < infos.Count; i++)
+            {
+                if (infos[i].IsPoolCreated)
+                {
+                    module.ClearUnused(infos[i].PoolName);
+                }
+            }
+        }
+
+        /// <summary>
+        /// 拷贝一次运行快照。
+        /// </summary>
+        /// <param name="module">对象池模块。</param>
+        private void CopySnapshot(IGameObjectPoolModule module)
+        {
+            module.FillPoolInfos(_poolInfos);
+            foreach (List<GameObjectPoolInstanceInfo> snapshot in _instanceSnapshots.Values)
+            {
+                snapshot.Clear();
+            }
+            if (_showInstanceList.boolValue)
+            {
+                for (int i = 0; i < _poolInfos.Count; i++)
+                {
+                    string poolName = _poolInfos[i].PoolName;
+                    if (!_expandedPools.TryGetValue(poolName, out bool expanded) || !expanded)
+                    {
+                        continue;
+                    }
+                    if (!_instanceSnapshots.TryGetValue(poolName, out List<GameObjectPoolInstanceInfo> snapshot))
+                    {
+                        snapshot = new List<GameObjectPoolInstanceInfo>();
+                        _instanceSnapshots.Add(poolName, snapshot);
+                    }
+                    module.FillInstanceInfos(poolName, false, snapshot);
+                }
+            }
+            _snapshotModule = module;
+            _refreshRequested = false;
+            _nextRefreshTime = Time.realtimeSinceStartup + Mathf.Max(0.1f, _refreshInterval.floatValue);
+        }
+
+        /// <summary>
+        /// 清空展示缓存，避免退出播放后残留旧数据。
+        /// </summary>
+        private void ClearSnapshot()
+        {
+            _poolInfos.Clear();
+            _instanceInfos.Clear();
+            _instanceSnapshots.Clear();
+            _expandedPools.Clear();
+            _instancePages.Clear();
+            _spawnedOnly.Clear();
+            _nextRefreshTime = 0f;
+            _refreshRequested = true;
+            _snapshotModule = null;
+            _pendingCommand = null;
+        }
+
+        /// <summary>
+        /// 读取当前 Monitor 所在层级的 Settings 绑定，不扫描或猜测工程中的配置资产。
+        /// </summary>
+        /// <returns>找到的配置资产，没有时返回 null。</returns>
+        private GameObjectPoolSetting FindBoundSetting()
+        {
+            GameObjectPoolMonitor monitor = (GameObjectPoolMonitor)target;
+            Settings settings = monitor.transform.root.GetComponentInChildren<Settings>(true);
+            if (settings == null)
+            {
+                return null;
+            }
+
+            SerializedObject settingsObject = new SerializedObject(settings);
+            return settingsObject.FindProperty("gameObjectPoolSetting").objectReferenceValue as GameObjectPoolSetting;
+        }
+
+        /// <summary>
+        /// 将模块状态转换为面板显示文本。
+        /// </summary>
+        /// <param name="state">模块状态。</param>
+        /// <returns>状态文本。</returns>
+        private static string GetStateName(GameObjectPoolModuleState state)
+        {
+            switch (state)
+            {
+                case GameObjectPoolModuleState.NotInitialized:
+                    return "未初始化";
+                case GameObjectPoolModuleState.Ready:
+                    return "运行中";
+                case GameObjectPoolModuleState.Closing:
+                    return "关闭中";
+                default:
+                    return "已关闭";
+            }
+        }
+    }
+}

@@ -31,6 +31,9 @@ openspec/
 /.codex_tmp/
 /.luban_cache/
 /UnityProject/.workbuddy/
+
+# WorkBuddy 本地工具二进制（ocr CLI 等，体积大且按平台区分）
+/.workbuddy/tools/
 /UnityProject/UserSettings/EditorUserSettings.asset
 **/__pycache__/
 *.py[cod]

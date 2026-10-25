@@ -126,6 +126,21 @@ namespace TEngine
         T Spawn(string name);
 
         /// <summary>
+        /// 尝试获取对象。
+        /// </summary>
+        /// <param name="obj">要获取的对象。</param>
+        /// <returns>是否获取成功。</returns>
+        bool TrySpawn(out T obj);
+
+        /// <summary>
+        /// 尝试获取对象。
+        /// </summary>
+        /// <param name="name">对象名称。</param>
+        /// <param name="obj">要获取的对象。</param>
+        /// <returns>是否获取成功。</returns>
+        bool TrySpawn(string name, out T obj);
+
+        /// <summary>
         /// 回收对象。
         /// </summary>
         /// <param name="obj">要回收的对象。</param>
